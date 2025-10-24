@@ -44,7 +44,6 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
     raise ValueError("GOOGLE_API_KEY environment variable is not set")
 
-print(f'Google API Key: {GOOGLE_API_KEY}')
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
