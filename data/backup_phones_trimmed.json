@@ -1,0 +1,6418 @@
+[
+  {
+    "brand_name": "Nothing",
+    "id": "nothing_phone_(1)-11636",
+    "phone_name": "Phone (1)",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-1.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2022, July 16",
+      "body": "193.5g, 8.3mm thickness",
+      "os": "Android 12, up to 15",
+      "storage": "128GB/256GB storage, no card slot",
+      "display_size": "6.55\"",
+      "display_resolution": "1080x2400 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Snapdragon 778G+ 5G",
+      "battery_size": "4500 mAh",
+      "battery_type": "33W15W",
+      "popularity": " 2.2%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "159.2 x 75.8 x 8.3 mm (6.27 x 2.98 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "193.5 g (6.84 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": "Colors",
+          "info": "White, Black"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "OLED, 1B colors, 120Hz, 1440Hz PWM, HDR10+, 500 nits (typ), 1200 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.55 inches, 103.6 cm2 (~85.8% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2400 pixels, 20:9 ratio (~402 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 5"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 12, upgradable to Android 15, up to 3 major Android upgrades, Nothing OS 3.0"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM7325-AE Snapdragon 778G+ 5G (6 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x2.5 GHz Cortex-A78 & 3x2.4 GHz Cortex-A78 & 4x1.9 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 642L"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 3.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.9, 24mm (wide), 1/1.56\", 1.0µm, PDAF, OIS\n50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\", 0.64µm, AF"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30/60fps, gyro-EIS, live HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "16 MP, f/2.5, (wide), 1/3.1\", 1.0µm"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 4500 mAh (17.42 Wh)"
+        },
+        {
+          "title": "Charging",
+          "info": "33W wired, PD3.0, QC4, 50% in 30 min, 100% in 70 min\n15W wireless\n5W reverse wireless"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM: ₹21,999, 256GB 8GB RAM: ₹23,999 , 256GB 12GB RAM: ₹25,999"
+  },
+  {
+    "brand_name": "Nothing",
+    "id": "nothing_phone_(2a)-12760",
+    "phone_name": "Phone (2a)",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-2a.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2023, July 17",
+      "body": "201.2g, 8.6mm thickness",
+      "os": "Android 13, up to 15",
+      "storage": "128GB/256GB, no card slot",
+      "display_size": "6.7\"",
+      "display_resolution": "1080x2412 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Snapdragon 8+ Gen 1",
+      "battery_size": "4700 mAh",
+      "battery_type": "45W15W",
+      "popularity": " 2.6%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "162.1 x 76.4 x 8.6 mm (6.38 x 3.01 x 0.34 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "201.2 g (7.09 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "11 LED light strips on the back (notifications, camera fill light, 33 addressable zones)\nBlinking red light on the back (video recording indicator)\nIP54 dust protected and water resistant (water splashes)"
+        },
+        {
+          "title": "Colors",
+          "info": "White, Dark Gray"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO OLED, 1B colors, 120Hz, 1920Hz PWM, HDR10+, 1600 nits (HBM), 1600 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.7 inches, 108.0 cm2 (~87.2% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2412 pixels, 20:9 ratio (~394 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 5"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 13, upgradable to Android 15, up to 3 major Android upgrades, Nothing OS 3.0"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.0 GHz Cortex-X2 & 3x2.5 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 730"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 12GB RAM"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.9, 24mm (wide), 1/1.56\", 1.0µm, PDAF, OIS\n50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\", 0.64µm, AF"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps, gyro-EIS, live HDR, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "32 MP, f/2.5, (wide), 1/2.74\", 0.8µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 4700 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "45W wired, PD3.0, PPS, QC4, 100% in 55 min\n15W wireless, 100% in 130 min\n5W reverse wireless"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM: ₹20,990, 256GB 12GB RAM: ₹29,990"
+  },
+  {
+    "brand_name": "Nothing",
+    "id": "nothing_phone_(3a)-13672",
+    "phone_name": "Phone (3a)",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-3a.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, March 11",
+      "body": "201g, 8.4mm thickness",
+      "os": "Android 15, up to 3 major upgrades",
+      "storage": "128GB/256GB storage, no card slot",
+      "display_size": "6.77\"",
+      "display_resolution": "1080x2392 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8 GB RAM",
+      "chipset": "Snapdragon 7s Gen 3",
+      "battery_size": "5000 mAh",
+      "battery_type": "50W",
+      "popularity": " 8.4%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "163.5 x 77.5 x 8.4 mm (6.44 x 3.05 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "201 g (7.09 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Panda Glass), plastic frame, glass back"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP64 dust tight and water resistant (water splashes)\n3 LED light strips on the back (notifications, camera fill light, 26 addressable zones)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, White, Blue"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, 800 nits (typ), 1300 nits (HBM), 3000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.77 inches, 111.5 cm2 (~88.0% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2392 pixels (~387 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Panda Glass, Mohs level 5"
+        },
+        {
+          "title": " ",
+          "info": "Ultra HDR image support"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 3 major Android upgrades, Nothing OS 3.1"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM7635 Snapdragon 7s Gen 3 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 810"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.9, 24mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS\n50 MP, f/2.0, 50mm (telephoto), 1/2.74\", 0.64µm, PDAF (25cm - ∞), 2x optical zoom\n8 MP, f/2.2, 15mm, 120˚ (ultrawide), 1/4.0\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30/60/120fps, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "32 MP, f/2.2, 22mm (wide), 1/3.44\""
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "5000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "50W wired, 50% in 19 min, 100% in 56 min"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM: ₹27,999, 256GB 8GB RAM: ₹30,999"
+  },
+  {
+    "brand_name": "Nothing",
+    "id": "nothing_phone_(3)-13969",
+    "phone_name": "Phone (3)",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone3.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, July 15",
+      "body": "218g, 9mm thickness",
+      "os": "Android 15, up to 5 major upgrades",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.67\"",
+      "display_resolution": "1260x2800 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12/16 GB RAM",
+      "chipset": "Snapdragon 8s Gen 4",
+      "battery_size": "5150 mAh",
+      "battery_type": "65W15W",
+      "popularity": " 6.3%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "160.6 x 75.6 x 9 mm (6.32 x 2.98 x 0.35 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "218 g (7.69 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 7i), glass back (Gorilla Glass Victus), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "title": " ",
+          "info": "Monochrome LED display on the back (489 LEDs, notifications, timer, flashlight)\nIP68 dust tight and water resistant (submerged up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "White, Black"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "OLED, 1B colors, 120Hz, 960Hz PWM, HDR10+, 4500 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.67 inches, 107.4 cm2 (~88.5% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1260 x 2800 pixels, 20:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 7i, Mohs level 5"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 5 major Android upgrades, Nothing OS 3.5"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8735 Snapdragon 8s Gen 4 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.21 GHz Cortex-X4 & 3x3.0 GHz Cortex-A720 & 2x2.8 GHz Cortex-A720 & 2x2.0 GHz Cortex-A720)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 825"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.7, 24mm (wide), 1/1.3\", PDAF, OIS\n50 MP, f/2.7, (periscope telephoto), 1/2.75\", PDAF, 3x optical zoom. OIS\n50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\""
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/2.2, (wide), 1/2.76\""
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@60fps, 1080p@60fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Market-dependent versions:· Si/C 5150 mAh - International model· Si/C 5500 mAh - India model"
+        },
+        {
+          "title": "Charging",
+          "info": "65W wired, PD3.0, PPS, QC4\n15W wireless\n7.5W reverse charging\n5W reverse wireless"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM: ₹79,999, 512GB 16GB RAM: ₹89,999"
+  },
+  {
+    "brand_name": "Apple",
+    "id": "apple_iphone_se_(2022)-11410",
+    "phone_name": "iPhone SE (2022)",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-se-2022.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2022, March 18",
+      "body": "144g, 7.3mm thickness",
+      "os": "iOS 15.4, up to iOS 26",
+      "storage": "64GB/128GB storage, no card slot",
+      "display_size": "4.7\"",
+      "display_resolution": "750x1334 pixels",
+      "camera_pixels": "12 MP",
+      "video_pixels": "2160p",
+      "ram_size": "4 GB RAM",
+      "chipset": "Apple A15 Bionic",
+      "battery_size": "2018 mAh",
+      "battery_type": "20W8W",
+      "popularity": " 3.4%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G, EV-DO Rev.A 3.1 Mbps"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "144 g (5.08 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, glass back, aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + eSIM"
+        },
+        {
+          "title": " ",
+          "info": "IP67 dust/water resistant (up to 1m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
+        },
+        {
+          "title": "Colors",
+          "info": "Midnight, Starlight, Red"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Retina IPS LCD, 625 nits (typ)"
+        },
+        {
+          "title": "Size",
+          "info": "4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "750 x 1334 pixels, 16:9 ratio (~326 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ion-strengthened glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "iOS 15.4, upgradable to iOS 26"
+        },
+        {
+          "title": "Chipset",
+          "info": "Apple A15 Bionic (5 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Hexa-core (2x3.22 GHz Avalanche + 4x1.82 GHz Blizzard)"
+        },
+        {
+          "title": "GPU",
+          "info": "Apple GPU (4-core graphics)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "64GB 4GB RAM, 128GB 4GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "NVMe"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/1.8 (wide), PDAF, OIS"
+        },
+        {
+          "title": "Features",
+          "info": "Quad-LED dual-tone flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/30/60fps, 1080p@30/60/120/240fps, HDR, OIS, stereo sound rec."
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "7 MP, f/2.2"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30/120fps; gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 2018 mAh (6.96 Wh)"
+        },
+        {
+          "title": "Charging",
+          "info": "20W wired, 50% in 30 min\n7.5W wireless (Qi)"
+        }
+      ]
+    },
+    "price": "64GB 4GB RAM: ₹47,600, 128GB 4GB RAM: ₹52,600"
+  },
+  {
+    "brand_name": "Apple",
+    "id": "apple_iphone_14-11861",
+    "phone_name": "iPhone 14",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2022, March 18",
+      "body": "144g, 7.3mm thickness",
+      "os": "iOS 15.4, up to iOS 26",
+      "storage": "128GB/256GB storage, no card slot",
+      "display_size": "4.7\"",
+      "display_resolution": "750x1334 pixels",
+      "camera_pixels": "12 MP",
+      "video_pixels": "2160p",
+      "ram_size": "4 GB RAM",
+      "chipset": "Apple A15 Bionic",
+      "battery_size": "2018 mAh",
+      "battery_type": "20W8W",
+      "popularity": " 3.4%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G, EV-DO Rev.A 3.1 Mbps"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "144 g (5.08 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, glass back, aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + eSIM"
+        },
+        {
+          "title": " ",
+          "info": "IP67 dust/water resistant (up to 1m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
+        },
+        {
+          "title": "Colors",
+          "info": "Midnight, Starlight, Red"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Retina IPS LCD, 625 nits (typ)"
+        },
+        {
+          "title": "Size",
+          "info": "4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "750 x 1334 pixels, 16:9 ratio (~326 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ion-strengthened glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "iOS 15.4, upgradable to iOS 26"
+        },
+        {
+          "title": "Chipset",
+          "info": "Apple A15 Bionic (5 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Hexa-core (2x3.22 GHz Avalanche + 4x1.82 GHz Blizzard)"
+        },
+        {
+          "title": "GPU",
+          "info": "Apple GPU (4-core graphics)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 4GB RAM, 256GB 4GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "NVMe"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/1.8 (wide), PDAF, OIS"
+        },
+        {
+          "title": "Features",
+          "info": "Quad-LED dual-tone flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/30/60fps, 1080p@30/60/120/240fps, HDR, OIS, stereo sound rec."
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "7 MP, f/2.2"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30/120fps; gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 2018 mAh (6.96 Wh)"
+        },
+        {
+          "title": "Charging",
+          "info": "20W wired, 50% in 30 min\n7.5W wireless (Qi)"
+        }
+      ]
+    },
+    "price": "128GB 4GB RAM: ₹54,900, 256GB 4GB RAM: ₹64,900"
+  },
+  {
+    "brand_name": "Apple",
+    "id": "apple_iphone_15-12559",
+    "phone_name": "iPhone 15",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2023, September 22",
+      "body": "171g, 7.8mm thickness",
+      "os": "iOS 17, up to iOS 26",
+      "storage": "128GB/256GB storage, no card slot",
+      "display_size": "6.1\"",
+      "display_resolution": "1179x2556 pixels",
+      "camera_pixels": "48 MP",
+      "video_pixels": "2160p",
+      "ram_size": "6 GB RAM",
+      "chipset": "Apple A16 Bionic",
+      "battery_size": "3349 mAh",
+      "battery_type": "PD2.015W",
+      "popularity": " 14%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "147.6 x 71.6 x 7.8 mm (5.81 x 2.82 x 0.31 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "171 g (6.03 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, glass back, aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, Blue, Green, Yellow, Pink"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.1 inches, 91.3 cm2 (~86.4% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1179 x 2556 pixels, 19.5:9 ratio (~461 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ceramic Shield glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "iOS 17, upgradable to iOS 26"
+        },
+        {
+          "title": "Chipset",
+          "info": "Apple A16 Bionic (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Hexa-core (2x3.46 GHz Everest + 4x2.02 GHz Sawtooth)"
+        },
+        {
+          "title": "GPU",
+          "info": "Apple GPU (5-core graphics)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 6GB RAM, 256GB 6GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "NVMe"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "48 MP, f/1.6, 26mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, sensor-shift OIS\n12 MP, f/2.4, 13mm, 120˚ (ultrawide), 0.7µm"
+        },
+        {
+          "title": "Features",
+          "info": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, HDR, Dolby Vision HDR (up to 60fps), stereo sound rec."
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/1.9, 23mm (wide), 1/3.6\", 1.0µm, PDAF\nSL 3D, (depth/biometrics sensor)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, Dolby Vision HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 3349 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "Wired, PD2.0, 50% in 30 min\n15W wireless (MagSafe)\n15W wireless (Qi2) - requires iOS 17.2 update\n4.5W reverse wired"
+        }
+      ]
+    },
+    "price": "128GB 6GB RAM: ₹59,900, 256GB 6GB RAM: ₹69,900"
+  },
+  {
+    "brand_name": "Apple",
+    "id": "apple_iphone_15_pro-12557",
+    "phone_name": "iPhone 15 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2023, September 22",
+      "body": "187g, 8.3mm thickness",
+      "os": "iOS 17, up to iOS 26",
+      "storage": "128GB/256GB/512GB/1TB storage, no card slot",
+      "display_size": "6.1\"",
+      "display_resolution": "1179x2556 pixels",
+      "camera_pixels": "48 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8 GB RAM",
+      "chipset": "Apple A17 Pro",
+      "battery_size": "3274 mAh",
+      "battery_type": "PD2.015W",
+      "popularity": " 8.1%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "146.6 x 70.6 x 8.3 mm (5.77 x 2.78 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "187 g (6.60 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, glass back, titanium frame (grade 5)"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black Titanium, White Titanium, Blue Titanium, Natural Titanium"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.1 inches, 91.3 cm2 (~88.2% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1179 x 2556 pixels, 19.5:9 ratio (~461 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ceramic Shield glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "iOS 17, upgradable to iOS 26"
+        },
+        {
+          "title": "Chipset",
+          "info": "Apple A17 Pro (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Hexa-core (2x3.78 GHz + 4x2.11 GHz)"
+        },
+        {
+          "title": "GPU",
+          "info": "Apple GPU (6-core graphics)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM, 1TB 8GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "NVMe"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "48 MP, f/1.8, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS\n12 MP, f/2.8, 77mm (telephoto), 1/3.5\", 1.0µm, PDAF, OIS, 3x optical zoom\n12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 1.4µm, dual pixel PDAF\nTOF 3D LiDAR scanner (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 60fps), ProRes, 3D (spatial) video, stereo sound rec."
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/1.9, 23mm (wide), 1/3.6\", 1.0µm, PDAF, OIS\nSL 3D, (depth/biometrics sensor)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, Dolby Vision HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 3274 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "Wired, PD2.0, 50% in 30 min\n15W wireless (MagSafe)\n15W wireless (Qi2) - requires iOS 17.2 update\n4.5W reverse wired"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM: ₹90,999, 256GB 8GB RAM: ₹94,999, 512GB 8GB RAM: ₹99,999, 1TB 8GB RAM: ₹1,04,999"
+  },
+  {
+    "brand_name": "Apple",
+    "id": "apple_iphone_16_pro-13315",
+    "phone_name": "iPhone 16 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2024, September 20",
+      "body": "199g, 8.3mm thickness",
+      "os": "iOS 18, up to iOS 26",
+      "storage": "128GB/256GB/512GB/1TB storage, no card slot",
+      "display_size": "6.3\"",
+      "display_resolution": "1206x2622 pixels",
+      "camera_pixels": "48 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8 GB RAM",
+      "chipset": "Apple A18 Pro",
+      "battery_size": "3582 mAh",
+      "battery_type": "PD2.025W",
+      "popularity": " 9.7%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "149.6 x 71.5 x 8.3 mm (5.89 x 2.81 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "199 g (7.02 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Ceramic Shield), glass back, titanium frame (grade 5)"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black Titanium, White Titanium, Natural Titanium, Desert Titanium"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.3 inches, 96.4 cm2 (~90.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1206 x 2622 pixels, 19.5:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ceramic Shield glass (2024 gen), Mohs level 4"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "iOS 18, upgradable to iOS 26"
+        },
+        {
+          "title": "Chipset",
+          "info": "Apple A18 Pro (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Hexa-core (2x4.05 GHz + 4x2.42 GHz)"
+        },
+        {
+          "title": "GPU",
+          "info": "Apple GPU (6-core graphics)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM, 1TB 8GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "NVMe"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "48 MP, f/1.8, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS\n12 MP, f/2.8, 120mm (periscope telephoto), 1/3.06\", 1.12µm, dual pixel PDAF, 3D sensor‑shift OIS, 5x optical zoom\n48 MP, f/2.2, 13mm (ultrawide), 1/2.55\", 0.7µm, PDAF\nTOF 3D LiDAR scanner (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 60fps), ProRes, 3D (spatial) video/audio, stereo sound rec."
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/1.9, 23mm (wide), 1/3.6\", 1.0µm, PDAF, OIS\nSL 3D, (depth/biometrics sensor)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec."
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 3582 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "Wired, PD2.0, 50% in 30 min\n25W wireless (MagSafe), 15W wireless (China only)\n15W wireless (Qi2)\n4.5W reverse wired"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM: ₹1,09,900, 256GB 8GB RAM: ₹1,19,900, 512GB 8GB RAM: ₹1,39,900, 1TB 8GB RAM: ₹1,59,900"
+  },
+  {
+    "brand_name": "Apple",
+    "id": "apple_iphone_17-14050",
+    "phone_name": "iPhone 17",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, September 19",
+      "body": "177g, 8mm thickness",
+      "os": "iOS 26",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.3\"",
+      "display_resolution": "1206x2622 pixels",
+      "camera_pixels": "48 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8 GB RAM",
+      "chipset": "Apple A19",
+      "battery_size": "3692 mAh",
+      "battery_type": "PD3.225W",
+      "popularity": " 21%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "149.6 x 71.5 x 8 mm (5.89 x 2.81 x 0.31 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "177 g (6.24 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Ceramic Shield 2), aluminum frame, glass back"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, White, Mist Blue, Sage, Lavender"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.3 inches, 96.4 cm2 (~90.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1206 x 2622 pixels, 19.5:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ceramic Shield 2, Mohs level 5"
+        },
+        {
+          "title": " ",
+          "info": "Anti-reflective coating"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "iOS 26"
+        },
+        {
+          "title": "Chipset",
+          "info": "Apple A19 (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Hexa-core (2x4.26 GHz + 4xX.X GHz)"
+        },
+        {
+          "title": "GPU",
+          "info": "Apple GPU (5-core graphics)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 8GB RAM, 512GB 8GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "NVMe"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "48 MP, f/1.6, 26mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, sensor-shift OIS\n48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, HDR, Dolby Vision HDR (up to 60fps), stereo sound rec."
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "18 MP multi-aspect, f/1.9, 20mm (ultrawide), PDAF\nSL 3D, (depth/biometrics sensor)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec."
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 3692 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "Wired, PD3.2, AVS, 50% in 20 min\n25W wireless MagSafe/Qi2, 50% in 30 min (15W - China)\n4.5W reverse wired"
+        }
+      ]
+    },
+    "price": "256GB 8GB RAM: ₹82,900, 512GB 8GB RAM: ₹1,02,900 "
+  },
+  {
+    "brand_name": "Apple",
+    "id": "apple_iphone_17_pro_max-13964",
+    "phone_name": "iPhone 17 Pro Max",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, September 19",
+      "body": "233g, 8.8mm thickness",
+      "os": "iOS 26",
+      "storage": "256GB/512GB/2TB storage, no card slot",
+      "display_size": "6.9\"",
+      "display_resolution": "1320x2868 pixels",
+      "camera_pixels": "48 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Apple A19 Pro",
+      "battery_size": "4823 mAh",
+      "battery_type": "PD3.225W",
+      "popularity": " 31%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "163.4 x 78 x 8.8 mm (6.43 x 3.07 x 0.35 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "233 g (8.22 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
+        },
+        {
+          "title": "Colors",
+          "info": "Silver, Cosmic Orange, Deep Blue"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.9 inches, 115.6 cm2 (~90.7% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1320 x 2868 pixels, 19.5:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ceramic Shield 2, Mohs level 5"
+        },
+        {
+          "title": " ",
+          "info": "Anti-reflective coating"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "iOS 26"
+        },
+        {
+          "title": "Chipset",
+          "info": "Apple A19 Pro (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Hexa-core (2x4.26 GHz + 4xX.X GHz)"
+        },
+        {
+          "title": "GPU",
+          "info": "Apple GPU (6-core graphics)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 2TB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "NVMe"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "48 MP, f/1.8, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS\n48 MP, f/2.8, 100mm (periscope telephoto), 1/2.55\", 0.7µm, PDAF, 3D sensor‑shift OIS, 4x optical zoom\n48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAF\nTOF 3D LiDAR scanner (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "Dual-LED dual-tone flash, HDR (photo/panorama)"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 120fps), ProRes, ProRes RAW (up to 120fps), Apple Log 2, 3D (spatial) video/audio, stereo sound rec."
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "18 MP multi-aspect, f/1.9, 20mm (ultrawide), PDAF\nSL 3D, (depth/biometrics sensor)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Market-dependent versions:· Li-Ion 4823 mAh - Nano SIM model· Li-Ion 5088 mAh - eSIM only model"
+        },
+        {
+          "title": "Charging",
+          "info": "Wired, PD3.2, AVS, 50% in 20 min\n25W wireless MagSafe/Qi2, 50% in 30 min (15W - China)\n4.5W reverse wired"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM: ₹1,49,900 , 512GB 12GB RAM: ₹1,69,900, 1TB 12GB RAM: ₹1,89,900, 2TB 12GB RAM: ₹2,29,900"
+  },
+  {
+    "brand_name": "Samsung",
+    "id": "samsung_galaxy_f07-14205",
+    "phone_name": "Galaxy F07",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f07.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, October 04",
+      "body": "184g, 7.6mm thickness",
+      "os": "Android 15, up to 6 major upgrades, One UI 7",
+      "storage": "64GB storage, microSDXC",
+      "display_size": "6.7\"",
+      "display_resolution": "720x1600 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "1080p",
+      "ram_size": "4 GB RAM",
+      "chipset": "Helio G99",
+      "battery_size": "5000 mAh",
+      "battery_type": "25W",
+      "popularity": " 2.2%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "167.4 x 77.4 x 7.6 mm (6.59 x 3.05 x 0.30 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "184 g (6.49 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, plastic back, plastic frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP54 dust protected and water resistant (water splashes)"
+        },
+        {
+          "title": "Colors",
+          "info": "Green"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "PLS LCD, 90Hz"
+        },
+        {
+          "title": "Size",
+          "info": "6.7 inches, 108.4 cm2 (~83.6% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "720 x 1600 pixels, 20:9 ratio (~262 ppi density)"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 6 major Android upgrades, One UI 7"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Helio G99 (6 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G57 MC2"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC (dedicated slot)"
+        },
+        {
+          "title": "Internal",
+          "info": "64GB 4GB RAM"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, (wide), 1/2.76\", 0.64µm, PDAF\n2 MP, f/2.4, (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "8 MP, f/2.0, (wide), 1/4.0\", 1.12µm"
+        },
+        {
+          "title": "Video",
+          "info": "Yes"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "5000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "25W wired"
+        }
+      ]
+    },
+    "price": "₹10,999"
+  },
+  {
+    "brand_name": "Samsung",
+    "id": "samsung_galaxy_a17_4g-14157",
+    "phone_name": "Galaxy A17 4G",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a17.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, September 18",
+      "body": "190g, 7.5mm thickness",
+      "os": "Android 15, up to 6 major upgrades, One UI 7",
+      "storage": "128GB/256GB storage, microSDXC",
+      "display_size": "6.7\"",
+      "display_resolution": "1080x2340 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "1080p",
+      "ram_size": "4-8 GB RAM",
+      "chipset": "Helio G99",
+      "battery_size": "5000 mAh",
+      "battery_type": "25W",
+      "popularity": " 5.1%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "164.4 x 77.9 x 7.5 mm (6.47 x 3.07 x 0.30 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "190 g (6.70 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus+), plastic back, plastic frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM· Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP54 dust protected and water resistant (water splashes)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, Gray, Light blue"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Super AMOLED, 90Hz"
+        },
+        {
+          "title": "Size",
+          "info": "6.7 inches, 110.2 cm2 (~86.0% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2340 pixels, 19.5:9 ratio (~385 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass Victus+, Mohs level 5"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 6 major Android upgrades, One UI 7"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Helio G99 (6 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G57 MC2"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC (uses shared SIM slot)"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 4GB RAM, 128GB 6GB RAM,256GB 8GB RAM"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.8, (wide), 1/2.76\", 0.64µm, AF, OIS\n5 MP, f/2.2, (ultrawide), 1/5.0\", 1.12µm\n2 MP, f/2.4, (macro)"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "13 MP, f/2.0, (wide), 1/3.1\", 1.12µm"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "5000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "25W wired"
+        }
+      ]
+    },
+    "price": "128GB 4GB RAM: ₹19,990, 128GB 6GB RAM: ₹21,500,256GB 8GB RAM: ₹24,300"
+  },
+  {
+    "brand_name": "Samsung",
+    "id": "samsung_galaxy_m36-13967",
+    "phone_name": "Galaxy M36",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m36.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, July 12",
+      "body": "197g, 7.7mm thickness",
+      "os": "Android 15, up to 6 major upgrades, One UI 7",
+      "storage": "128GB/256GB storage, microSDXC",
+      "display_size": "6.7\"",
+      "display_resolution": "1080x2340 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "6/8 GB RAM",
+      "chipset": "Exynos 1380",
+      "battery_size": "5000 mAh",
+      "battery_type": "25W",
+      "popularity": " 4.8%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "164.4 x 77.9 x 7.7 mm (6.47 x 3.07 x 0.30 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "197 g (6.95 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus+), plastic frame, glass back"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "Drop resistant up to 2m"
+        },
+        {
+          "title": "Colors",
+          "info": "Orange Haze, Velvet Black, Serene Green"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Super AMOLED, 120Hz"
+        },
+        {
+          "title": "Size",
+          "info": "6.7 inches, 110.2 cm2 (~86.0% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2340 pixels, 19.5:9 ratio (~385 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass Victus+"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 6 major Android upgrades, One UI 7"
+        },
+        {
+          "title": "Chipset",
+          "info": "Exynos 1380 (5 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (4x2.4 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G68 MP5"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC (uses shared SIM slot)"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.2"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.8, (wide), 1/1.96\", PDAF, OIS\n8 MP, f/2.2, 123˚, (ultrawide), 1/4.0\", 1.12µm\n2 MP, f/2.4, (macro)"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30/60fps, 720p@480fps, gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "13 MP, f/2.2, (wide), 1/3.06\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "5000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "25W wired"
+        }
+      ]
+    },
+    "price": "128GB 6GB RAM: ₹13,999, 128GB 8GB RAM: ₹15,499, 256GB 8GB RAM: ₹17,499"
+  },
+  {
+    "brand_name": "Samsung",
+    "id": "samsung_galaxy_s25_fe-14042",
+    "phone_name": "Galaxy S25 FE",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25-fe.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, September 04",
+      "body": "190g, 7.4mm thickness",
+      "os": "Android 16, up to 7 major upgrades, One UI 8",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.7\"",
+      "display_resolution": "1080x2340 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "4320p",
+      "ram_size": "8 GB RAM",
+      "chipset": "Exynos 2400",
+      "battery_size": "4900 mAh",
+      "battery_type": "45W15W",
+      "popularity": " 18%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "161.3 x 76.6 x 7.4 mm (6.35 x 3.02 x 0.29 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "190 g (6.70 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus+), glass back (Gorilla Glass Victus+), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM· Nano-SIM + Nano-SIM· Nano-SIM + eSIM· eSIM + eSIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)\nEnhanced armor aluminum frame"
+        },
+        {
+          "title": "Colors",
+          "info": "Icyblue, Jetblack, Navy, White"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 1900 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.7 inches, 110.2 cm2 (~89.2% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2340 pixels, 19.5:9 ratio (~385 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass Victus+, Mohs level 5"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 16, up to 7 major Android upgrades, One UI 8"
+        },
+        {
+          "title": "Chipset",
+          "info": "Exynos 2400 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "10-core (1x3.2GHz Cortex-X4 & 2x2.9GHz Cortex-A720 & 3x2.6GHz Cortex-A720 & 4x1.95GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Xclipse 940"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 8GB RAM, 512GB 8GB RAM"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.8, 24mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS\n8 MP, f/2.4, 75mm (telephoto), 1/4.4\", 1.0µm, PDAF, OIS, 3x optical zoom\n12 MP, f/2.2, 13mm, 123˚ (ultrawide), 1/3.0\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps; gyro-EIS, HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps; gyro-EIS, HDR"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "4900 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "45W wired, PD, QC2, 65% in 30 min\n15W wireless, Qi2 compatible\nReverse wireless"
+        }
+      ]
+    },
+    "price": "256GB 8GB RAM: ₹65,999, 512GB 8GB RAM: ₹77,999"
+  },
+  {
+    "brand_name": "Samsung",
+    "id": "samsung_galaxy_s25-13610",
+    "phone_name": "Galaxy S25",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25-sm-s931.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, February 03",
+      "body": "162g, 7.2mm thickness",
+      "os": "Android 15, up to 7 major upgrades, One UI 7",
+      "storage": "128GB/256GB/512GB storage, no card slot",
+      "display_size": "6.2\"",
+      "display_resolution": "1080x2340 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "4320p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "4000 mAh",
+      "battery_type": "25W15W",
+      "popularity": " 19%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (up to 7CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "146.9 x 70.5 x 7.2 mm (5.78 x 2.78 x 0.28 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "162 g (5.71 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT· Nano-SIM + eSIM + eSIM (max 2 at a time) - USA· Nano-SIM + Nano-SIM - CN"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)\nArmor aluminum 2 frame"
+        },
+        {
+          "title": "Colors",
+          "info": "Icy Blue, Mint, Navy, Silver Shadow, Pink Gold, Coral Red, Blue Black"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Dynamic LTPO AMOLED 2X, 120Hz, 480Hz PWM, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.2 inches, 94.4 cm2 (~91.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2340 pixels, 19.5:9 ratio (~416 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass Victus 2, Mohs level 5"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 7 major Android upgrades, One UI 7"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AC Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830 (1200 MHz)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS\n10 MP, f/2.4, 67mm (telephoto), 1/3.94\", 1.0µm, PDAF, OIS, 3x optical zoom\n12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\" 1.4µm, Super Steady video"
+        },
+        {
+          "title": "Features",
+          "info": "Best Face, LED flash, auto-HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@24/30fps, 4K@30/60fps, 1080p@30/60/120/240fps, 10-bit HDR, HDR10+, stereo sound rec., gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, HDR10+"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 4000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "25W wired, PD3.0, 50% in 30 min\n15W wireless (Qi2 Ready)\n4.5W reverse wireless"
+        }
+      ]
+    },
+    "price": "128GB 12GB RAM: ₹80,999, 256GB 12GB RAM: ₹86,999, 512GB 12GB RAM: ₹92,999"
+  },
+  {
+    "brand_name": "Samsung",
+    "id": "samsung_galaxy_s25_ultra-13322",
+    "phone_name": "Galaxy S25 Ultra",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s25-ultra-sm-s938.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, February 03",
+      "body": "218g, 8.2mm thickness",
+      "os": "Android 15, up to 7 major upgrades, One UI 7",
+      "storage": "256GB/512GB/1TB storage, no card slot",
+      "display_size": "6.9\"",
+      "display_resolution": "1440x3120 pixels",
+      "camera_pixels": "200 MP",
+      "video_pixels": "4320p",
+      "ram_size": "12/16 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "5000 mAh",
+      "battery_type": "45W15W",
+      "popularity": " 30%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (up to 7CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "162.8 x 77.6 x 8.2 mm (6.41 x 3.06 x 0.32 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "218 g (7.69 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Corning Gorilla Armor 2), glass back (Gorilla Glass Victus 2), titanium frame (grade 5)"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT· Nano-SIM + eSIM + eSIM (max 2 at a time) - USA· Nano-SIM + Nano-SIM - CN"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)\nStylus"
+        },
+        {
+          "title": "Colors",
+          "info": "Titanium Silver Blue, Titanium Black, Titanium White Silver, Titanium Gray, Titanium Jade Green, Titanium Jet Black, Titanium Pink Gold"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Dynamic LTPO AMOLED 2X, 120Hz, 480Hz PWM, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.9 inches, 116.9 cm2 (~92.5% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1440 x 3120 pixels, 19.5:9 ratio (~498 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Armor 2, Mohs level 6"
+        },
+        {
+          "title": " ",
+          "info": "DX anti-reflective coating"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 7 major Android upgrades, One UI 7"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AC Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830 (1200 MHz)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 1TB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Quad",
+          "info": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS\n10 MP, f/2.4, 67mm (telephoto), 1/3.52\", 1.12µm, PDAF, OIS, 3x optical zoom\n50 MP, f/3.4, 111mm (periscope telephoto), 1/2.52\", 0.7µm, PDAF, OIS, 5x optical zoom\n50 MP, f/1.9, 120˚ (ultrawide), 1/2.5\", 0.7µm, dual pixel PDAF, Super Steady video"
+        },
+        {
+          "title": "Features",
+          "info": "Laser AF, Best Face, LED flash, auto-HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/120/240fps, 10-bit HDR, HDR10+, stereo sound rec., gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "12 MP, f/2.2, 26mm (wide), 1/3.2\", 1.12µm, dual pixel PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, HDR10+"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 5000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "45W wired, PD3.0, 65% in 30 min\n15W wireless (Qi2 Ready)\n4.5W reverse wireless"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 1TB 16GB RAM"
+  },
+  {
+    "brand_name": "Samsung",
+    "id": "samsung_galaxy_z_fold7-13826",
+    "phone_name": "Galaxy Z Fold7",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold7.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, July 25",
+      "body": "215g, 4.2mm thickness",
+      "os": "Android 16, up to 7 major upgrades, One UI 8",
+      "storage": "256GB/512GB/1TB storage, no card slot",
+      "display_size": "8.0\"",
+      "display_resolution": "1968x2184 pixels",
+      "camera_pixels": "200 MP",
+      "video_pixels": "4320p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "4400 mAh",
+      "battery_type": "25W15W",
+      "popularity": " 7.8%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "Unfolded: 158.4 x 143.2 x 4.2 mmFolded: 158.4 x 72.8 x 8.9 mm"
+        },
+        {
+          "title": "Weight",
+          "info": "215 g (7.58 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus Ceramic 2) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM + multiple eSIM (max 2 at a time)"
+        },
+        {
+          "title": " ",
+          "info": "IP48 dust and water resistant (dust > 1mm; immersible up to 1.5m for 30 min)\nAdvanced Armor aluminum frame"
+        },
+        {
+          "title": "Colors",
+          "info": "Blue Shadow, Silver Shadow, Jet Black, Mint"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Foldable Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "8.0 inches, 204.2 cm2 (~90.0% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1968 x 2184 pixels (~368 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Mohs level 1"
+        },
+        {
+          "title": " ",
+          "info": "Titanium plate layer for display support\nCover display:\nDynamic LTPO AMOLED 2X, 120Hz, Corning Gorilla Glass Ceramic 2\n6.5 inches, 1080 x 2520 pixels, 422 ppi"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 16, up to 7 major Android upgrades, One UI 8"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AC Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.47 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830 (1200 MHz)"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "200 MP, f/1.7, 24mm (wide), 1/1.3\", 0.6µm, multi-directional PDAF, OIS\n10 MP, f/2.4, 67mm (telephoto), 1.0µm, PDAF, OIS, 3x optical zoom\n12 MP, f/2.2, 120˚ (ultrawide), 1.4µm, dual pixel PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@30fps, 4K@60fps, 1080p@60/120/240fps (gyro-EIS), 10-bit HDR, HDR10+"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "10 MP, f/2.2, 18mm (ultrawide), 1.12µm\nCover camera:\n10 MP, f/2.2, 24mm (wide), 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Po 4400 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "25W wired, QC2.0, 50% in 30 min\n15W wireless\n4.5W reverse wireless"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM: ₹1,23,499, 512GB 12GB RAM: ₹1,35,499, 1TB 12GB RAM: ₹1,59,499"
+  },
+  {
+    "brand_name": "Xiaomi",
+    "id": "xiaomi_redmi_14c_5g-13595",
+    "phone_name": "Redmi 14C 5G",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-14c.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, January 10",
+      "body": "205g or 212g, 8.2mm thickness",
+      "os": "Android 14, up to 2 major upgrades, HyperOS",
+      "storage": "128GB/256GB storage, microSDXC",
+      "display_size": "6.88\"",
+      "display_resolution": "720x1640 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "1080p",
+      "ram_size": "6/8/12 GB RAM",
+      "chipset": "Snapdragon 4 Gen 2",
+      "battery_size": "5160 mAh",
+      "battery_type": "18W",
+      "popularity": " 2.3%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "171.9 x 77.8 x 8.2 mm (6.77 x 3.06 x 0.32 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "205 g or 212 g (7.23 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, plastic frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "Dust and splash resistant"
+        },
+        {
+          "title": "Colors",
+          "info": "Stardust Purple, Starlight Blue, Stargaze Black"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "IPS LCD, 120Hz, 450 nits (typ), 600 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.88 inches, 112.4 cm2 (~84.0% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "720 x 1640 pixels (~260 ppi density)"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 14, up to 2 major Android upgrades, HyperOS"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM4450 Snapdragon 4 Gen 2 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x2.2 GHz Cortex-A78 & 6x1.95 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 613"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC (dedicated slot)"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.2"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/1.8, 27mm (wide), PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "8 MP"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Po 5160 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "18W wired, PD"
+        }
+      ]
+    },
+    "price": "128GB 6GB RAM: ₹14,999, 128GB 8GB RAM: ₹16,999, 256GB 8GB RAM: ₹17,999, 256GB 12GB RAM: ₹19,999"
+  },
+  {
+    "brand_name": "Xiaomi",
+    "id": "xiaomi_redmi_note_15-14092",
+    "phone_name": "Redmi Note 15",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-15-5g.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, August 21",
+      "body": "178g, 7.4mm thickness",
+      "os": "Android 15, HyperOS 2",
+      "storage": "128GB/256GB storage, microSDXC",
+      "display_size": "6.77\"",
+      "display_resolution": "1080x2392 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "6-8 GB RAM",
+      "chipset": "Snapdragon 6 Gen 3",
+      "battery_size": "5800 mAh",
+      "battery_type": "45W",
+      "popularity": " 7.2%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "165 x 75.4 x 7.4 mm (6.50 x 2.97 x 0.29 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "178 g (6.28 oz)"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, White, Blue"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 68B colors, 120Hz, 3200 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.77 inches, 110.9 cm2 (~89.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2392 pixels (~388 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Xiaomi Dragon Crystal Glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, HyperOS 2"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM6475-AB Snapdragon 6 Gen 3 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (4x2.4 GHz Cortex-A78 & 4x1.8 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 710"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC (uses shared SIM slot)"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 6GB, 256GB 8GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.2"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, (wide), 1/2.88\", 0.61µm, PDAF\n2 MP, (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30fps, gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "8 MP, (wide)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30/60fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 5800 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "45W wired\n22.5W reverse wired"
+        }
+      ]
+    },
+    "price": "128GB 6GB: ₹14,999, 256GB 8GB RAM: ₹16,999"
+  },
+  {
+    "brand_name": "Xiaomi",
+    "id": "xiaomi_poco_x7_pro-13582",
+    "phone_name": "Poco X7 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x7-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, January 09",
+      "body": "195g or 198g, 8.3mm thickness",
+      "os": "Android 15, HyperOS 2",
+      "storage": "256GB storage, no card slot",
+      "display_size": "6.67\"",
+      "display_resolution": "1220x2712 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Dimensity 8400 Ultra",
+      "battery_size": "6000 mAh",
+      "battery_type": "90W",
+      "popularity": " 17%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "160.8 x 75.2 x 8.3 mm (6.33 x 2.96 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "195 g or 198 g (6.88 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 7i), plastic back, silicone polymer back (eco leather)"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nManufacturer-rated water-resistance (up to 2m for 48 h) - India only\nIP69 (market/region dependent)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black/Yellow, White, Green, Red (Iron Man Edition)"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 68B colors, 120Hz, 1920Hz PWM, Dolby Vision, HDR10+, 1400 nits (HBM), 3200 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.67 inches, 107.4 cm2 (~88.8% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1220 x 2712 pixels, 20:9 ratio (~446 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 7i"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, HyperOS 2"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Dimensity 8400 Ultra (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.25 GHz Cortex-A725 & 3x3.0 GHz Cortex-A725 & 4x2.1 GHz Cortex-A725)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G720 MC7"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 8GB RAM, 256GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.5, 26mm (wide), 1/1.95\", 0.8µm, PDAF, OIS\n8 MP, f/2.2, 15mm (ultrawide), 1/4.0\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/30/60fps, 1080p@30/60/120/240/960fps, HDR10+, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "20 MP, f/2.2, 25mm (wide), 1/4.0\", 0.7µm"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Market-dependent versions:· Si/C Li-Ion 6000 mAh (Global)· Si/C Li-Ion 6550 mAh (India only)"
+        },
+        {
+          "title": "Charging",
+          "info": "90W wired, PD3.0, QC3+, 100% in 42 min\nReverse wired"
+        }
+      ]
+    },
+    "price": "256GB 8GB RAM: ₹23,499, 256GB 12GB RAM: ₹29,999"
+  },
+  {
+    "brand_name": "Xiaomi",
+    "id": "xiaomi_poco_f7_pro-13724",
+    "phone_name": "Poco F7 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f7-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, March 27",
+      "body": "206g, 8.1mm thickness",
+      "os": "Android 15, HyperOS 2",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.67\"",
+      "display_resolution": "1440x3200 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "4320p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Snapdragon 8 Gen 3",
+      "battery_size": "6000 mAh",
+      "battery_type": "90W",
+      "popularity": " 6.5%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "160.3 x 75 x 8.1 mm (6.31 x 2.95 x 0.32 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "206 g (7.27 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 7i), glass back, aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 2.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, Blue, Silver"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 68B colors, 120Hz, 3840Hz PWM, Dolby Vision, HDR10+, 1800 nits (HBM), 3200 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.67 inches, 107.4 cm2 (~89.3% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1440 x 3200 pixels, 20:9 ratio (~526 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 7i, Mohs level 5"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, HyperOS 2"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 750"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.6, 24mm (wide), 1/1.55\", 1.0µm, dual pixel PDAF, OIS\n8 MP, f/2.2, (ultrawide), 1/4.0\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@24fps, 4K@24/30/60fps, 1080p@30/60/120/240/960fps, 720p@1920fps, gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "20 MP, (wide)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30/60fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Po 6000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "90W wired, PD3.0, QC3+, 100% in 37 min"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM: ₹39,990 , 512GB 12GB RAM: ₹49,990 "
+  },
+  {
+    "brand_name": "Xiaomi",
+    "id": "xiaomi_15-13472",
+    "phone_name": "Xiaomi 15",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-15.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2024, October 29",
+      "body": "189 / 191 / 192g, 8.1mm thickness",
+      "os": "Android 15, up to 4 major upgrades, HyperOS 2",
+      "storage": "512GB storage, no card slot",
+      "display_size": "6.36\"",
+      "display_resolution": "1200x2670 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "4320p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "5240 mAh",
+      "battery_type": "90W50W",
+      "popularity": " 8.2%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "152.3 x 71.2 x 8.1 / 8.4 / 8.5 mm"
+        },
+        {
+          "title": "Weight",
+          "info": "189 / 191 / 192 g (6.67 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Xiaomi Shield Glass), aluminum alloy frame (6M42)"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, White, Liquid Silver, Green, Lilac"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO AMOLED, 68B colors, 1920Hz PWM, 120Hz, Dolby Vision, HDR10+, 3200 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.36 inches, 97.6 cm2 (~90.0% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1200 x 2670 pixels, 20:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Xiaomi Shield Glass, Mohs level 6"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 4 major Android upgrades, HyperOS 2"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.6, 23mm (wide), 1/1.31\", 1.2µm, dual pixel PDAF, OIS\n50 MP, f/2.0, 60mm (telephoto), 1/2.76\", 0.64µm, PDAF (10cm - ∞), OIS, 2.6x optical zoom\n50 MP, f/2.2, 14mm, 115˚ (ultrawide), 1/2.76\", 0.64µm"
+        },
+        {
+          "title": "Features",
+          "info": "Laser AF, color spectrum sensor, Leica lens, Dual-LED dual-tone flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@24/30fps (HDR), 4K@24/30/60fps (HDR10+, 10-bit Dolby Vision HDR, 10-bit LOG), 1080p@30/60/120/240/960fps, 720p@1920fps, gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "32 MP, f/2.0, 21mm (wide), 1/3.14\", 0.7µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps, HDR10+, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Market-dependent versions:· Si/C Li-Ion 5240 mAh - Global· Si/C Li-Ion 5400 mAh - China"
+        },
+        {
+          "title": "Charging",
+          "info": "90W wired, PD3.0, QC3+\n50W wireless\n10W reverse wireless"
+        }
+      ]
+    },
+    "price": "512GB 12GB RAM ₹64,999"
+  },
+  {
+    "brand_name": "Xiaomi",
+    "id": "xiaomi_mix_flip_2-13980",
+    "phone_name": "Mix Flip 2",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-mix-flip2.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, June 26",
+      "body": "199g, 7.6mm thickness",
+      "os": "Android 15, HyperOS 2",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.86\"",
+      "display_resolution": "1224x2912 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12/16 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "5165 mAh",
+      "battery_type": "67W50W",
+      "popularity": " 0.8%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "Unfolded: 166.9 x 73.8 x 7.6 mmFolded: 86.1 x 73.8 x 15.9 mm"
+        },
+        {
+          "title": "Weight",
+          "info": "199 g (7.02 oz)"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": "Colors",
+          "info": "White, Purple, Green, Checkered Gold"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Foldable LTPO AMOLED, 1B colors, Dolby Vision, HDR10+, HDR Vivid, 120Hz, 3200 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.86 inches, 108.5 cm2 (~88.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1224 x 2912 pixels (~460 ppi density)"
+        },
+        {
+          "title": " ",
+          "info": "Second external AMOLED, 68B colors, Dolby Vision, HDR10+, HDR Vivid, 120Hz, 1600 nits (HBM), 3200 nits (peak)\n4 inches, 1392 x 1208 pixels, 460 ppi\nXiaomi Shield Glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, HyperOS 2"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.7, 23mm (wide), 1/1.55\", 1.0µm, dual pixel PDAF, OIS\n50 MP, f/2.2, 14mm, 115˚ (ultrawide), PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, LED flash, panorama, HDR, Leica lenses"
+        },
+        {
+          "title": "Video",
+          "info": "8K@24fps, 4K@30/60fps, 1080p@30/60/120/240/960fps, Dolby Vision HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "32 MP, f/2.0, 21mm (wide), 0.7µm"
+        },
+        {
+          "title": "Features",
+          "info": "Dolby Vision HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 5165 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "67W wired, PD3.0, QC4\n50W wireless"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM ₹79,999, 512GB 12GB RAM ₹89,999"
+  },
+  {
+    "brand_name": "Oppo",
+    "id": "oppo_a5_4g-13871",
+    "phone_name": "Oppo A5 4G",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a5-4g.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, May 15",
+      "body": "193g, 8mm thickness",
+      "os": "Android 15, ColorOS 15",
+      "storage": "128GB storage, microSDXC",
+      "display_size": "6.67\"",
+      "display_resolution": "720x1604 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "1080p",
+      "ram_size": "6/8 GB RAM",
+      "chipset": "Snapdragon 6s 4G Gen1",
+      "battery_size": "6000 mAh",
+      "battery_type": "45W",
+      "popularity": " 1.2%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "165.7 x 76.2 x 8 mm (6.52 x 3.00 x 0.31 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "193 g (6.81 oz)"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP65 dust tight and water resistant (low pressure water jets)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
+        },
+        {
+          "title": "Colors",
+          "info": "Midnight Purple, Aurora Green, Mist White"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "IPS LCD, 90Hz, 1000 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.67 inches, 107.2 cm2 (~84.9% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "720 x 1604 pixels, 20:9 ratio (~264 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 7i, Mohs level 4"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, ColorOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM-6115 Snapdragon 6s 4G Gen1 (11 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (4x2.1 GHz Cortex-A73 & 4x1.8 GHz Cortex-A53)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 610"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 128GB 6GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, (wide), PDAF\n2 MP, f/2.4, (wide)"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "5 MP, f/2.2, (wide)"
+        },
+        {
+          "title": "Features",
+          "info": "Panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "6000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "45W wired, 33W PPS, 13.5W PD, 50% in 36 min"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM: ₹16,999, 128GB 6GB RAM ₹15,999"
+  },
+  {
+    "brand_name": "Oppo",
+    "id": "oppo_a6_pro-14171",
+    "phone_name": "Oppo A6 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-a6-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, September 29",
+      "body": "185g, 8mm thickness",
+      "os": "Android 15, ColorOS 15",
+      "storage": "256GB/512GB storage, microSDXC",
+      "display_size": "6.57\"",
+      "display_resolution": "1080x2372 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "1080p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Dimensity 6300",
+      "battery_size": "7000 mAh",
+      "battery_type": "80W",
+      "popularity": " 10%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "158.2 x 75 x 8 mm (6.23 x 2.95 x 0.31 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "185 g (6.53 oz)"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
+        },
+        {
+          "title": "Colors",
+          "info": "Lunar Titanium, Stellar Blue, Coral Pink, Rosewood Red"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 1B colors, 120Hz, 600 nits (typ), 1400 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.57 inches, 105.0 cm2 (~88.5% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2372 pixels (~397 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "AGC DT-Star D+"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, ColorOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Dimensity 6300 (6 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G57 MC2"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 8GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.2"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, (wide), PDAF\n2 MP, f/2.4, (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30/60/120fps"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "16 MP, f/2.4, (wide)"
+        },
+        {
+          "title": "Features",
+          "info": "Panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Market-dependent versions:· Si/C Li-Ion 7000 mAh - version 1· 6500 mAh - version 2"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 33W PPS, 13.5W PD\nReverse wired charging"
+        }
+      ]
+    },
+    "price": "256GB 8GB RAM: ₹25,999, 512GB 12GB RAM: ₹28,999"
+  },
+  {
+    "brand_name": "Oppo",
+    "id": "oppo_k13_turbo_pro-14013",
+    "phone_name": "Oppo K13 Turbo Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-k13-turbo-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, April 01",
+      "body": "180g, 7.6mm thickness",
+      "os": "Android 15, ColorOS 15",
+      "storage": "256GB storage, no card slot",
+      "display_size": "6.7\"",
+      "display_resolution": "1080x2412 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Dimensity 7300 Energy",
+      "battery_size": "6000 mAh",
+      "battery_type": "80W",
+      "popularity": " 1.8%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "161.5 x 74.9 x 7.6 mm (6.36 x 2.95 x 0.30 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "180 g (6.35 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus 2), fiber fabric back"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
+        },
+        {
+          "title": "Colors",
+          "info": "Marble White, Granite Black"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 1B colors, 120Hz, 600 nits (typ), 1200 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.7 inches, 108.0 cm2 (~89.3% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2412 pixels, 20:9 ratio (~394 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass Victus 2"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, ColorOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Dimensity 7300 Energy (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G615 MC2"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 8GB RAM, 256GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 3.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, 27mm (wide), 1/2.88\", PDAF, OIS\n2 MP, f/2.4, (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30/60/120/480fps, 720p@960fps, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "16 MP, f/2.4, (wide)"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 6000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, PD, 45% in 20 min"
+        }
+      ]
+    },
+    "price": "256GB 8GB RAM ₹37,999, 256GB 12GB RAM ₹39,999"
+  },
+  {
+    "brand_name": "Oppo",
+    "id": "oppo_reno14_pro-13865",
+    "phone_name": "Oppo Reno14 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno14-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, May 23",
+      "body": "201g, 7.5mm thickness",
+      "os": "Android 15, ColorOS 15",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.83\"",
+      "display_resolution": "1272x2800 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Dimensity 8450",
+      "battery_size": "6200 mAh",
+      "battery_type": "80W50W",
+      "popularity": " 6.5%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "163.4 x 77 x 7.5 mm (6.43 x 3.03 x 0.30 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "201 g (7.09 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 7i), aluminum alloy frame, glass back"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 2m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Titanium Gray, Brilliant White (Opal White), Purple"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 1B colors, 120Hz, 3840Hz PWM, HDR10+, 600 nits (typ), 1200 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.83 inches, 113.3 cm2 (~90.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1272 x 2800 pixels (~450 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 7i or Crystal Shield Glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, ColorOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Dimensity 8450 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core 3.25 GHz"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G720 MC7"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 3.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.8, 24mm (wide), 1/1.55\", PDAF, OIS\n50 MP, f/2.8, 80mm (periscope telephoto), PDAF, OIS, 3.5x optical zoom\n50 MP, f/2.0, 16mm, 116˚ (ultrawide), AF"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60/120/240fps, gyro-EIS, HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/2.0, 21mm (wide), AF"
+        },
+        {
+          "title": "Features",
+          "info": "Panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps, gyro-EIS, HDR"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "6200 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 13.5W PD, 33W UFCS, 33W PPS\n50W wireless\nReverse wired"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM ₹49,999, 512GB 12GB RAM ₹54,999"
+  },
+  {
+    "brand_name": "Oppo",
+    "id": "oppo_find_x9_pro-14094",
+    "phone_name": "Oppo Find X9 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x9-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, October 22",
+      "body": "224g, 8.3mm thickness",
+      "os": "Android 16, up to 5 major upgrades",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.78\"",
+      "display_resolution": "1272x2772 pixels",
+      "camera_pixels": "200 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12/16 GB RAM",
+      "chipset": "Dimensity 9500",
+      "battery_size": "7500 mAh",
+      "battery_type": "80W50W",
+      "popularity": " 32%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "161.3 x 76.5 x 8.3 mm (6.35 x 3.01 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "224 g (7.90 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass), glass back (Gorilla Glass), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM· Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Silk White, Titanium Charcoal, Velvet Red"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO AMOLED, 1B colors, 120Hz, 2160Hz PWM, Dolby Vision, HDR10+, HDR Vivid, 800 nits (typ), 1800 nits (HBM), 3600 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.78 inches, 112.4 cm2 (~91.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1272 x 2772 pixels, 19.5:9 ratio (~450 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass (unspecified version)"
+        },
+        {
+          "title": " ",
+          "info": "Ultra HDR image support"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 16, up to 5 major Android upgrades, ColorOS 16"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Dimensity 9500 (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x4.21 GHz C1-Ultra & 3x3.5 GHz C1-Premium & 4x2.7 GHz C1-Pro)"
+        },
+        {
+          "title": "GPU",
+          "info": "Arm G1-Ultra"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM, 512GB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.5, 23mm (wide), 1/1.28\", 1.22µm, multi-directional PDAF, OIS\n200 MP, f/2.1, 70mm (periscope telephoto), 1/1.56\", 0.5µm, 3x optical zoom, multi-directional PDAF, OIS\n50 MP, f/2.0, 15mm, 120˚ (ultrawide), 1/2.76\", 0.64µm, multi-directional PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Laser AF, color spectrum sensor, Hasselblad Color Calibration, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60/120fps, 1080p@30/60/240fps; gyro-EIS; HDR, 10‑bit video, Dolby Vision, LOG"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/2.0, 21mm (wide), 1/2.76\", 0.64µm, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 7500 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 80W UFCS, 55W PPS, 11.7W PD\n50W wireless\n10W reverse wireless"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM ₹79,999, 512GB 12GB RAM ₹89,999, 512GB 16GB RAM ₹99,999"
+  },
+  {
+    "brand_name": "OnePlus",
+    "id": "oneplus_nord_ce4_lite-13166",
+    "phone_name": "OnePlus Nord CE4 Lite",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce4-lite-intl.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2024, July 02",
+      "body": "191g, 8.1mm thickness",
+      "os": "Android 14, up to Android 15, OxygenOS 15",
+      "storage": "128GB/256GB storage, microSDXC",
+      "display_size": "6.67\"",
+      "display_resolution": "1080x2400 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "1080p",
+      "ram_size": "8 GB RAM",
+      "chipset": "Snapdragon 695 5G",
+      "battery_size": "5110 mAh",
+      "battery_type": "80W",
+      "popularity": " 3.0%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "162.9 x 75.6 x 8.1 mm (6.41 x 2.98 x 0.32 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "191 g (6.74 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, plastic frame, plastic back"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP54 dust protected and water resistant (water splashes)"
+        },
+        {
+          "title": "Colors",
+          "info": "Super Silver, Mega Blue"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 120Hz, 600 nits (typ), 1200 nits (HBM), 2100 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.67 inches, 107.4 cm2 (~87.2% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 14, upgradable to Android 15, OxygenOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM6375 Snapdragon 695 5G (6 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x2.2 GHz Kryo 660 Gold & 6x1.7 GHz Kryo 660 Silver)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 619"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC (uses shared SIM slot)"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.2"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, 25mm (wide), 1/1.95\", 0.8µm, PDAF, OIS\n2 MP, f/2.4, (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "Dual-LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps, gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "16 MP, f/2.4, 24mm (wide)"
+        },
+        {
+          "title": "Features",
+          "info": "Panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "5110 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 100% in 50 min\n5W reverse wired"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM ₹17,999, 256GB 8GB RAM ₹20,999"
+  },
+  {
+    "brand_name": "OnePlus",
+    "id": "oneplus_nord_5-13992",
+    "phone_name": "OnePlus Nord 5",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord5.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, July 08",
+      "body": "211g, 8.1mm thickness",
+      "os": "Android 15, up to 4 major upgrades",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.83\"",
+      "display_resolution": "1272x2800 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Snapdragon 8s Gen 3",
+      "battery_size": "6800 mAh",
+      "battery_type": "80W",
+      "popularity": " 10%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "163.4 x 77 x 8.1 mm (6.43 x 3.03 x 0.32 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "211 g (7.44 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 7i), glass back, plastic frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP65 dust tight and water resistant (low pressure water jets)"
+        },
+        {
+          "title": "Colors",
+          "info": "Phantom Grey, Dry Ice, Marble Sands"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Swift AMOLED, 1B colors, 144Hz, 3840Hz PWM, HDR10+, 800 nits (typ), 1400 nits (HBM), 1800 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.83 inches, 113.3 cm2 (~90.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1272 x 2800 pixels (~450 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 7i, Mohs level 6"
+        },
+        {
+          "title": " ",
+          "info": "Ultra HDR image support"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 4 major Android upgrades, OxygenOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8635 Snapdragon 8s Gen 3 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.0 GHz Cortex-X4 & 4x2.8 GHz Cortex-A720 & 3x2.0 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 735"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 8GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 3.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, PDAF, OIS\n8 MP, f/2.2, 15mm, 116˚ (ultrawide), 1/4.0\", 1.12µm, AF"
+        },
+        {
+          "title": "Features",
+          "info": "LED flash, Ultra HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60/120fps, gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/2.0, 21mm (wide), 1/2.76\", 0.64µm, AF"
+        },
+        {
+          "title": "Features",
+          "info": "Panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps; gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Market-dependent versions:· 5200 mAh (Europe)· 6800 mAh (Global)"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 33W PPS, 18W PD, 100% in just 54 min\n5W reverse wired\nBypass charging"
+        }
+      ]
+    },
+    "price": "256GB 8GB RAM 34,999, 512GB 12GB RAM ₹42,999"
+  },
+  {
+    "brand_name": "OnePlus",
+    "id": "oneplus_13r-13548",
+    "phone_name": "OnePlus 13R",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13r.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, January 14",
+      "body": "206g, 8mm thickness",
+      "os": "Android 15, up to 4 major upgrades",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.78\"",
+      "display_resolution": "1264x2780 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12/16 GB RAM",
+      "chipset": "Snapdragon 8 Gen 3",
+      "battery_size": "6000 mAh",
+      "battery_type": "80W",
+      "popularity": " 7.3%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "161.7 x 75.8 x 8 mm (6.37 x 2.98 x 0.31 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "206 g (7.27 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 7i), aluminum frame, glass back"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP65 dust tight and water resistant (low pressure water jets)"
+        },
+        {
+          "title": "Colors",
+          "info": "Astral Trail, Nebula Noir"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO 4.1 AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, Dolby Vision, HDR Vivid, 1600 nits (HBM), 4500 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.78 inches, 111.7 cm2 (~91.2% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1264 x 2780 pixels (~450 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 7i"
+        },
+        {
+          "title": " ",
+          "info": "Ultra HDR image support"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 4 major Android upgrades, OxygenOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 750"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, multi-directional PDAF, OIS\n50 MP, f/2.0, 47mm (telephoto), 1/2.75\", 0.64µm, PDAF, 2x optical zoom\n8 MP, f/2.2, 16mm, 112˚ (ultrawide), 1/4.0\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60/120/240fps, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "16 MP, f/2.4, 26mm (wide), 1/3.1\", 1.0µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 6000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 50% in 20 min, 100% in 52/54 min"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM ₹44,999, 512GB 16GB RAM ₹49,999"
+  },
+  {
+    "brand_name": "OnePlus",
+    "id": "oneplus_13t-13791",
+    "phone_name": "OnePlus 13T",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13t.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, April 30",
+      "body": "185g, 8.2mm thickness",
+      "os": "Android 15, OxygenOS 15, ColorOS 15",
+      "storage": "256GB/512GB/1TB storage, no card slot",
+      "display_size": "6.32\"",
+      "display_resolution": "1216x2640 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12/16 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "6260 mAh",
+      "battery_type": "80W",
+      "popularity": " 4.6%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "150.8 x 71.7 x 8.2 mm (5.94 x 2.82 x 0.32 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "185 g (6.53 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, aluminum alloy frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP65 dust tight and water resistant (low pressure water jets)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, Gray, Pink"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO AMOLED, 1B colors, 120Hz, 2160Hz PWM, Dolby Vision, HDR10+, HDR Vivid, 1600 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.32 inches, 97.9 cm2 (~90.6% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1216 x 2640 pixels, 19.5:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Crystal Shield Glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, OxygenOS 15 (International), ColorOS 15 (China)"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 8GB RAM, 256GB 12GB RAM, 512GB 16GB RAM, 1TB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, multi-directional PDAF, OIS\n50 MP, f/2.0, (telephoto), 1/2.76\", 0.64µm, 2x optical zoom, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60/240fps, gyro-EIS, OIS, Dolby Vision HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "16 MP, f/2.4, 24mm (wide)"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 6260 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 33W PPS, 18W PD, 18W QC\n5W reverse wired"
+        }
+      ]
+    },
+    "price": "256GB 8GB RAM ₹39,999, 256GB 12GB RAM ₹44,999, 512GB 16GB RAM ₹49,999, 1TB 16GB RAM ₹54,999"
+  },
+  {
+    "brand_name": "OnePlus",
+    "id": "oneplus_13s-13818",
+    "phone_name": "OnePlus 13S",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13s-.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, June 12",
+      "body": "185g, 8.2mm thickness",
+      "os": "Android 15, OxygenOS 15",
+      "storage": "256GB/512GB storage, no card slot",
+      "display_size": "6.32\"",
+      "display_resolution": "1216x2640 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "5850 mAh",
+      "battery_type": "80W",
+      "popularity": " 7.1%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "150.8 x 71.7 x 8.2 mm (5.94 x 2.82 x 0.32 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "185 g (6.53 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, aluminum alloy frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "title": " ",
+          "info": "IP65 dust tight and water resistant (low pressure water jets)"
+        },
+        {
+          "title": "Colors",
+          "info": "Green Silk, Black Velvet, Pink Satin"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO AMOLED, 1B colors, 120Hz, 2160Hz PWM, Dolby Vision, HDR10+, HDR Vivid, 1600 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.32 inches, 97.9 cm2 (~90.6% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1216 x 2640 pixels, 19.5:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Crystal Shield Glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, OxygenOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 512GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "50 MP, f/1.8, 24mm (wide), 1/1.56\", 1.0µm, multi-directional PDAF, OIS\n50 MP, f/2.0, (telephoto), 1/2.75\", 0.64µm, 2x optical zoom, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60/240fps, gyro-EIS, OIS, Dolby Vision HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "32 MP, f/2.0, 21mm (wide), 1/3.1\", 0.7µm, AF"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "5850 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired, 33W PPS, 18W PD, 18W QC\n5W reverse wired"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM: ₹54,999, 512GB 12GB RAM: ₹59,999"
+  },
+  {
+    "brand_name": "OnePlus",
+    "id": "oneplus_13-13477",
+    "phone_name": "OnePlus 13",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-13.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2024, November 01",
+      "body": "210g or 213g, 8.5mm thickness",
+      "os": "Android 15, up to 4 major upgrades",
+      "storage": "256GB/512GB/1TB storage, no card slot",
+      "display_size": "6.82\"",
+      "display_resolution": "1440x3168 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "4320p",
+      "ram_size": "12/16/24 GB RAM",
+      "chipset": "Snapdragon 8 Elite",
+      "battery_size": "6000 mAh",
+      "battery_type": "100W50W",
+      "popularity": " 11%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "162.9 x 76.5 x 8.5 mm or 8.9 mm"
+        },
+        {
+          "title": "Weight",
+          "info": "210 g or 213 g (7.41 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Ceramic Guard), glass back or silicone polymer back (eco leather), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black Eclipse, Arctic Dawn, Midnight Ocean"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO 4.1 AMOLED, 1B colors, 120Hz, 2160Hz PWM, Dolby Vision, HDR10+, HDR Vivid, 800 nits (typ), 1600 nits (HBM), 4500 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.82 inches, 113.0 cm2 (~90.7% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1440 x 3168 pixels (~510 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Ceramic Guard glass, Mohs level 4"
+        },
+        {
+          "title": " ",
+          "info": "Ultra HDR image support"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 4 major Android upgrades, OxygenOS 15 (International), ColorOS 15 (China)"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8750-AB Snapdragon 8 Elite (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x4.32 GHz Oryon V2 Phoenix L + 6x3.53 GHz Oryon V2 Phoenix M)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 830"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM,512GB 16GB RAM, 1TB 24GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.6, 23mm (wide), 1/1.43\", 1.12µm, multi-directional PDAF, OIS\n50 MP, f/2.6, 73mm (periscope telephoto), 1/1.95\", 0.8µm, 3x optical zoom, PDAF, OIS\n50 MP, f/2.0, 15mm, 120˚ (ultrawide), 1/2.75\", 0.64µm, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Laser focus, Hasselblad Color Calibration, color spectrum sensor, Dual-LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@30fps, 4K@30/60fps, 1080p@30/60/240/480fps, Auto HDR, gyro-EIS, Dolby Vision"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "32 MP, f/2.4, 21mm (wide), 1/2.74\", 0.8µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 6000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "100W wired, PD, QC, 50% in 13 min, 100% in 36 min\n50W wireless\n10W reverse wireless\n5W reverse wired"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM ₹69,999 ,512GB 16GB RAM ₹76,999 , 1TB 24GB RAM: ₹89,999 "
+  },
+  {
+    "brand_name": "OnePlus",
+    "id": "oneplus_open-12619",
+    "phone_name": "OnePlus Open",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oneplus-open-10.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2023, October 26",
+      "body": "239g or 245g, 5.8mm thickness",
+      "os": "Android 13, up to Android 15, OxygenOS 15",
+      "storage": "512GB/1TB storage, no card slot",
+      "display_size": "7.82\"",
+      "display_resolution": "2268x2440 pixels",
+      "camera_pixels": "64 MP",
+      "video_pixels": "2160p",
+      "ram_size": "16 GB RAM",
+      "chipset": "Snapdragon 8 Gen 2",
+      "battery_size": "4805 mAh",
+      "battery_type": "67W",
+      "popularity": " 0.9%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "Unfolded: 153.4 x 143.1 x 5.8 mmFolded: 153.4 x 73.3 x 11.7 mm"
+        },
+        {
+          "title": "Weight",
+          "info": "239 g or 245 g (8.43 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Ceramic Guard) (folded), plastic front (unfolded), glass back or eco leather back, aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
+        },
+        {
+          "title": " ",
+          "info": "IPX4 splash resistant"
+        },
+        {
+          "title": "Colors",
+          "info": "Emerald Dusk, Voyager Black, Apex Edition"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Foldable LTPO3 Flexi-fluid AMOLED, 1B colors, Dolby Vision, 120Hz, 2800 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "7.82 inches, 196.7 cm2 (~89.6% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "2268 x 2440 pixels (~426 ppi density)"
+        },
+        {
+          "title": " ",
+          "info": "Cover display:\nLTPO3 Super Fluid OLED, 1B colors, Dolby Vision, 120Hz, 2800 nits (peak)\n6.31 inches, 1116 x 2484 pixels, 431 ppi, Ceramic Guard"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 13, upgradable to Android 15, OxygenOS 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 740"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "512GB 16GB RAM, 1TB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "48 MP, f/1.7, 24mm (wide), 1/1.43\", 1.12µm, multi-directional PDAF, OIS\n64 MP, f/2.6, 70mm (telephoto), 1/2.0\", 0.7µm, PDAF, OIS, 3x optical zoom\n48 MP, f/2.2, 14mm, 114˚ (ultrawide), 1/2.0\", 0.8µm, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Hasselblad Color Calibration, LED flash, HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60/120/240/480fps gyro-EIS, HDR10+, Dolby Vision"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "20MP, f/2.2, 20mm (ultrawide), 1/4.0\", 0.7µm\nCover camera:\n32MP, f/2.4, 22mm (ultrawide), 1/3.14\", 0.7µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30fps, gyro-EIS"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Po 4805 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "67W wired, PD, 100% in 42 min\nReverse wired"
+        }
+      ]
+    },
+    "price": "512GB 16GB RAM ₹1,39,999, 1TB 16GB RAM ₹149,999"
+  },
+  {
+    "brand_name": "vivo",
+    "id": "vivo_y31-14143",
+    "phone_name": "vivo Y31",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y31-5g.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, September 15",
+      "body": "209g, 8.4mm thickness",
+      "os": "Android 15, Funtouch 15",
+      "storage": "128GB storage, microSDXC",
+      "display_size": "6.68\"",
+      "display_resolution": "720x1608 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "1080p",
+      "ram_size": "4/6 GB RAM",
+      "chipset": "Snapdragon 4 Gen 2",
+      "battery_size": "6500 mAh",
+      "battery_type": "44W",
+      "popularity": " 4.3%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "166.1 x 77 x 8.4 mm (6.54 x 3.03 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "209 g (7.37 oz)"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
+        },
+        {
+          "title": "Colors",
+          "info": "Rose Red, Diamond Green"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "IPS LCD, 120Hz, 1000 nits (HBM)"
+        },
+        {
+          "title": "Size",
+          "info": "6.68 inches, 107.4 cm2 (~84.0% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "720 x 1608 pixels, 20:9 ratio (~264 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Guardian Glass (ion-strengthened)"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, Funtouch 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM4450 Snapdragon 4 Gen 2 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (2x2.2 GHz Cortex-A78 & 6x1.95 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 613"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "microSDXC (uses shared SIM slot)"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 4GB RAM, 128GB 6GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "eMMC 5.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/1.8, (wide), PDAF\nAuxiliary lens"
+        },
+        {
+          "title": "Features",
+          "info": "Ring-LED flash, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "8 MP, f/2.0, (wide)"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 6500 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "44W wired, 50% in 38 min\nReverse wired"
+        }
+      ]
+    },
+    "price": "128GB 4GB RAM ₹14,999, 128GB 6GB RAM ₹16,499 "
+  },
+  {
+    "brand_name": "vivo",
+    "id": "vivo_v60e-14194",
+    "phone_name": "vivo V60e",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v60e.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, October 10",
+      "body": "190g, 7.5mm thickness",
+      "os": "Android 15, up to 3 major upgrades",
+      "storage": "128GB/256GB storage, no card slot",
+      "display_size": "6.77\"",
+      "display_resolution": "1080x2392 pixels",
+      "camera_pixels": "200 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Dimensity 7360 Turbo",
+      "battery_size": "6500 mAh",
+      "battery_type": "90W",
+      "popularity": " 6.7%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "163.5 x 77 x 7.5 mm (6.44 x 3.03 x 0.30 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "190 g (6.70 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Diamond Shield Glass), plastic back, plastic frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 2 hours)"
+        },
+        {
+          "title": "Colors",
+          "info": "Elite Purple, Noble Gold"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 1B colors, 120Hz, HDR10+, 1600 nits (HBM), 5000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.77 inches, 110.9 cm2 (~88.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2392 pixels (~388 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Diamond Shield Glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 3 major Android upgrades, Funtouch 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Dimensity 7360 Turbo (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G615 MC2"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.2"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "200 MP, f/1.9, 23mm (wide), 1/1.56\", PDAF, OIS\n8 MP, f/2.2, 120˚ (ultrawide)"
+        },
+        {
+          "title": "Features",
+          "info": "Ring-LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K, 1080p, HDR, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/2.0, 22mm (wide), 1/2.76\", 0.64µm, AF"
+        },
+        {
+          "title": "Video",
+          "info": "4K, 1080p"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 6500 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "90W wired\nReverse wired\nBypass charging"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM 29,999, 256GB 8GB RAM ₹31,999, 256GB 12GB RAM ₹33,999"
+  },
+  {
+    "brand_name": "vivo",
+    "id": "vivo_t4_pro-14095",
+    "phone_name": "vivo T4 Pro",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-t4-pro.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, August 26",
+      "body": "192g, 7.5mm thickness",
+      "os": "Android 15, up to 4 major upgrades",
+      "storage": "128GB/256GB storage, no card slot",
+      "display_size": "6.77\"",
+      "display_resolution": "1080x2392 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8/12 GB RAM",
+      "chipset": "Snapdragon 7 Gen 4",
+      "battery_size": "6500 mAh",
+      "battery_type": "90W",
+      "popularity": " 3.7%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "163.5 x 77 x 7.5 mm (6.44 x 3.03 x 0.30 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "192 g (6.77 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, plastic frame, plastic back"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nManufacturer-rated water-resistant (up to 120 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
+        },
+        {
+          "title": "Colors",
+          "info": "Nitro Blue, Blaze Gold"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "AMOLED, 1B colors, HDR10+, 120Hz, 1500 nits (HBM), 5000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.77 inches, 110.9 cm2 (~88.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2392 pixels (~388 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Diamond Shield Glass"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 4 major Android upgrades, Funtouch 15"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM7750-AB Snapdragon 7 Gen 4 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x2.8 GHz Cortex-720 & 4x2.4 GHz Cortex-720 & 3x1.8 GHz Cortex-520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 722"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 2.2"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.8, 26mm (wide), 1/1.95\", 0.8µm, PDAF, OIS\n50 MP, f/2.7, 73mm (periscope telephoto), 1/1.95\", 0.8µm, PDAF, OIS, 3x optical zoom\n2 MP, f/2.4, (depth)"
+        },
+        {
+          "title": "Features",
+          "info": "Ring-LED flash, panorama, HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30fps, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "32 MP, f/2.5, 30mm (wide)"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 6500 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "90W wired, PD\n7.5W reverse wired\nBypass charging"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM: ₹27,999, 256GB 8GB RAM: ₹29,999, 256GB 12GB RAM ₹31,999 "
+  },
+  {
+    "brand_name": "vivo",
+    "id": "vivo_x300-14224",
+    "phone_name": "vivo X300",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x300.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, October 17",
+      "body": "190g, 8mm thickness",
+      "os": "Android 16, up to 4 major upgrades",
+      "storage": "256GB/1TB storage, no card slot",
+      "display_size": "6.31\"",
+      "display_resolution": "1216x2640 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12/16 GB RAM",
+      "chipset": "Dimensity 9500",
+      "battery_size": "6040 mAh",
+      "battery_type": "90W40W",
+      "popularity": " 16%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "150.6 x 71.9 x 8 mm (5.93 x 2.83 x 0.31 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "190 g (6.70 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front, aluminum alloy frame, glass back"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time) - International· Nano-SIM + Nano-SIM - China"
+        },
+        {
+          "title": " ",
+          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Black, Blue, Red, Purple, Pink"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, HDR Vivid, 4500 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.31 inches, 98.0 cm2 (~90.5% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1216 x 2640 pixels, 19.5:9 ratio (~460 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Unspecified, Mohs level 4"
+        },
+        {
+          "title": " ",
+          "info": "Ultra HDR image support"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 16, up to 4 major Android upgrades, OriginOS 6"
+        },
+        {
+          "title": "Chipset",
+          "info": "Mediatek Dimensity 9500 (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x4.21 GHz C1-Ultra & 3x3.5 GHz C1-Premium & 4x2.7 GHz C1-Pro)"
+        },
+        {
+          "title": "GPU",
+          "info": "Arm G1-Ultra"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 12GB RAM, 1TB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "200 MP, f/1.7, 23mm (wide), 1/1.4\", 0.56µm, PDAF, OIS\n50 MP, f/2.6, 70mm (periscope telephoto), 1/1.95\", PDAF, OIS, 3x optical zoom\n50 MP, f/2.0, 15mm, 119˚ (ultrawide), 1/2.76\", 0.64µm, AF"
+        },
+        {
+          "title": "Features",
+          "info": "Laser AF, Zeiss optics, Zeiss T* lens coating, LED flash, panorama, HDR, 3D LUT import"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60/120fps, 1080p@30/60/120/240fps, gyro-EIS, 4K@120fps HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "50 MP, f/2.0, (wide), 1/2.76\", 0.64µm, AF"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 6040 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "90W wired\n40W wireless\nReverse wired"
+        }
+      ]
+    },
+    "price": "256GB 12GB RAM ₹54,900, 1TB 16GB RAM ₹72,900"
+  },
+  {
+    "brand_name": "vivo",
+    "id": "vivo_x_fold5-13858",
+    "phone_name": "vivo X Fold5",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x-fold5-new.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, July 02",
+      "body": "217g or 226g, 4.3mm thickness",
+      "os": "Android 15, up to 4 major upgrades",
+      "storage": "512GB storage, no card slot",
+      "display_size": "8.03\"",
+      "display_resolution": "2200x2480 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "4320p",
+      "ram_size": "16 GB RAM",
+      "chipset": "Snapdragon 8 Gen 3",
+      "battery_size": "6000 mAh",
+      "battery_type": "80W40W",
+      "popularity": " 1.4%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE, 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "Unfolded: 159.7 x 142.3 x 4.3 mmFolded: 159.7 x 72.6 x 9.2 mm"
+        },
+        {
+          "title": "Weight",
+          "info": "217 g or 226 g (7.65 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (closed), aluminum alloy frame, glass fiber back"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + Nano-SIM"
+        },
+        {
+          "title": " ",
+          "info": "IP58/IP59+ dust protected and water resistant (high pressure water jets; immersible up to 3m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Titanium Gray, Green, White"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Foldable LTPO AMOLED, 1B colors, 120Hz, 5280Hz PWM, HDR10+, Dolby Vision, 4500 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "8.03 inches, 206.5 cm2 (~90.9% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "2200 x 2480 pixels (~413 ppi density)"
+        },
+        {
+          "title": " ",
+          "info": "Cover display:\nLTPO AMOLED, 120Hz, HDR10+, Dolby Vision, 5500 nits (peak)\n6.53 inches, 1172 x 2748 pixels, 21:9 ratio\nArmor Glass (2nd gen)"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, up to 4 major Android upgrades, Funtouch 15 (International), OriginOS 5 (China)"
+        },
+        {
+          "title": "Chipset",
+          "info": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Adreno 750"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": " 512GB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 4.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.6, 23mm (wide), 1/1.56\", 1.0µm, PDAF, OIS\n50 MP, f/2.6, 70mm (periscope telephoto), 1/1.95\", 0.8µm, PDAF, OIS, 3x optical zoom\n50 MP, f/2.1, 15mm, 119˚ (ultrawide), 1/2.76\", 0.64µm, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Color spectrum sensor, Laser AF, Zeiss optics, Zeiss T* lens coating, Dual-LED flash, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "8K@30fps, 4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "20 MP, f/2.4, 21mm (wide), 1/3.6\", 0.7µm\nCover camera:\n20 MP, f/2.4, 21mm (wide), 1/3.6\", 0.7µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR"
+        },
+        {
+          "title": "Video",
+          "info": "1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Si/C Li-Ion 6000 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "80W wired\n40W wireless\nReverse wired\n5W reverse wireless"
+        }
+      ]
+    },
+    "price": "512GB 16GB RAM ₹159,999"
+  },
+  {
+    "brand_name": "Google",
+    "id": "google_pixel_9a-13478",
+    "phone_name": "Pixel 9a",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-9a.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, April 10",
+      "body": "186g, 8.9mm thickness",
+      "os": "Android 15, up to 16",
+      "storage": "128GB/256GB storage, no card slot",
+      "display_size": "6.3\"",
+      "display_resolution": "1080x2424 pixels",
+      "camera_pixels": "48 MP",
+      "video_pixels": "2160p",
+      "ram_size": "8 GB RAM",
+      "chipset": "Google Tensor G4",
+      "battery_size": "5100 mAh",
+      "battery_type": "23W8W",
+      "popularity": " 6.3%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "154.7 x 73.3 x 8.9 mm (6.09 x 2.89 x 0.35 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "186 g (6.56 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass 3), aluminum frame, plastic back"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + eSIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Obsidian, Porcelain, Iris, Peony"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "P-OLED, HDR, 120Hz, 1800 nits (HBM), 2700 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.3 inches, 94.7 cm2 (~83.5% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2424 pixels, 20:9 ratio (~422 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass 3, Mohs level 4"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 15, upgradable to Android 16, up to 7 major Android upgrades"
+        },
+        {
+          "title": "Chipset",
+          "info": "Google Tensor G4 (4 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.1 GHz Cortex-X4 & 3x2.6 GHz Cortex-A720 & 4x1.9 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "Mali-G715 MP7"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "128GB 8GB RAM, 256GB 8GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 3.1"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Dual",
+          "info": "48 MP, f/1.7, 25mm (wide), 1/2.0\", 0.8µm, dual pixel PDAF, OIS\n13 MP, f/2.2, 120˚ (ultrawide), 1/3.1\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "Dual-LED flash, Pixel Shift, Ultra HDR, panorama, Best Take"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60/120/240fps, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "13 MP, f/2.2, 20mm (ultrawide), 1/3.1\", 1.12µm"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30fps, 1080p@30fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Po 5100 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "23W wired, PD3.0\n7.5W wireless\nBypass charging"
+        }
+      ]
+    },
+    "price": "128GB 8GB RAM ₹49,999., 256GB 8GB RAM ₹56,999."
+  },
+  {
+    "brand_name": "Google",
+    "id": "google_pixel_10-13979",
+    "phone_name": "Pixel 10",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-10-.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, August 28",
+      "body": "204g, 8.6mm thickness",
+      "os": "Android 16, up to 7 major Android upgrades",
+      "storage": "256GB storage, no card slot",
+      "display_size": "6.3\"",
+      "display_resolution": "1080x2424 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "2160p",
+      "ram_size": "12 GB RAM",
+      "chipset": "Google Tensor G5",
+      "battery_size": "4970 mAh",
+      "battery_type": "30W15W",
+      "popularity": " 6.9%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "152.8 x 72 x 8.6 mm (6.02 x 2.83 x 0.34 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "204 g (7.20 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM· eSIM + eSIM (8 or more, max 2 at a time; USA)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Indigo, Frost, Lemongrass, Obsidian"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "OLED, 120Hz, HDR10+, 2000 nits (HBM), 3000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.3 inches, 94.7 cm2 (~86.1% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1080 x 2424 pixels, 20:9 ratio (~422 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass Victus 2, Mohs level 4"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 16, up to 7 major Android upgrades"
+        },
+        {
+          "title": "Chipset",
+          "info": "Google Tensor G5 (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.78 GHz Cortex-X4 & 5x3.05 GHz Cortex-A725 & 2x2.25 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "PowerVR DXT-48-1536"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": " 256GB 12GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 3.1 - 128GB\nUFS 4.0 - 256GB"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "48 MP, f/1.7, 25mm (wide), 1/2.0\", 0.8µm, dual pixel PDAF, OIS\n10.8 MP, f/3.1, 112mm (telephoto), 1/3.2\", dual pixel PDAF, OIS, 5x optical zoom\n13 MP, f/2.2, 120˚ (ultrawide), 1/3.1\", PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Single-zone Laser AF, LED flash, Pixel Shift, Ultra-HDR, panorama, Best Take"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/30/60fps, 1080p@24/30/60/120/240fps; gyro-EIS, OIS, 10-bit HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "10.5 MP, f/2.2, 95˚, 20mm (ultrawide), 1/3.1\", 1.22µm, PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 4970 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "30W wired, PD3.0, PPS, 55% in 30 minutes\n15W wireless (magnetic), Qi2\nReverse wired\nBypass charging"
+        }
+      ]
+    },
+    "price": "₹79,999"
+  },
+  {
+    "brand_name": "Google",
+    "id": "google_pixel_10_pro_xl-13988",
+    "phone_name": "Pixel 10 Pro XL",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-10-pro-xl-.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, August 28",
+      "body": "207g, 8.5mm thickness",
+      "os": "Android 16, up to 7 major Android upgrades",
+      "storage": "256GB storage, no card slot",
+      "display_size": "6.3\"",
+      "display_resolution": "1280x2856 pixels",
+      "camera_pixels": "50 MP",
+      "video_pixels": "4320p",
+      "ram_size": "16 GB RAM",
+      "chipset": "Google Tensor G5",
+      "battery_size": "4870 mAh",
+      "battery_type": "30W15W",
+      "popularity": " 8.6%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "152.8 x 72 x 8.5 mm (6.02 x 2.83 x 0.33 in)"
+        },
+        {
+          "title": "Weight",
+          "info": "207 g (7.30 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus 2), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "· Nano-SIM + eSIM· eSIM + eSIM (8 or more, max 2 at a time; USA)"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Moonstone, Jade, Porcelain, Obsidian"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "LTPO OLED, 120Hz, HDR10+, 2200 nits (HBM), 3300 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "6.3 inches, 96.3 cm2 (~87.6% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "1280 x 2856 pixels, 20:9 ratio (~495 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Corning Gorilla Glass Victus 2, Mohs level 4"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 16, up to 7 major Android upgrades"
+        },
+        {
+          "title": "Chipset",
+          "info": "Google Tensor G5 (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.78 GHz Cortex-X4 & 5x3.05 GHz Cortex-A725 & 2x2.25 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "PowerVR DXT-48-1536"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 16GB RAM"
+        },
+        {
+          "title": " ",
+          "info": "UFS 3.1 - 128GB only\nUFS 4.0"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "50 MP, f/1.7, 25mm (wide), 1/1.31\", 1.2µm, dual pixel PDAF, OIS\n48 MP, f/2.8, 113mm (periscope telephoto), 1/2.55\", dual pixel PDAF, OIS, 5x optical zoom\n48 MP, f/1.7, 123˚ (ultrawide), 1/2.55\", dual pixel PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Multi-zone Laser AF, LED flash, Pixel Shift, Ultra-HDR, panorama, Best Take, Zoom Enhance"
+        },
+        {
+          "title": "Video",
+          "info": "8K@30fps (via cloud-based upscaling), 4K@24/30/60fps, 1080p@24/30/60/120/240fps; gyro-EIS, OIS, 10-bit HDR"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "42 MP, f/2.2, 17mm (ultrawide), PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "Li-Ion 4870 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "30W wired, PD3.0, PPS, 55% in 30 min\n15W wireless (magnetic), Qi2\nReverse wired\nBypass charging"
+        }
+      ]
+    },
+    "price": "256GB 16GB RAM 1,24,999"
+  },
+  {
+    "brand_name": "Google",
+    "id": "google_pixel_10_pro_fold-14014",
+    "phone_name": "Pixel 10 Pro Fold",
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-10-pro-fold--.jpg",
+    "spotlight": {
+      "releaseDate": "Released 2025, October 09",
+      "body": "258g, 5.2mm thickness",
+      "os": "Android 16, up to 7 major Android upgrades",
+      "storage": "256GB storage, no card slot",
+      "display_size": "8.0\"",
+      "display_resolution": "2076x2152 pixels",
+      "camera_pixels": "48 MP",
+      "video_pixels": "2160p",
+      "ram_size": "16 GB RAM",
+      "chipset": "Google Tensor G5",
+      "battery_size": "5015 mAh",
+      "battery_type": "30W15W",
+      "popularity": " 5.1%"
+    },
+    "all_specs": {
+      "Network": [
+        {
+          "title": "Speed",
+          "info": "HSPA, LTE (CA), 5G"
+        }
+      ],
+      "Body": [
+        {
+          "title": "Dimensions",
+          "info": "Unfolded: 155.2 x 150.4 x 5.2 mmFolded: 155.2 x 76.3 x 10.8 mm"
+        },
+        {
+          "title": "Weight",
+          "info": "258 g (9.10 oz)"
+        },
+        {
+          "title": "Build",
+          "info": "Glass front (Gorilla Glass Victus 2) (folded), plastic front (unfolded), glass back (Gorilla Glass Victus 2), aluminum frame"
+        },
+        {
+          "title": "SIM",
+          "info": "Nano-SIM + eSIM"
+        },
+        {
+          "title": " ",
+          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
+        },
+        {
+          "title": "Colors",
+          "info": "Moonstone, Jade"
+        }
+      ],
+      "Display": [
+        {
+          "title": "Type",
+          "info": "Foldable LTPO OLED, 120Hz, HDR10+, 1800 nits (HBM), 3000 nits (peak)"
+        },
+        {
+          "title": "Size",
+          "info": "8.0 inches, 206.3 cm2 (~88.4% screen-to-body ratio)"
+        },
+        {
+          "title": "Resolution",
+          "info": "2076 x 2152 pixels, 1:1 ratio (~374 ppi density)"
+        },
+        {
+          "title": "Protection",
+          "info": "Mohs level 5"
+        },
+        {
+          "title": " ",
+          "info": "Cover display:\nOLED, 120Hz, HDR, Corning Gorilla Glass Victus 2\n6.4 inches, 1080 x 2364 pixels\n2000 nits (HBM), 3000 nits (peak)"
+        }
+      ],
+      "Platform": [
+        {
+          "title": "OS",
+          "info": "Android 16, up to 7 major Android upgrades"
+        },
+        {
+          "title": "Chipset",
+          "info": "Google Tensor G5 (3 nm)"
+        },
+        {
+          "title": "CPU",
+          "info": "Octa-core (1x3.78 GHz Cortex-X4 & 5x3.05 GHz Cortex-A725 & 2x2.25 GHz Cortex-A520)"
+        },
+        {
+          "title": "GPU",
+          "info": "PowerVR DXT-48-1536"
+        }
+      ],
+      "Memory": [
+        {
+          "title": "Card slot",
+          "info": "No"
+        },
+        {
+          "title": "Internal",
+          "info": "256GB 16GB RAM"
+        }
+      ],
+      "Main Camera": [
+        {
+          "title": "Triple",
+          "info": "48 MP, f/1.7, 25mm (wide), 1/2.0\", 0.8µm, dual pixel PDAF, OIS\n10.8 MP, f/3.1, 112mm (telephoto), 1/3.2\", dual pixel PDAF, OIS, 5x optical zoom\n10.5 MP, f/2.2, 127˚ (ultrawide), 1/3.4\", PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "Multi-zone Laser AF, LED flash, Pixel Shift, Ultra-HDR, panorama, Best Take, Zoom Enhance"
+        },
+        {
+          "title": "Video",
+          "info": "4K@24/30/60fps, 1080p@24/30/60/120/240fps, 10-bit HDR, gyro-EIS, OIS"
+        }
+      ],
+      "Selfie camera": [
+        {
+          "title": "Single",
+          "info": "10 MP, f/2.2, 23mm (wide), 1/3.94\", PDAF\nCover camera:\n10 MP, f/2.2, 23mm (wide), 1/3.94\", PDAF"
+        },
+        {
+          "title": "Features",
+          "info": "HDR, panorama"
+        },
+        {
+          "title": "Video",
+          "info": "4K@30/60fps, 1080p@30/60fps"
+        }
+      ],
+      "Battery": [
+        {
+          "title": "Type",
+          "info": "5015 mAh"
+        },
+        {
+          "title": "Charging",
+          "info": "30W wired, PPS, 50% in 30 min\n15W wireless (magnetic), Qi2\nBypass charging"
+        }
+      ]
+    },
+    "price": "256GB 16GB RAM ₹1,72,999"
+  }
+]
