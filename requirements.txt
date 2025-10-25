@@ -1,7 +1,11 @@
 # Core dependencies
 google-adk>=0.1.0
+google-genai>=1.46.0
 google-generativeai>=0.4.1
 litellm>=1.0.0
 python-dotenv==1.0.0
 requests>=2.31.0
 supabase>=2.22.2
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+websockets>=15.0.1
