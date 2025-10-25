@@ -92,10 +92,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 3.1"
         }
       ],
       "Main Camera": [
@@ -178,10 +174,6 @@
         {
           "title": "SIM",
           "info": "Nano-SIM + Nano-SIM"
-        },
-        {
-          "title": " ",
-          "info": "11 LED light strips on the back (notifications, camera fill light, 33 addressable zones)\nBlinking red light on the back (video recording indicator)\nIP54 dust protected and water resistant (water splashes)"
         },
         {
           "title": "Colors",
@@ -320,10 +312,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP64 dust tight and water resistant (water splashes)\n3 LED light strips on the back (notifications, camera fill light, 26 addressable zones)"
-        },
-        {
           "title": "Colors",
           "info": "Black, White, Blue"
         }
@@ -344,10 +332,6 @@
         {
           "title": "Protection",
           "info": "Panda Glass, Mohs level 5"
-        },
-        {
-          "title": " ",
-          "info": "Ultra HDR image support"
         }
       ],
       "Platform": [
@@ -460,10 +444,6 @@
           "info": "Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
         },
         {
-          "title": " ",
-          "info": "Monochrome LED display on the back (489 LEDs, notifications, timer, flashlight)\nIP68 dust tight and water resistant (submerged up to 1.5m for 30 min)"
-        },
-        {
           "title": "Colors",
           "info": "White, Black"
         }
@@ -512,10 +492,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -604,10 +580,6 @@
           "info": "Nano-SIM + eSIM"
         },
         {
-          "title": " ",
-          "info": "IP67 dust/water resistant (up to 1m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
-        },
-        {
           "title": "Colors",
           "info": "Midnight, Starlight, Red"
         }
@@ -656,10 +628,6 @@
         {
           "title": "Internal",
           "info": "64GB 4GB RAM, 128GB 4GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "NVMe"
         }
       ],
       "Main Camera": [
@@ -748,10 +716,6 @@
           "info": "Nano-SIM + eSIM"
         },
         {
-          "title": " ",
-          "info": "IP67 dust/water resistant (up to 1m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
-        },
-        {
           "title": "Colors",
           "info": "Midnight, Starlight, Red"
         }
@@ -800,10 +764,6 @@
         {
           "title": "Internal",
           "info": "128GB 4GB RAM, 256GB 4GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "NVMe"
         }
       ],
       "Main Camera": [
@@ -892,10 +852,6 @@
           "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
         },
         {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
-        },
-        {
           "title": "Colors",
           "info": "Black, Blue, Green, Yellow, Pink"
         }
@@ -944,10 +900,6 @@
         {
           "title": "Internal",
           "info": "128GB 6GB RAM, 256GB 6GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "NVMe"
         }
       ],
       "Main Camera": [
@@ -1036,10 +988,6 @@
           "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
         },
         {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
-        },
-        {
           "title": "Colors",
           "info": "Black Titanium, White Titanium, Blue Titanium, Natural Titanium"
         }
@@ -1088,10 +1036,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM, 1TB 8GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "NVMe"
         }
       ],
       "Main Camera": [
@@ -1180,10 +1124,6 @@
           "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
         },
         {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
-        },
-        {
           "title": "Colors",
           "info": "Black Titanium, White Titanium, Natural Titanium, Desert Titanium"
         }
@@ -1232,10 +1172,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM, 1TB 8GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "NVMe"
         }
       ],
       "Main Camera": [
@@ -1324,10 +1260,6 @@
           "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
         },
         {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
-        },
-        {
           "title": "Colors",
           "info": "Black, White, Mist Blue, Sage, Lavender"
         }
@@ -1348,10 +1280,6 @@
         {
           "title": "Protection",
           "info": "Ceramic Shield 2, Mohs level 5"
-        },
-        {
-          "title": " ",
-          "info": "Anti-reflective coating"
         }
       ],
       "Platform": [
@@ -1380,10 +1308,6 @@
         {
           "title": "Internal",
           "info": "256GB 8GB RAM, 512GB 8GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "NVMe"
         }
       ],
       "Main Camera": [
@@ -1472,10 +1396,6 @@
           "info": "· Nano-SIM + eSIM + eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
         },
         {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 6m for 30 min)\nApple Pay (Visa, MasterCard, AMEX certified)"
-        },
-        {
           "title": "Colors",
           "info": "Silver, Cosmic Orange, Deep Blue"
         }
@@ -1496,10 +1416,6 @@
         {
           "title": "Protection",
           "info": "Ceramic Shield 2, Mohs level 5"
-        },
-        {
-          "title": " ",
-          "info": "Anti-reflective coating"
         }
       ],
       "Platform": [
@@ -1528,10 +1444,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 2TB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "NVMe"
         }
       ],
       "Main Camera": [
@@ -1618,10 +1530,6 @@
         {
           "title": "SIM",
           "info": "Nano-SIM + Nano-SIM"
-        },
-        {
-          "title": " ",
-          "info": "IP54 dust protected and water resistant (water splashes)"
         },
         {
           "title": "Colors",
@@ -1750,10 +1658,6 @@
         {
           "title": "SIM",
           "info": "· Nano-SIM· Nano-SIM + Nano-SIM"
-        },
-        {
-          "title": " ",
-          "info": "IP54 dust protected and water resistant (water splashes)"
         },
         {
           "title": "Colors",
@@ -1887,10 +1791,7 @@
           "title": "SIM",
           "info": "Nano-SIM + Nano-SIM"
         },
-        {
-          "title": " ",
-          "info": "Drop resistant up to 2m"
-        },
+
         {
           "title": "Colors",
           "info": "Orange Haze, Velvet Black, Serene Green"
@@ -1940,10 +1841,6 @@
         {
           "title": "Internal",
           "info": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.2"
         }
       ],
       "Main Camera": [
@@ -2031,10 +1928,7 @@
           "title": "SIM",
           "info": "· Nano-SIM· Nano-SIM + Nano-SIM· Nano-SIM + eSIM· eSIM + eSIM"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)\nEnhanced armor aluminum frame"
-        },
+
         {
           "title": "Colors",
           "info": "Icyblue, Jetblack, Navy, White"
@@ -2167,10 +2061,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT· Nano-SIM + eSIM + eSIM (max 2 at a time) - USA· Nano-SIM + Nano-SIM - CN"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)\nArmor aluminum 2 frame"
-        },
+
         {
           "title": "Colors",
           "info": "Icy Blue, Mint, Navy, Silver Shadow, Pink Gold, Coral Red, Blue Black"
@@ -2220,10 +2111,6 @@
         {
           "title": "Internal",
           "info": "128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -2311,10 +2198,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time) - INT· Nano-SIM + eSIM + eSIM (max 2 at a time) - USA· Nano-SIM + Nano-SIM - CN"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)\nStylus"
-        },
+
         {
           "title": "Colors",
           "info": "Titanium Silver Blue, Titanium Black, Titanium White Silver, Titanium Gray, Titanium Jade Green, Titanium Jet Black, Titanium Pink Gold"
@@ -2336,10 +2220,6 @@
         {
           "title": "Protection",
           "info": "Corning Gorilla Armor 2, Mohs level 6"
-        },
-        {
-          "title": " ",
-          "info": "DX anti-reflective coating"
         }
       ],
       "Platform": [
@@ -2368,10 +2248,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 1TB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -2460,10 +2336,6 @@
           "info": "· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM + multiple eSIM (max 2 at a time)"
         },
         {
-          "title": " ",
-          "info": "IP48 dust and water resistant (dust > 1mm; immersible up to 1.5m for 30 min)\nAdvanced Armor aluminum frame"
-        },
-        {
           "title": "Colors",
           "info": "Blue Shadow, Silver Shadow, Jet Black, Mint"
         }
@@ -2484,10 +2356,6 @@
         {
           "title": "Protection",
           "info": "Mohs level 1"
-        },
-        {
-          "title": " ",
-          "info": "Titanium plate layer for display support\nCover display:\nDynamic LTPO AMOLED 2X, 120Hz, Corning Gorilla Glass Ceramic 2\n6.5 inches, 1080 x 2520 pixels, 422 ppi"
         }
       ],
       "Platform": [
@@ -2516,10 +2384,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -2608,10 +2472,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "Dust and splash resistant"
-        },
-        {
           "title": "Colors",
           "info": "Stardust Purple, Starlight Blue, Stargaze Black"
         }
@@ -2656,10 +2516,6 @@
         {
           "title": "Internal",
           "info": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.2"
         }
       ],
       "Main Camera": [
@@ -2740,10 +2596,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
-        },
-        {
           "title": "Colors",
           "info": "Black, White, Blue"
         }
@@ -2792,10 +2644,6 @@
         {
           "title": "Internal",
           "info": "128GB 6GB, 256GB 8GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.2"
         }
       ],
       "Main Camera": [
@@ -2884,10 +2732,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nManufacturer-rated water-resistance (up to 2m for 48 h) - India only\nIP69 (market/region dependent)"
-        },
-        {
           "title": "Colors",
           "info": "Black/Yellow, White, Green, Red (Iron Man Edition)"
         }
@@ -2936,10 +2780,6 @@
         {
           "title": "Internal",
           "info": "256GB 8GB RAM, 256GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -3023,10 +2863,7 @@
           "title": "SIM",
           "info": "Nano-SIM + Nano-SIM"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 2.5m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Black, Blue, Silver"
@@ -3076,10 +2913,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.1"
         }
       ],
       "Main Camera": [
@@ -3167,10 +3000,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + Nano-SIM· Nano-SIM + Nano-SIM + eSIM + eSIM (max 2 at a time)"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Black, White, Liquid Silver, Green, Lilac"
@@ -3220,10 +3050,6 @@
         {
           "title": "Internal",
           "info": "512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -3324,10 +3150,6 @@
         {
           "title": "Resolution",
           "info": "1224 x 2912 pixels (~460 ppi density)"
-        },
-        {
-          "title": " ",
-          "info": "Second external AMOLED, 68B colors, Dolby Vision, HDR10+, HDR Vivid, 120Hz, 1600 nits (HBM), 3200 nits (peak)\n4 inches, 1392 x 1208 pixels, 460 ppi\nXiaomi Shield Glass"
         }
       ],
       "Platform": [
@@ -3356,10 +3178,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.1"
         }
       ],
       "Main Camera": [
@@ -3444,10 +3262,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP65 dust tight and water resistant (low pressure water jets)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
-        },
-        {
           "title": "Colors",
           "info": "Midnight Purple, Aurora Green, Mist White"
         }
@@ -3496,10 +3310,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 128GB 6GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.1"
         }
       ],
       "Main Camera": [
@@ -3584,10 +3394,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
-        },
-        {
           "title": "Colors",
           "info": "Lunar Titanium, Stellar Blue, Coral Pink, Rosewood Red"
         }
@@ -3636,10 +3442,6 @@
         {
           "title": "Internal",
           "info": "256GB 8GB RAM, 512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.2"
         }
       ],
       "Main Camera": [
@@ -3728,10 +3530,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
-        },
-        {
           "title": "Colors",
           "info": "Marble White, Granite Black"
         }
@@ -3780,10 +3578,6 @@
         {
           "title": "Internal",
           "info": "256GB 8GB RAM, 256GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 3.1"
         }
       ],
       "Main Camera": [
@@ -3868,10 +3662,6 @@
           "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 2m for 30 min)"
-        },
-        {
           "title": "Colors",
           "info": "Titanium Gray, Brilliant White (Opal White), Purple"
         }
@@ -3920,10 +3710,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 3.1"
         }
       ],
       "Main Camera": [
@@ -4012,10 +3798,6 @@
           "info": "· Nano-SIM + eSIM· Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)"
-        },
-        {
           "title": "Colors",
           "info": "Silk White, Titanium Charcoal, Velvet Red"
         }
@@ -4036,10 +3818,6 @@
         {
           "title": "Protection",
           "info": "Corning Gorilla Glass (unspecified version)"
-        },
-        {
-          "title": " ",
-          "info": "Ultra HDR image support"
         }
       ],
       "Platform": [
@@ -4068,10 +3846,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM, 512GB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.1"
         }
       ],
       "Main Camera": [
@@ -4160,10 +3934,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP54 dust protected and water resistant (water splashes)"
-        },
-        {
           "title": "Colors",
           "info": "Super Silver, Mega Blue"
         }
@@ -4208,10 +3978,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 256GB 8GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.2"
         }
       ],
       "Main Camera": [
@@ -4300,10 +4066,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP65 dust tight and water resistant (low pressure water jets)"
-        },
-        {
           "title": "Colors",
           "info": "Phantom Grey, Dry Ice, Marble Sands"
         }
@@ -4324,10 +4086,6 @@
         {
           "title": "Protection",
           "info": "Corning Gorilla Glass 7i, Mohs level 6"
-        },
-        {
-          "title": " ",
-          "info": "Ultra HDR image support"
         }
       ],
       "Platform": [
@@ -4356,10 +4114,6 @@
         {
           "title": "Internal",
           "info": "256GB 8GB RAM, 512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 3.1"
         }
       ],
       "Main Camera": [
@@ -4447,10 +4201,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
         },
-        {
-          "title": " ",
-          "info": "IP65 dust tight and water resistant (low pressure water jets)"
-        },
+
         {
           "title": "Colors",
           "info": "Astral Trail, Nebula Noir"
@@ -4472,10 +4223,6 @@
         {
           "title": "Protection",
           "info": "Corning Gorilla Glass 7i"
-        },
-        {
-          "title": " ",
-          "info": "Ultra HDR image support"
         }
       ],
       "Platform": [
@@ -4504,10 +4251,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -4595,10 +4338,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
         },
-        {
-          "title": " ",
-          "info": "IP65 dust tight and water resistant (low pressure water jets)"
-        },
+
         {
           "title": "Colors",
           "info": "Black, Gray, Pink"
@@ -4648,10 +4388,6 @@
         {
           "title": "Internal",
           "info": "256GB 8GB RAM, 256GB 12GB RAM, 512GB 16GB RAM, 1TB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -4739,10 +4475,7 @@
           "title": "SIM",
           "info": "Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
         },
-        {
-          "title": " ",
-          "info": "IP65 dust tight and water resistant (low pressure water jets)"
-        },
+
         {
           "title": "Colors",
           "info": "Green Silk, Black Velvet, Pink Satin"
@@ -4792,10 +4525,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 512GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -4883,10 +4612,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time)· Nano-SIM + Nano-SIM"
         },
-        {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Black Eclipse, Arctic Dawn, Midnight Ocean"
@@ -4908,10 +4634,6 @@
         {
           "title": "Protection",
           "info": "Ceramic Guard glass, Mohs level 4"
-        },
-        {
-          "title": " ",
-          "info": "Ultra HDR image support"
         }
       ],
       "Platform": [
@@ -4940,10 +4662,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM,512GB 16GB RAM, 1TB 24GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -5032,10 +4750,6 @@
           "info": "Nano-SIM + Nano-SIM + eSIM (max 2 at a time)"
         },
         {
-          "title": " ",
-          "info": "IPX4 splash resistant"
-        },
-        {
           "title": "Colors",
           "info": "Emerald Dusk, Voyager Black, Apex Edition"
         }
@@ -5052,10 +4766,6 @@
         {
           "title": "Resolution",
           "info": "2268 x 2440 pixels (~426 ppi density)"
-        },
-        {
-          "title": " ",
-          "info": "Cover display:\nLTPO3 Super Fluid OLED, 1B colors, Dolby Vision, 120Hz, 2800 nits (peak)\n6.31 inches, 1116 x 2484 pixels, 431 ppi, Ceramic Guard"
         }
       ],
       "Platform": [
@@ -5084,10 +4794,6 @@
         {
           "title": "Internal",
           "info": "512GB 16GB RAM, 1TB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.0"
         }
       ],
       "Main Camera": [
@@ -5172,10 +4878,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
-        },
-        {
           "title": "Colors",
           "info": "Rose Red, Diamond Green"
         }
@@ -5224,10 +4926,6 @@
         {
           "title": "Internal",
           "info": "128GB 4GB RAM, 128GB 6GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "eMMC 5.1"
         }
       ],
       "Main Camera": [
@@ -5312,10 +5010,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 2 hours)"
-        },
-        {
           "title": "Colors",
           "info": "Elite Purple, Noble Gold"
         }
@@ -5364,10 +5058,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.2"
         }
       ],
       "Main Camera": [
@@ -5452,10 +5142,6 @@
           "info": "Nano-SIM + Nano-SIM"
         },
         {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)\nManufacturer-rated water-resistant (up to 120 min)\nMIL-STD-810H compliant*\n* does not guarantee ruggedness or use in extreme conditions"
-        },
-        {
           "title": "Colors",
           "info": "Nitro Blue, Blaze Gold"
         }
@@ -5504,10 +5190,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 2.2"
         }
       ],
       "Main Camera": [
@@ -5591,10 +5273,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + Nano-SIM + eSIM (max 2 at a time) - International· Nano-SIM + Nano-SIM - China"
         },
-        {
-          "title": " ",
-          "info": "IP68/IP69 dust tight and water resistant (high pressure water jets; immersible up to 1.5m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Black, Blue, Red, Purple, Pink"
@@ -5616,10 +5295,6 @@
         {
           "title": "Protection",
           "info": "Unspecified, Mohs level 4"
-        },
-        {
-          "title": " ",
-          "info": "Ultra HDR image support"
         }
       ],
       "Platform": [
@@ -5648,10 +5323,6 @@
         {
           "title": "Internal",
           "info": "256GB 12GB RAM, 1TB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.1"
         }
       ],
       "Main Camera": [
@@ -5739,10 +5410,7 @@
           "title": "SIM",
           "info": "Nano-SIM + Nano-SIM"
         },
-        {
-          "title": " ",
-          "info": "IP58/IP59+ dust protected and water resistant (high pressure water jets; immersible up to 3m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Titanium Gray, Green, White"
@@ -5760,10 +5428,6 @@
         {
           "title": "Resolution",
           "info": "2200 x 2480 pixels (~413 ppi density)"
-        },
-        {
-          "title": " ",
-          "info": "Cover display:\nLTPO AMOLED, 120Hz, HDR10+, Dolby Vision, 5500 nits (peak)\n6.53 inches, 1172 x 2748 pixels, 21:9 ratio\nArmor Glass (2nd gen)"
         }
       ],
       "Platform": [
@@ -5792,10 +5456,6 @@
         {
           "title": "Internal",
           "info": " 512GB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 4.1"
         }
       ],
       "Main Camera": [
@@ -5883,10 +5543,7 @@
           "title": "SIM",
           "info": "Nano-SIM + eSIM"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Obsidian, Porcelain, Iris, Peony"
@@ -5936,10 +5593,6 @@
         {
           "title": "Internal",
           "info": "128GB 8GB RAM, 256GB 8GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 3.1"
         }
       ],
       "Main Camera": [
@@ -6028,10 +5681,6 @@
           "info": "· Nano-SIM + eSIM· eSIM + eSIM (8 or more, max 2 at a time; USA)"
         },
         {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
-        },
-        {
           "title": "Colors",
           "info": "Indigo, Frost, Lemongrass, Obsidian"
         }
@@ -6080,10 +5729,6 @@
         {
           "title": "Internal",
           "info": " 256GB 12GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 3.1 - 128GB\nUFS 4.0 - 256GB"
         }
       ],
       "Main Camera": [
@@ -6171,10 +5816,7 @@
           "title": "SIM",
           "info": "· Nano-SIM + eSIM· eSIM + eSIM (8 or more, max 2 at a time; USA)"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Moonstone, Jade, Porcelain, Obsidian"
@@ -6224,10 +5866,6 @@
         {
           "title": "Internal",
           "info": "256GB 16GB RAM"
-        },
-        {
-          "title": " ",
-          "info": "UFS 3.1 - 128GB only\nUFS 4.0"
         }
       ],
       "Main Camera": [
@@ -6315,10 +5953,7 @@
           "title": "SIM",
           "info": "Nano-SIM + eSIM"
         },
-        {
-          "title": " ",
-          "info": "IP68 dust tight and water resistant (immersible up to 1.5m for 30 min)"
-        },
+
         {
           "title": "Colors",
           "info": "Moonstone, Jade"
@@ -6340,10 +5975,6 @@
         {
           "title": "Protection",
           "info": "Mohs level 5"
-        },
-        {
-          "title": " ",
-          "info": "Cover display:\nOLED, 120Hz, HDR, Corning Gorilla Glass Victus 2\n6.4 inches, 1080 x 2364 pixels\n2000 nits (HBM), 3000 nits (peak)"
         }
       ],
       "Platform": [
