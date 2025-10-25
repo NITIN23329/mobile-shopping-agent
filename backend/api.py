@@ -32,15 +32,9 @@ runner = Runner(
 )
 
 
-class Message(BaseModel):
-    role: str
-    content: str
-
-
 class ChatRequest(BaseModel):
     session_id: Optional[str]
     message: str
-    history: Optional[List[Message]] = None
 
 
 class ChatResponse(BaseModel):
@@ -157,9 +151,8 @@ async def chat_endpoint(payload: ChatRequest) -> ChatResponse:
     message = (payload.message or "").strip()
     if not message:
         logger.warning(
-            "Rejected empty message (session=%s, history_items=%d)",
+            "Rejected empty message (session=%s)",
             payload.session_id,
-            len(payload.history or []),
         )
         raise HTTPException(status_code=400, detail="Message cannot be empty.")
 
