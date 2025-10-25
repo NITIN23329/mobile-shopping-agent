@@ -1,4 +1,11 @@
-[
+from supabase import create_client, Client, os
+
+url = os.getenv("SUPABASE_URL")
+key = os.getenv("SUPABASE_KEY")
+supabase: Client = create_client(url, key)
+
+#data fetched from RAPIDAPI: https://rapidapi.com/apikite/api/mobile-phones2
+data = [
   {
     "brand_name": "Nothing",
     "id": "nothing_phone_(1)-11636",
@@ -6047,3 +6054,7 @@
     "price": "256GB 16GB RAM ₹1,72,999"
   }
 ]
+
+
+for p in data: 
+    supabase.table("phones").upsert(data).execute()

@@ -1,15 +1,94 @@
-"""
-Tools for the mobile shopping agent using Google ADK
-These tools interact with the phone database and provide structured data
-"""
-import json
-from typing import Dict, Any, Optional, List
+"""Tools for the mobile shopping agent using Google ADK."""
+
+import re
+from typing import Any, Dict, List, Optional
+
 from google.adk.tools.tool_context import ToolContext
 
 try:
-    from .database import search_phones, get_phone_by_id, get_phone_by_model, get_all_phones
+    from .database import get_all_phones, get_phone_by_id, get_phone_by_model
 except ImportError:
-    from database import search_phones, get_phone_by_id, get_phone_by_model, get_all_phones
+    from database import get_all_phones, get_phone_by_id, get_phone_by_model
+
+
+# ======================= HELPERS =======================
+
+def _parse_lowest_price(phone: Dict[str, Any]) -> Optional[int]:
+    price_text = phone.get("price") or ""
+    values: List[int] = []
+
+    # Prefer explicit rupee/INR annotations to avoid picking non-price numbers
+    rupee_matches = re.findall(r"(?:₹|rs\.?|inr)\s*(\d[\d,]*)", price_text, flags=re.IGNORECASE)
+    for match in rupee_matches:
+        try:
+            values.append(int(match.replace(",", "")))
+        except ValueError:
+            continue
+
+    # Fallback: collect other large numeric tokens that look like prices
+    if not values:
+        generic_matches = re.findall(r"(\d[\d,]*)", price_text)
+        for match in generic_matches:
+            try:
+                numeric_value = int(match.replace(",", ""))
+            except ValueError:
+                continue
+            if numeric_value >= 1000:  # Ignore small numbers like RAM capacities
+                values.append(numeric_value)
+
+    return min(values) if values else None
+
+
+def _parse_max_ram(phone: Dict[str, Any]) -> Optional[int]:
+    spotlight = phone.get("spotlight") or {}
+    pieces: List[str] = []
+    if spotlight.get("ram_size"):
+        pieces.append(spotlight["ram_size"])
+    for entry in (phone.get("all_specs") or {}).get("Memory", []):
+        info = entry.get("info")
+        if info:
+            pieces.append(info)
+    joined = " ".join(pieces)
+    matches = re.findall(r"(\d+(?:\.\d+)?)\s*GB", joined, flags=re.IGNORECASE)
+    if not matches:
+        return None
+    try:
+        values = [float(m) for m in matches]
+    except ValueError:
+        return None
+    return int(max(values)) if values else None
+
+
+def _parse_battery_capacity(phone: Dict[str, Any]) -> Optional[int]:
+    spotlight = phone.get("spotlight") or {}
+    pieces: List[str] = []
+    if spotlight.get("battery_size"):
+        pieces.append(spotlight["battery_size"])
+    for entry in (phone.get("all_specs") or {}).get("Battery", []):
+        info = entry.get("info")
+        if info:
+            pieces.append(info)
+    joined = " ".join(pieces)
+    match = re.search(r"(\d{3,5})\s*mAh", joined, flags=re.IGNORECASE)
+    if not match:
+        return None
+    try:
+        return int(match.group(1))
+    except ValueError:
+        return None
+
+
+def _parse_refresh_rate(phone: Dict[str, Any]) -> Optional[int]:
+    display_specs = (phone.get("all_specs") or {}).get("Display", [])
+    for entry in display_specs:
+        info = entry.get("info", "")
+        match = re.search(r"(\d{2,3})\s*Hz", info, flags=re.IGNORECASE)
+        if match:
+            try:
+                return int(match.group(1))
+            except ValueError:
+                continue
+    return None
 
 
 # ======================= PHONE SEARCH TOOLS =======================
@@ -43,7 +122,7 @@ def search_phones_by_filters(
         - "Samsung phones with 8GB RAM" → brand="Samsung", min_ram=8
         - "Best battery phones" → battery_threshold=5000
     """
-    filters = {}
+    filters: Dict[str, Any] = {}
     if max_price is not None:
         filters["max_price"] = max_price
     if min_price is not None:
@@ -56,31 +135,35 @@ def search_phones_by_filters(
         filters["battery_threshold"] = battery_threshold
     if refresh_rate is not None:
         filters["refresh_rate"] = refresh_rate
-    
-    results = search_phones(filters)
-    
-    # Format results nicely
-    formatted_results = []
-    for phone in results:
-        formatted_results.append({
-            "id": phone["id"],
-            "model": phone["model"],
-            "brand": phone["brand"],
-            "price": f"₹{phone['price']:,}",
-            "processor": phone["processor"],
-            "ram": f"{phone['ram']}GB",
-            "storage": f"{phone['storage']}GB",
-            "display": phone["display"],
-            "refresh_rate": f"{phone['refresh_rate']}Hz",
-            "battery": f"{phone['battery']}mAh",
-            "rating": f"{phone['rating']}⭐",
-        })
+
+    raw_phones = [record.to_dict() for record in get_all_phones()]
+    results: List[Dict[str, Any]] = []
+    for phone in raw_phones:
+        price_value = _parse_lowest_price(phone)
+        ram_value = _parse_max_ram(phone)
+        battery_value = _parse_battery_capacity(phone)
+        refresh_value = _parse_refresh_rate(phone)
+
+        if brand and phone.get("brand_name", "").lower() != brand.lower():
+            continue
+        if max_price is not None and price_value is not None and price_value > max_price:
+            continue
+        if min_price is not None and price_value is not None and price_value < min_price:
+            continue
+        if min_ram is not None and ram_value is not None and ram_value < min_ram:
+            continue
+        if battery_threshold is not None and battery_value is not None and battery_value < battery_threshold:
+            continue
+        if refresh_rate is not None and refresh_value is not None and refresh_value < refresh_rate:
+            continue
+        results.append(phone)
     
     return {
         "success": True,
         "count": len(results),
-        "phones": formatted_results,
-        "message": f"Found {len(results)} phone(s) matching your criteria"
+        "filters_applied": filters,
+        "phones": results,
+        "message": f"Found {len(results)} phone(s) (raw Supabase rows)."
     }
 
 
@@ -92,21 +175,23 @@ def get_phone_details(
     Get detailed specifications for a specific phone.
     
     Args:
-        phone_id: Phone identifier (e.g., "pixel-8a", "oneplus-12r")
+        phone_id: Phone identifier (e.g., "apple_iphone_14-11861", "oneplus_nord_ce4_lite-13166")
         tool_context: Context passed by ADK framework
     
     Returns:
         Dictionary with complete phone specifications
     
     Examples:
-        - "Tell me about Pixel 8a" → phone_id="pixel-8a"
-        - "Show me iPhone 15 specs" → phone_id="iphone-15"
+        - "Tell me about iPhone 14" → phone_id="apple_iphone_14-11861"
+        - "Show me OnePlus Nord CE4 Lite specs" → phone_id="oneplus_nord_ce4_lite-13166"
     """
-    phone = get_phone_by_id(phone_id)
+    record = get_phone_by_id(phone_id)
+    phone = record.to_dict() if record else None
     
     if not phone:
         # Try to find by model name
-        phone = get_phone_by_model(phone_id)
+        model_match = get_phone_by_model(phone_id)
+        phone = model_match.to_dict() if model_match else None
     
     if not phone:
         return {
@@ -115,40 +200,10 @@ def get_phone_details(
             "message": "Please check the phone ID and try again"
         }
     
-    # Format detailed response
     return {
         "success": True,
-        "phone": {
-            "model": phone["model"],
-            "brand": phone["brand"],
-            "price": f"₹{phone['price']:,}",
-            "processor": phone["processor"],
-            "specifications": {
-                "memory": {
-                    "ram": f"{phone['ram']}GB",
-                    "storage": f"{phone['storage']}GB",
-                },
-                "display": {
-                    "size": phone["display"],
-                    "refresh_rate": f"{phone['refresh_rate']}Hz",
-                },
-                "camera": {
-                    "rear": phone["camera"]["rear"],
-                    "front": phone["camera"]["front"],
-                    "features": ", ".join(phone["camera"]["features"]),
-                },
-                "battery": {
-                    "capacity": f"{phone['battery']}mAh",
-                    "charging": phone["charging"],
-                },
-                "connectivity": {
-                    "5g": "Yes" if phone["5g"] else "No",
-                    "water_resistance": phone["water_resistance"],
-                },
-            },
-            "weight": f"{phone['weight']}g",
-            "rating": f"{phone['rating']}⭐",
-        }
+        "phone": phone,
+        "message": "Raw phone data returned from Supabase."
     }
 
 
@@ -162,26 +217,13 @@ def list_all_phones(tool_context: Optional[ToolContext] = None) -> Dict[str, Any
     Returns:
         Dictionary with list of all phones
     """
-    phones = get_all_phones()
-    
-    formatted_phones = []
-    for phone in phones:
-        formatted_phones.append({
-            "model": phone["model"],
-            "brand": phone["brand"],
-            "price": f"₹{phone['price']:,}",
-            "processor": phone["processor"],
-            "ram": f"{phone['ram']}GB",
-            "camera": phone["camera"]["rear"],
-            "battery": f"{phone['battery']}mAh",
-            "rating": f"{phone['rating']}⭐",
-        })
+    phones = [record.to_dict() for record in get_all_phones()]
     
     return {
         "success": True,
         "total": len(phones),
-        "phones": formatted_phones,
-        "message": f"Here are all {len(phones)} available phones"
+        "phones": phones,
+        "message": f"Retrieved {len(phones)} phone(s) from Supabase."
     }
 
 
@@ -209,11 +251,14 @@ def compare_phones(
         - "Compare Pixel 8a vs OnePlus 12R" → phone_id_1="pixel-8a", phone_id_2="oneplus-12r"
         - "Which is better: Pixel 8a or iPhone 15?" → same as above
     """
-    phone_1 = get_phone_by_id(phone_id_1) or get_phone_by_model(phone_id_1)
-    phone_2 = get_phone_by_id(phone_id_2) or get_phone_by_model(phone_id_2)
+    phone_1_record = get_phone_by_id(phone_id_1) or get_phone_by_model(phone_id_1)
+    phone_2_record = get_phone_by_id(phone_id_2) or get_phone_by_model(phone_id_2)
+    phone_1 = phone_1_record.to_dict() if phone_1_record else None
+    phone_2 = phone_2_record.to_dict() if phone_2_record else None
     phone_3 = None
     if phone_id_3:
-        phone_3 = get_phone_by_id(phone_id_3) or get_phone_by_model(phone_id_3)
+        phone_3_record = get_phone_by_id(phone_id_3) or get_phone_by_model(phone_id_3)
+        phone_3 = phone_3_record.to_dict() if phone_3_record else None
     
     if not phone_1 or not phone_2:
         return {
@@ -227,31 +272,14 @@ def compare_phones(
     if phone_3:
         phones_to_compare.append(phone_3)
     
-    comparison = {
+    return {
         "success": True,
-        "phones": [p["model"] for p in phones_to_compare],
-        "comparison_table": {
-            "Price": [f"₹{p['price']:,}" for p in phones_to_compare],
-            "Processor": [p["processor"] for p in phones_to_compare],
-            "RAM": [f"{p['ram']}GB" for p in phones_to_compare],
-            "Storage": [f"{p['storage']}GB" for p in phones_to_compare],
-            "Display": [p["display"] for p in phones_to_compare],
-            "Refresh Rate": [f"{p['refresh_rate']}Hz" for p in phones_to_compare],
-            "Rear Camera": [p["camera"]["rear"] for p in phones_to_compare],
-            "Front Camera": [p["camera"]["front"] for p in phones_to_compare],
-            "Battery": [f"{p['battery']}mAh" for p in phones_to_compare],
-            "Charging": [p["charging"] for p in phones_to_compare],
-            "5G Support": ["Yes" if p["5g"] else "No" for p in phones_to_compare],
-            "Water Resistance": [p["water_resistance"] for p in phones_to_compare],
-            "Rating": [f"{p['rating']}⭐" for p in phones_to_compare],
-        }
+        "phones": phones_to_compare,
+        "message": "Raw phone records ready for LLM-driven comparison.",
     }
-    
-    return comparison
 
 
 # ======================= FEATURE EXPLANATION TOOLS =======================
-#TODO: why hard coding explanations
 def explain_phone_feature(
     feature: str,
     tool_context: Optional[ToolContext] = None
@@ -272,64 +300,183 @@ def explain_phone_feature(
         - "What's the difference between OIS and EIS?" → feature="OIS vs EIS"
     """
     
-    explanations = {
-        "OIS": {
-            "name": "Optical Image Stabilization",
-            "description": "Uses physical lenses to compensate for hand movement, reducing blur in photos and videos",
-            "benefit": "Better low-light photography and smoother videos",
-            "phones_with_it": ["Pixel 8a", "OnePlus 12R", "iPhone 15", "Xiaomi 14"],
+    raw_explanations: Dict[str, Dict[str, Any]] = {
+        "ois": {
+            "name": "Optical Image Stabilization (OIS)",
+            "what_it_is": "Lens hardware shifts in real time to counter handshake during exposure.",
+            "why_it_matters": "Improves low-light photos and keeps telephoto shots sharp.",
+            "best_for": "Night photography, portrait mode, stabilized video.",
         },
-        "EIS": {
-            "name": "Electronic Image Stabilization",
-            "description": "Uses software to crop and shift frames to reduce blur, works with digital processing",
-            "benefit": "Works for all cameras, no physical hardware needed",
-            "phones_with_it": ["Most modern phones"],
+        "eis": {
+            "name": "Electronic Image Stabilization (EIS)",
+            "what_it_is": "Software analyzes frames and crops or warps them slightly to smooth motion.",
+            "why_it_matters": "Provides video stabilization even on budget sensors.",
+            "trade_off": "Adds a slight crop and can struggle in very dark scenes.",
         },
-        "OIS vs EIS": {
-            "name": "OIS vs EIS Comparison",
-            "description": """OIS (Optical) uses physical lens movement - more effective but expensive.
-EIS (Electronic) uses software processing - faster but crops the image slightly.
-Many flagship phones use BOTH for best results.""",
-            "benefit": "OIS is generally better for photography, EIS for video",
+        "ois vs eis": {
+            "name": "OIS vs EIS",
+            "summary": "OIS uses moving lenses; EIS uses software. Many phones combine both for the steadiest photos and video.",
+            "choose_if": {
+                "Need better night photos": "Make sure the main camera offers OIS.",
+                "Primarily filming video": "Look for phones advertising hybrid stabilization (OIS + EIS).",
+                "Entry-level budget": "Expect EIS-only stabilization, which still helps with casual clips."
+            },
         },
-        "5G": {
+        "5g": {
             "name": "5G Connectivity",
-            "description": "Fifth-generation mobile network technology offering much faster speeds than 4G LTE",
-            "benefit": "Faster downloads, lower latency, better for streaming and gaming",
-            "speed_comparison": "4G LTE: ~100Mbps, 5G: ~1-10Gbps",
+            "what_it_is": "Fifth-generation cellular networks covering low, mid and millimeter-wave spectrum.",
+            "real_world_speeds": "Around 100 Mbps on low-band, up to multi-gigabit on mmWave when available.",
+            "why_it_matters": "Lower latency gaming, fast cloud backups, stable hotspot performance.",
+            "watch_for": ["Carrier band support", "Dual 5G SIM", "Standalone (SA) vs Non-Standalone (NSA)"]
         },
-        "OLED": {
+        "wifi 6e": {
+            "name": "Wi-Fi 6E",
+            "what_it_is": "Extension of Wi-Fi 6 that opens the 6 GHz spectrum for cleaner, faster wireless links.",
+            "benefits": ["Less congestion in apartments", "Lower latency for cloud gaming", "Gigabit-class wireless throughput"],
+            "requirements": "Needs a Wi-Fi 6E router and region approval to use the 6 GHz band.",
+        },
+        "oled": {
             "name": "OLED Display",
-            "description": "Organic Light-Emitting Diode - each pixel emits its own light",
-            "benefits": ["Perfect blacks", "Better contrast", "Faster response time", "Better colors"],
-            "vs_LCD": "OLED is generally superior but more expensive",
+            "what_it_is": "Organic LEDs emit light per pixel, allowing true black reproduction.",
+            "advantages": ["High contrast", "Fast response for gaming", "Energy savings in dark mode"],
+            "considerations": "Can show temporary image retention if static UI stays on for hours.",
         },
-        "LCD": {
+        "lcd": {
             "name": "LCD Display",
-            "description": "Liquid Crystal Display - uses backlight with color filters",
-            "benefits": ["More affordable", "Longer lifespan", "Less power-intensive"],
-            "comparison": "Still good quality, but not as vibrant as OLED",
+            "what_it_is": "Liquid crystals modulate a constant backlight through color filters.",
+            "advantages": ["Consistent daylight brightness", "Lower cost", "No risk of burn-in"],
+            "trade_off": "Blacks appear gray because the backlight is always on.",
         },
-        "Refresh Rate": {
+        "refresh rate": {
             "name": "Display Refresh Rate",
-            "description": "How many times per second the display updates (measured in Hz)",
-            "common_rates": {
-                "60Hz": "Standard, smooth for most uses",
-                "90Hz": "Better for gaming, slightly smoother scrolling",
-                "120Hz": "Premium, very smooth for everything",
-                "144Hz": "High-end gaming phones",
+            "what_it_is": "Number of times per second the panel refreshes, shown in hertz (Hz).",
+            "key_marks": {
+                "60Hz": "Standard and battery-friendly",
+                "90Hz": "Noticeably smoother scrolling",
+                "120Hz": "Flagship-level fluidity for gaming and UI",
+                "Adaptive": "Panels that shift refresh rate to save power"
+            },
+            "battery_note": "Higher Hz drains more power unless the phone can dynamically drop to 60Hz or below.",
+        },
+        "pwm dimming": {
+            "name": "High-Frequency PWM Dimming",
+            "what_it_is": "Panel flickers at very high frequency (often 960Hz or higher) when lowering brightness.",
+            "why_it_matters": "Helps reduce visible flicker and eye strain on OLED displays.",
+            "tip": "Look for 960Hz+ PWM if you are flicker sensitive.",
+        },
+        "camera megapixels": {
+            "name": "Camera Megapixels",
+            "what_it_is": "Count of photodiodes on the sensor capturing image data.",
+            "context": "Higher megapixels enable more detail, but sensor size and processing often matter more.",
+            "binning": "Many 50 MP and 108 MP sensors combine 4 or 9 pixels into one for brighter photos.",
+        },
+        "sensor size": {
+            "name": "Camera Sensor Size",
+            "what_it_is": "Physical dimensions of the imaging sensor (e.g., 1/1.56 inch).",
+            "why_it_matters": "Larger sensors gather more light, improving dynamic range and low-light performance.",
+            "comparison": '1/1.3" sensors are considered flagship-grade; 1/2.5" are typical mid-range.',
+        },
+        "hdr": {
+            "name": "HDR (High Dynamic Range) Video/Photo",
+            "what_it_is": "Captures multiple exposures to retain detail in bright highlights and dark shadows.",
+            "use_cases": "Helps with sunsets, night cityscapes, and scenes with bright windows.",
+            "tip": "Enable auto-HDR for stills and Dolby Vision/HDR10+ for compatible displays.",
+        },
+        "battery capacity": {
+            "name": "Battery Capacity",
+            "what_it_is": "Measured in milliamp-hours (mAh); indicates how much charge the cell holds.",
+            "guidance": {
+                "<4000 mAh": "Compact phones, lighter use",
+                "4500-5000 mAh": "All-day endurance for most users",
+                ">5000 mAh": "Power users or phones with large displays"
+            },
+            "note": "Efficient chipsets and software optimizations can make smaller batteries last longer.",
+        },
+        "fast charging": {
+            "name": "Fast Wired Charging",
+            "what_it_is": "Higher wattage charging protocols (PD, PPS, proprietary) that refill batteries quickly.",
+            "common_levels": {
+                "25-33W": "Mid-range phones, ~50% in 30 minutes",
+                "45-67W": "Upper mid-range, near full in under an hour",
+                "80W+": "Flagships and gaming phones with dual-cell batteries"
+            },
+            "battery_care": "Heat is the enemy—use certified chargers and enable smart charging overnight.",
+        },
+        "wireless charging": {
+            "name": "Qi Wireless Charging",
+            "what_it_is": "Inductive charging through glass or plastic backs at 5W to 50W depending on the phone.",
+            "pros": ["No cables to plug in", "Works with shared pads and furniture chargers", "Reverse wireless can top up earbuds"],
+            "considerations": "Alignment matters; magnetic docks improve consistency.",
+        },
+        "ram": {
+            "name": "Random Access Memory (RAM)",
+            "what_it_is": "Short-term memory pool that keeps apps active and multitasking fluid.",
+            "guidance": {
+                "4 GB": "Entry-level and lightweight use",
+                "6-8 GB": "Comfortable for daily multitasking and casual gaming",
+                "12 GB": "Power users, creators, heavy multitasking"
+            },
+            "tip": "RAM management differs by brand—some offer memory expansion using storage.",
+        },
+        "storage": {
+            "name": "UFS Storage",
+            "what_it_is": "Universal Flash Storage chips soldered to the motherboard.",
+            "tiers": {
+                "UFS 2.2": "Common in budget/mid phones",
+                "UFS 3.1": "Flagship-grade read/write speeds",
+                "UFS 4.0": "Latest generation with better efficiency"
+            },
+            "why_it_matters": "Speeds up app installs, burst photography, and loading large games.",
+        },
+        "chipset tiers": {
+            "name": "Mobile Chipset Tiers",
+            "what_it_is": "Naming conventions that indicate performance class (e.g., Snapdragon 4/6/7/8 series).",
+            "quick_read": {
+                "Entry": "MediaTek G/Helio, Snapdragon 4—focus on efficiency",
+                "Mid": "Snapdragon 6/7, Dimensity 7000—balanced gaming",
+                "Flagship": "Snapdragon 8, Dimensity 9000, Apple A-series—top performance"
+            },
+            "note": "Lower-nanometer (nm) processes generally mean better efficiency.",
+        },
+        "android updates": {
+            "name": "Android Update Policy",
+            "what_it_is": "Number of years a manufacturer promises OS upgrades and security patches.",
+            "importance": "Longer support keeps the phone secure and compatible with new apps.",
+            "typical": {
+                "Value phones": "1-2 OS updates",
+                "Upper mid-range": "3 OS + 4 years security",
+                "Flagships": "4-7 OS updates depending on vendor"
             },
         },
-        "RAM": {
-            "name": "Random Access Memory",
-            "description": "Temporary memory used by apps and OS for quick access to data",
-            "guidance": {
-                "4GB": "Basic tasks",
-                "6-8GB": "General use, gaming",
-                "12GB+": "Heavy multitasking, gaming, video editing",
+        "ip rating": {
+            "name": "Ingress Protection (IP) Rating",
+            "what_it_is": "Two-digit code—first digit for solids, second for liquids.",
+            "examples": {
+                "IP52": "Drip resistant",
+                "IP54": "Splash resistant",
+                "IP67": "Dust tight + 1 m fresh water",
+                "IP68": "Dust tight + 1.5 m fresh water for 30 min"
             },
+            "note": "Water damage may still void warranties; rinse with fresh water after salt exposure.",
+        },
+        "gorilla glass": {
+            "name": "Corning Gorilla Glass",
+            "what_it_is": "Chemically strengthened cover glass designed to resist drops and scratches.",
+            "generations": {
+                "GG3/GG4": "Basic drop resistance",
+                "GG5/GG6": "Better drop survivability at the cost of minor scratch trade-offs",
+                "Victus/Victus 2": "Flagship-level protection with improved scratch resistance"
+            },
+            "care_tip": "Use a case to protect corners—most cracks start at impact points.",
+        },
+        "pwm": {
+            "name": "PWM (Pulse-Width Modulation)",
+            "what_it_is": "Technique displays use to dim brightness by switching pixels on and off rapidly.",
+            "impact": "Low-frequency PWM (240Hz) can cause eye fatigue; high-frequency (960Hz+) is gentler.",
         },
     }
+
+    explanations = {key.lower(): value for key, value in raw_explanations.items()}
     
     feature_lower = feature.lower()
     
@@ -341,11 +488,11 @@ Many flagship phones use BOTH for best results.""",
         }
     
     # Try partial match
-    for key in explanations:
-        if key.lower() in feature_lower or feature_lower in key.lower():
+    for key, value in explanations.items():
+        if key in feature_lower or feature_lower in key:
             return {
                 "success": True,
-                "feature": explanations[key],
+                "feature": value,
             }
     
     return {
