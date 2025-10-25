@@ -1,4 +1,7 @@
+import logging
 import os
+import random
+import time
 from dataclasses import dataclass, field, asdict
 from typing import Any, Dict, List, Optional
 
@@ -22,6 +25,12 @@ supabase: Client = create_client(
     SUPABASE_KEY,
     options=ClientOptions(postgrest_client_timeout=30),
 )
+
+logger = logging.getLogger(__name__)
+
+MAX_SUPABASE_RETRIES = int(os.getenv("SUPABASE_MAX_RETRIES", "3"))
+RETRY_BACKOFF_BASE = float(os.getenv("SUPABASE_RETRY_BASE_SECONDS", "0.5"))
+RETRY_BACKOFF_CAP = float(os.getenv("SUPABASE_RETRY_CAP_SECONDS", "4"))
 
 
 @dataclass
@@ -53,10 +62,29 @@ class PhoneRecord:
 
 
 def _execute(query) -> List[PhoneRecord]:
-    try:
-        response = query.execute()
-    except Exception as exc:  # noqa: BLE001
-        raise RuntimeError(f"Supabase query failed: {exc}") from exc
+    last_error: Optional[Exception] = None
+    for attempt in range(1, MAX_SUPABASE_RETRIES + 1):
+        try:
+            response = query.execute()
+            break
+        except Exception as exc:  # noqa: BLE001
+            last_error = exc
+            logger.warning(
+                "Supabase query failed (attempt %s/%s): %s",
+                attempt,
+                MAX_SUPABASE_RETRIES,
+                exc,
+            )
+            if attempt >= MAX_SUPABASE_RETRIES:
+                raise RuntimeError(f"Supabase query failed after {MAX_SUPABASE_RETRIES} attempts: {exc}") from exc
+
+            backoff = min(RETRY_BACKOFF_BASE * (2 ** (attempt - 1)), RETRY_BACKOFF_CAP)
+            jitter = random.uniform(0, 0.3)
+            time.sleep(backoff + jitter)
+    else:
+        if last_error:
+            raise RuntimeError(f"Supabase query failed: {last_error}") from last_error
+        raise RuntimeError("Supabase query failed: unknown error")
 
     data = getattr(response, "data", None)
     if not isinstance(data, list):

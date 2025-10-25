@@ -1,10 +1,12 @@
 """FastAPI wrapper for the mobile shopping agent."""
 import asyncio
 import logging
+import os
 from typing import Any, Dict, List, Optional
 
 from fastapi import FastAPI, HTTPException
 from fastapi.encoders import jsonable_encoder
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 try:
@@ -19,7 +21,7 @@ from google.genai import types as genai_types
 
 APP_NAME = "mobile-shopping-agent"
 DEFAULT_USER_ID = "default-user"
-API_REQUEST_TIMEOUT_SECONDS = 60.0
+API_REQUEST_TIMEOUT_SECONDS = float(os.getenv("API_REQUEST_TIMEOUT_SECONDS", "90"))
 AGENT_RUN_TIMEOUT_SECONDS = API_REQUEST_TIMEOUT_SECONDS
 
 logger = logging.getLogger(__name__)
@@ -44,6 +46,17 @@ class ChatResponse(BaseModel):
 
 
 app = FastAPI(title="Mobile Shopping Agent API", version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 async def _ensure_session(session_id: Optional[str]) -> str:

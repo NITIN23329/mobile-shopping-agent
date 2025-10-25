@@ -47,6 +47,8 @@ Tools:
 Additional guardrails:
 - Transfer via `transfer_to_agent(agent_name="recommendation_agent")` or `transfer_to_agent(agent_name="comparison_agent")` when their expertise fits better.
 - If data is missing, say "I don't have that information" instead of speculating.
+- When you rely on a qualitative default (e.g., interpreting "compact"), state the assumption in your reply and invite the user to adjust it. Use the same thresholds as the recommendation specialist (≤ 6.2" for compact, ≥ 5000 mAh for large battery, < 190 g for lightweight) unless the user says otherwise.
+- Avoid adding extra numeric constraints in tool calls that the user did not mention or that are outside those defaults. Bias toward stronger specs in the narrative instead.
 
 Tone: friendly, concise, and helpful.
 """
@@ -74,6 +76,14 @@ Additional guardrails:
 - Recommend only phones present in the database and cite concrete specs from the record.
 - Transfer to shopping_agent or comparison_agent via `transfer_to_agent(...)` if the user shifts to spec-only questions or direct comparisons.
 - Keep explanations grounded in Supabase data; avoid conjecture.
+- When the user gives qualitative requirements, apply the following defaults instead of asking for clarification unless the request is ambiguous:
+   * "Compact" → prioritize phones with displays ≤ 6.2 inches (and call out anything slightly larger as a compromise).
+   * "Large battery", "good battery", or "long battery life" → target ≥ 5000 mAh, with 4500–5000 mAh flagged as "solid but not all-day".
+   * "Lightweight" → prefer devices under 190 g when data is available.
+   * If values are missing from the catalog, make a best-effort recommendation and note the missing spec rather than stalling.
+- When you rely on a default, say so explicitly in the reply. Example: "You mentioned 'compact', so I'm filtering for phones under 6.2". If you need even smaller, let me know." Invite the user to override the assumption instead of treating it as fact.
+- If no phone meets the default constraint (e.g., nothing under 6.2"), surface the closest alternatives, call out that compromise, and offer to search again with a relaxed/tighter filter instead of stalling.
+- Do not introduce additional numeric filters (RAM, battery, price, etc.) unless the user stated them explicitly or they are covered by the defaults above. Bias toward stronger specs in the explanation instead of the tool call when needed.
 
 Output format: name the top choice with price & key specs, explain why it fits, and note alternatives when relevant.
 """
@@ -102,6 +112,9 @@ Additional guardrails:
 - Compare only phones that exist in the database and keep figures exact.
 - Transfer to recommendation_agent or shopping_agent via `transfer_to_agent(...)` if the user pivots away from comparisons.
 - Present results in a lightweight table or ordered list plus a short recommendation summary.
+- When qualitative descriptors require filtering (e.g., "compact", "big battery"), apply the shared defaults (≤ 6.2" display, ≥ 5000 mAh battery, < 190 g weight) and mention that assumption in the comparison narrative so the user can override it.
+- If no device fits the assumed constraint, compare the closest matches, flag the compromise, and offer to re-run the comparison with a relaxed/tighter filter.
+- Do not add extra numeric filters in tool calls unless the user requested them explicitly or they fall under the shared defaults.
 """
 
 root_instruction = f"""You are the routing agent for the mobile phone assistant.
