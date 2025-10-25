@@ -234,7 +234,11 @@ def _parse_screen_size(phone: Dict[str, Any]) -> Optional[float]:
         return None
 
     text = " ".join(pieces)
-    match = re.search(r"(\d+(?:\.\d+)?)\s*(?:inch|inches|in)\b", text, flags=re.IGNORECASE)
+    match = re.search(
+        r"(\d+(?:\.\d+)?)\s*(?:inch(?:es)?|in\.?|\"|″|”|′|')",
+        text,
+        flags=re.IGNORECASE,
+    )
     if not match:
         return None
     try:

@@ -89,7 +89,7 @@ export function buildComparisonRows(phones: PhoneRecord[]): ComparisonRow[] {
     },
     {
       label: "Display",
-  resolver: (phone) => getSpotlightField(phone, ["display", "screen_size"]),
+      resolver: (phone) => getSpotlightField(phone, ["display", "screen_size"]),
     },
     {
       label: "Performance",
@@ -184,4 +184,151 @@ export function buildPhoneHighlights(phone: PhoneRecord): Array<{ label: string;
   push("Front Camera", spotlight?.front_camera ?? spotlight?.selfie_camera);
 
   return highlights.slice(0, 4);
+}
+
+export function buildPhoneSummary(phone: PhoneRecord): {
+  memory?: string;
+  chipset?: string;
+  price?: string;
+} {
+  const ram = getSpotlightField(phone, ["ram_size", "memory"]);
+  const storage = getSpotlightField(phone, ["storage", "storage_options", "storage_variants"]);
+  const chipsetRaw = extractChipset(phone);
+  const priceRaw = phone.price;
+
+  const memory = joinParts(formatSummaryValue(ram), formatSummaryValue(storage), " / ");
+  const chipset = formatSummaryValue(chipsetRaw, 40);
+  const price = formatSummaryValue(extractPrimaryPrice(priceRaw), 32);
+
+  return { memory, chipset, price };
+}
+
+function extractChipset(phone: PhoneRecord): string | undefined {
+  const spotlight = toRecord(phone.spotlight);
+  const candidates: unknown[] = [];
+
+  if (spotlight) {
+    candidates.push(
+      spotlight.chipset,
+      spotlight.processor,
+      spotlight.performance,
+      spotlight.summary,
+    );
+  }
+
+  for (const candidate of candidates) {
+    const text = normalizeValue(candidate);
+    if (text) {
+      return text;
+    }
+  }
+
+  const allSpecs = toRecord(phone.all_specs);
+  if (!allSpecs) {
+    return undefined;
+  }
+
+  const sections = ["Performance", "Platform", "Hardware"];
+  for (const section of sections) {
+    const entries = allSpecs[section];
+    if (!Array.isArray(entries)) {
+      continue;
+    }
+    for (const entry of entries) {
+      if (!entry || typeof entry !== "object") {
+        continue;
+      }
+      const label = normalizeValue(
+        (entry as JsonRecord).title ||
+          (entry as JsonRecord).label ||
+          (entry as JsonRecord).name ||
+          (entry as JsonRecord).spec,
+      );
+      const info = normalizeValue(
+        (entry as JsonRecord).info ||
+          (entry as JsonRecord).value ||
+          (entry as JsonRecord).details,
+      );
+
+      if (!label) {
+        continue;
+      }
+
+      const lowerLabel = label.toLowerCase();
+      if (lowerLabel.includes("chipset") || lowerLabel.includes("processor")) {
+        return info || label;
+      }
+      if (!info) {
+        continue;
+      }
+      if (lowerLabel.includes("cpu") || lowerLabel.includes("platform")) {
+        return info;
+      }
+    }
+  }
+
+  return undefined;
+}
+
+function normalizeValue(value: unknown): string | undefined {
+  if (!value) {
+    return undefined;
+  }
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    return trimmed || undefined;
+  }
+  if (Array.isArray(value)) {
+    const joined = value
+      .map((item) => (typeof item === "string" ? item.trim() : undefined))
+      .filter(Boolean)
+      .join(", ");
+    return joined || undefined;
+  }
+  if (typeof value === "object") {
+    const record = value as JsonRecord;
+    const parts = [record.text, record.value, record.info]
+      .map((part) => (typeof part === "string" ? part.trim() : undefined))
+      .filter(Boolean)
+      .join(" ");
+    return parts || undefined;
+  }
+  return undefined;
+}
+
+function extractPrimaryPrice(priceText: string | undefined): string | undefined {
+  if (!priceText) {
+    return undefined;
+  }
+  const currencyMatch = priceText.match(/(?:₹|rs\.?|inr)\s*([\d,]+)/i);
+  if (currencyMatch) {
+    return `₹${currencyMatch[1]}`;
+  }
+  const numberMatch = priceText.match(/\b(\d[\d,]{3,})\b/);
+  if (numberMatch) {
+    return numberMatch[1];
+  }
+  return priceText.split(/[|,]/)[0]?.trim() || undefined;
+}
+
+function formatSummaryValue(value: string | undefined, maxLength = 30): string | undefined {
+  if (!value) {
+    return undefined;
+  }
+  const firstSegment = value.split(/\s*[|•;/]\s*|,\s*/)[0]?.trim() || value.trim();
+  if (!firstSegment) {
+    return undefined;
+  }
+  if (firstSegment.length <= maxLength) {
+    return firstSegment;
+  }
+  return `${firstSegment.slice(0, maxLength - 1)}…`;
+}
+
+function joinParts(left?: string, right?: string, separator = " "): string | undefined {
+  const parts = [left, right].filter((part): part is string => Boolean(part));
+  if (parts.length === 0) {
+    return undefined;
+  }
+  return parts.join(separator);
 }

@@ -8,6 +8,15 @@ const MAX_MESSAGES = 50;
 const MAX_DEBUG_ENTRIES = 60;
 const DEBUG_ENABLED = Boolean(import.meta.env.DEV || import.meta.env.VITE_DEBUG_LOGGING === "true");
 const INVALID_SESSION_VALUES = new Set(["", "undefined", "null", "nan"]);
+const DEFAULT_REQUEST_TIMEOUT_MS = 120_000;
+
+const REQUEST_TIMEOUT_MS = (() => {
+  const raw = Number.parseInt(import.meta.env.VITE_REQUEST_TIMEOUT_MS ?? "", 10);
+  if (Number.isFinite(raw) && raw > 0) {
+    return raw;
+  }
+  return DEFAULT_REQUEST_TIMEOUT_MS;
+})();
 
 type DebugLevel = "info" | "error";
 
@@ -73,6 +82,7 @@ export function useChat() {
   const [isSending, setIsSending] = useState(false);
   const [debugEntries, setDebugEntries] = useState<DebugEntry[]>([]);
   const abortRef = useRef<AbortController | null>(null);
+  const abortReasonRef = useRef<"timeout" | "cancel" | null>(null);
 
   const logDebug = useCallback<LogFn>((level, message, details) => {
     if (!DEBUG_ENABLED) {
@@ -173,6 +183,16 @@ export function useChat() {
       setIsSending(true);
       const controller = new AbortController();
       abortRef.current = controller;
+      abortReasonRef.current = null;
+      const timeoutId = window.setTimeout(() => {
+        if (!controller.signal.aborted) {
+          abortReasonRef.current = "timeout";
+          controller.abort();
+          logDebug("error", "Request aborted due to timeout", {
+            timeoutMs: REQUEST_TIMEOUT_MS,
+          });
+        }
+      }, REQUEST_TIMEOUT_MS);
 
       let succeeded = false;
       try {
@@ -206,16 +226,33 @@ export function useChat() {
           raw: response.raw_response,
         }));
       } catch (error) {
-        logDebug("error", "Failed to send message", error instanceof Error ? error.message : error);
+        let errorMessage: string;
+        if (error instanceof DOMException && error.name === "AbortError") {
+          if (abortReasonRef.current === "timeout") {
+            errorMessage = `Request timed out after ${Math.round(REQUEST_TIMEOUT_MS / 1000)}s`;
+          } else if (abortReasonRef.current === "cancel") {
+            errorMessage = "Request cancelled";
+          } else {
+            errorMessage = "Request aborted";
+          }
+        } else if (error instanceof Error) {
+          errorMessage = error.message;
+        } else {
+          errorMessage = "Unknown error";
+        }
+
+        logDebug("error", "Failed to send message", errorMessage);
         upsertAssistantMessage(assistantId, (message) => ({
           ...message,
           status: "error",
-          error: error instanceof Error ? error.message : "Unknown error",
+          error: errorMessage,
         }));
         succeeded = false;
       } finally {
         setIsSending(false);
         abortRef.current = null;
+        abortReasonRef.current = null;
+        window.clearTimeout(timeoutId);
       }
 
       return succeeded;
@@ -225,6 +262,7 @@ export function useChat() {
 
   const cancel = useCallback(() => {
     if (abortRef.current) {
+      abortReasonRef.current = "cancel";
       abortRef.current.abort();
       abortRef.current = null;
       setIsSending(false);

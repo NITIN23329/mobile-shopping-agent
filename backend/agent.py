@@ -37,7 +37,8 @@ except ImportError:
         get_root_agent_instruction,
     )
 
-load_dotenv()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 # Initialize Gemini
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")

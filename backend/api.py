@@ -21,7 +21,7 @@ from google.genai import types as genai_types
 
 APP_NAME = "mobile-shopping-agent"
 DEFAULT_USER_ID = "default-user"
-API_REQUEST_TIMEOUT_SECONDS = float(os.getenv("API_REQUEST_TIMEOUT_SECONDS", "90"))
+API_REQUEST_TIMEOUT_SECONDS = float(os.getenv("API_REQUEST_TIMEOUT_SECONDS", "120"))
 AGENT_RUN_TIMEOUT_SECONDS = API_REQUEST_TIMEOUT_SECONDS
 
 logger = logging.getLogger(__name__)
