@@ -13,6 +13,24 @@ except ImportError:
 
 # ======================= HELPERS =======================
 
+
+def _flatten_text(value: Any) -> List[str]:
+    if isinstance(value, str):
+        return [value]
+    if isinstance(value, (list, tuple, set)):
+        texts: List[str] = []
+        for item in value:
+            texts.extend(_flatten_text(item))
+        return texts
+    if isinstance(value, dict):
+        texts: List[str] = []
+        for item in value.values():
+            texts.extend(_flatten_text(item))
+        return texts
+    if value is None:
+        return []
+    return [str(value)]
+
 def _parse_lowest_price(phone: Dict[str, Any]) -> Optional[int]:
     price_text = phone.get("price") or ""
     values: List[int] = []
@@ -91,15 +109,224 @@ def _parse_refresh_rate(phone: Dict[str, Any]) -> Optional[int]:
     return None
 
 
+def _parse_max_storage(phone: Dict[str, Any]) -> Optional[int]:
+    pieces: List[str] = []
+    spotlight = phone.get("spotlight") or {}
+    for key in ("storage", "storage_options", "storage_size", "storage_capacity", "storage_variants"):
+        for text in _flatten_text(spotlight.get(key)):
+            pieces.append(text)
+
+    for entry in (phone.get("all_specs") or {}).get("Memory", []):
+        for field in ("info", "value", "details"):
+            value = entry.get(field)
+            if value:
+                pieces.extend(_flatten_text(value))
+
+    if not pieces:
+        return None
+
+    matches = re.findall(r"(\d+(?:\.\d+)?)\s*(TB|GB)", " ".join(pieces), flags=re.IGNORECASE)
+    if not matches:
+        return None
+
+    capacities: List[float] = []
+    for number, unit in matches:
+        try:
+            value = float(number)
+        except ValueError:
+            continue
+        if unit.upper() == "TB":
+            capacities.append(value * 1024)
+        else:
+            capacities.append(value)
+
+    if not capacities:
+        return None
+    return int(max(capacities))
+
+
+def _camera_texts(phone: Dict[str, Any]) -> Dict[str, List[str]]:
+    texts: Dict[str, List[str]] = {"rear": [], "front": []}
+    spotlight = phone.get("spotlight") or {}
+
+    rear_keys = ("rear_camera", "rear_camera_setup", "rear_camera_primary", "main_camera", "camera", "primary_camera")
+    front_keys = ("front_camera", "selfie_camera", "front_camera_setup")
+
+    for key in rear_keys:
+        for text in _flatten_text(spotlight.get(key)):
+            texts["rear"].append(text)
+
+    for key in front_keys:
+        for text in _flatten_text(spotlight.get(key)):
+            texts["front"].append(text)
+
+    all_specs = phone.get("all_specs") or {}
+    for section_name, entries in all_specs.items():
+        if not isinstance(entries, list):
+            continue
+        section_lower = section_name.lower()
+        is_camera_section = "camera" in section_lower
+        if not is_camera_section:
+            continue
+
+        target_bucket = "rear"
+        if any(term in section_lower for term in ("selfie", "front")):
+            target_bucket = "front"
+
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            label = (entry.get("title") or entry.get("label") or entry.get("name") or entry.get("spec") or "")
+            info = entry.get("info") or entry.get("value") or ""
+            combined = " ".join(part for part in [label, info] if part)
+            if not combined:
+                continue
+
+            lower_label = label.lower()
+            if any(term in lower_label for term in ("front", "selfie")):
+                texts["front"].append(combined)
+            elif any(term in lower_label for term in ("rear", "back", "main", "primary", "triple", "quad")):
+                texts["rear"].append(combined)
+            else:
+                texts[target_bucket].append(combined)
+
+    return texts
+
+
+def _parse_camera_megapixels(phone: Dict[str, Any], which: str) -> Optional[float]:
+    camera_data = _camera_texts(phone)
+    text = " ".join(camera_data.get(which, []))
+    if not text:
+        return None
+
+    matches = re.findall(r"(\d+(?:\.\d+)?)\s*MP", text, flags=re.IGNORECASE)
+    if not matches:
+        return None
+
+    values: List[float] = []
+    for match in matches:
+        try:
+            values.append(float(match))
+        except ValueError:
+            continue
+
+    if not values:
+        return None
+    return max(values)
+
+
+def _parse_screen_size(phone: Dict[str, Any]) -> Optional[float]:
+    spotlight = phone.get("spotlight") or {}
+    pieces: List[str] = []
+
+    for key in ("display_size", "screen_size", "display"):
+        for text in _flatten_text(spotlight.get(key)):
+            pieces.append(text)
+
+    display_specs = (phone.get("all_specs") or {}).get("Display", [])
+    for entry in display_specs:
+        label = entry.get("title") or entry.get("label") or ""
+        info = entry.get("info") or entry.get("value") or ""
+        combined = " ".join(part for part in [label, info] if part)
+        pieces.append(combined)
+
+    if not pieces:
+        return None
+
+    text = " ".join(pieces)
+    match = re.search(r"(\d+(?:\.\d+)?)\s*(?:inch|inches|in)\b", text, flags=re.IGNORECASE)
+    if not match:
+        return None
+    try:
+        return float(match.group(1))
+    except ValueError:
+        return None
+
+
+def _matches_os(phone: Dict[str, Any], os_query: str) -> bool:
+    target = (os_query or "").strip().lower()
+    if not target:
+        return True
+
+    pieces: List[str] = []
+    spotlight = phone.get("spotlight") or {}
+    for key in ("os_version", "os", "software"):
+        for text in _flatten_text(spotlight.get(key)):
+            pieces.append(text)
+
+    specs = phone.get("all_specs") or {}
+    for section in ("Performance", "Software", "General", "Platform"):
+        for entry in specs.get(section, []):
+            segment = " ".join(str(entry.get(field) or "") for field in ("title", "label", "info", "value"))
+            if segment.strip():
+                pieces.append(segment)
+
+    combined = " ".join(pieces).lower()
+    return all(token in combined for token in target.split()) if combined else False
+
+
+def _matches_network(phone: Dict[str, Any], network_query: str) -> bool:
+    target = (network_query or "").strip().lower()
+    if not target:
+        return True
+
+    pieces: List[str] = []
+    spotlight = phone.get("spotlight") or {}
+    for key in ("network", "network_support", "network_tech", "connectivity", "sim"):
+        for text in _flatten_text(spotlight.get(key)):
+            pieces.append(text)
+
+    specs = phone.get("all_specs") or {}
+    for section in ("Connectivity", "Network", "Sim"):
+        for entry in specs.get(section, []):
+            segment = " ".join(str(entry.get(field) or "") for field in ("title", "label", "info", "value"))
+            if segment.strip():
+                pieces.append(segment)
+
+    combined = " ".join(pieces).lower()
+    return target in combined if combined else False
+
+
+def _matches_display_type(phone: Dict[str, Any], display_query: str) -> bool:
+    target = (display_query or "").strip().lower()
+    if not target:
+        return True
+
+    pieces: List[str] = []
+    spotlight = phone.get("spotlight") or {}
+    for key in ("display_type", "display", "screen"):
+        for text in _flatten_text(spotlight.get(key)):
+            pieces.append(text)
+
+    display_specs = (phone.get("all_specs") or {}).get("Display", [])
+    for entry in display_specs:
+        segment = " ".join(str(entry.get(field) or "") for field in ("title", "label", "info", "value"))
+        if segment.strip():
+            pieces.append(segment)
+
+    combined = " ".join(pieces).lower()
+    return target in combined if combined else False
+
+
 # ======================= PHONE SEARCH TOOLS =======================
 
 def search_phones_by_filters(
     max_price: Optional[int] = None,
     min_price: Optional[int] = None,
     brand: Optional[str] = None,
+    os_name: Optional[str] = None,
     min_ram: Optional[int] = None,
+    min_storage: Optional[int] = None,
+    max_storage: Optional[int] = None,
     battery_threshold: Optional[int] = None,
     refresh_rate: Optional[int] = None,
+    min_refresh_rate: Optional[int] = None,
+    display_type: Optional[str] = None,
+    min_screen_size: Optional[float] = None,
+    max_screen_size: Optional[float] = None,
+    min_front_camera_mp: Optional[float] = None,
+    min_rear_camera_mp: Optional[float] = None,
+    network: Optional[str] = None,
     tool_context: Optional[ToolContext] = None
 ) -> Dict[str, Any]:
     """
@@ -109,9 +336,19 @@ def search_phones_by_filters(
         max_price: Maximum price in rupees
         min_price: Minimum price in rupees
         brand: Brand name (e.g., "Google", "Samsung", "Apple")
+        os_name: Operating system preference (e.g., "Android 14", "iOS")
         min_ram: Minimum RAM in GB
+        min_storage: Minimum storage in GB (512 for 512 GB, 1024 for 1 TB)
+        max_storage: Maximum storage in GB
         battery_threshold: Minimum battery capacity in mAh
-        refresh_rate: Minimum refresh rate in Hz
+        refresh_rate: Minimum refresh rate in Hz (alias of min_refresh_rate)
+        min_refresh_rate: Minimum refresh rate in Hz
+        display_type: Display technology keyword (e.g., "AMOLED", "LTPO")
+        min_screen_size: Minimum display size in inches
+        max_screen_size: Maximum display size in inches
+        min_front_camera_mp: Minimum front camera resolution in MP
+        min_rear_camera_mp: Minimum rear camera resolution in MP
+        network: Network support keyword (e.g., "5G", "Wi-Fi 6E")
         tool_context: Context passed by ADK framework
     
     Returns:
@@ -121,6 +358,8 @@ def search_phones_by_filters(
         - "Find phones under 30000" → max_price=30000
         - "Samsung phones with 8GB RAM" → brand="Samsung", min_ram=8
         - "Best battery phones" → battery_threshold=5000
+        - "Android 14 phones with 256GB storage" → os_name="Android 14", min_storage=256
+        - "Compact AMOLED phone with great selfie camera" → display_type="AMOLED", max_screen_size=6.3, min_front_camera_mp=32
     """
     filters: Dict[str, Any] = {}
     if max_price is not None:
@@ -129,12 +368,31 @@ def search_phones_by_filters(
         filters["min_price"] = min_price
     if brand is not None:
         filters["brand"] = brand
+    if os_name is not None:
+        filters["os_name"] = os_name
     if min_ram is not None:
         filters["min_ram"] = min_ram
+    if min_storage is not None:
+        filters["min_storage"] = min_storage
+    if max_storage is not None:
+        filters["max_storage"] = max_storage
     if battery_threshold is not None:
         filters["battery_threshold"] = battery_threshold
-    if refresh_rate is not None:
-        filters["refresh_rate"] = refresh_rate
+    effective_refresh = min_refresh_rate if min_refresh_rate is not None else refresh_rate
+    if effective_refresh is not None:
+        filters["min_refresh_rate"] = effective_refresh
+    if display_type is not None:
+        filters["display_type"] = display_type
+    if min_screen_size is not None:
+        filters["min_screen_size"] = min_screen_size
+    if max_screen_size is not None:
+        filters["max_screen_size"] = max_screen_size
+    if min_front_camera_mp is not None:
+        filters["min_front_camera_mp"] = min_front_camera_mp
+    if min_rear_camera_mp is not None:
+        filters["min_rear_camera_mp"] = min_rear_camera_mp
+    if network is not None:
+        filters["network"] = network
 
     raw_phones = [record.to_dict() for record in get_all_phones()]
     results: List[Dict[str, Any]] = []
@@ -143,8 +401,14 @@ def search_phones_by_filters(
         ram_value = _parse_max_ram(phone)
         battery_value = _parse_battery_capacity(phone)
         refresh_value = _parse_refresh_rate(phone)
+        storage_value = _parse_max_storage(phone)
+        screen_size_value = _parse_screen_size(phone)
+        front_camera_value = _parse_camera_megapixels(phone, "front")
+        rear_camera_value = _parse_camera_megapixels(phone, "rear")
 
         if brand and phone.get("brand_name", "").lower() != brand.lower():
+            continue
+        if os_name and not _matches_os(phone, os_name):
             continue
         if max_price is not None and price_value is not None and price_value > max_price:
             continue
@@ -152,9 +416,25 @@ def search_phones_by_filters(
             continue
         if min_ram is not None and ram_value is not None and ram_value < min_ram:
             continue
+        if min_storage is not None and storage_value is not None and storage_value < min_storage:
+            continue
+        if max_storage is not None and storage_value is not None and storage_value > max_storage:
+            continue
         if battery_threshold is not None and battery_value is not None and battery_value < battery_threshold:
             continue
-        if refresh_rate is not None and refresh_value is not None and refresh_value < refresh_rate:
+        if effective_refresh is not None and refresh_value is not None and refresh_value < effective_refresh:
+            continue
+        if display_type and not _matches_display_type(phone, display_type):
+            continue
+        if min_screen_size is not None and screen_size_value is not None and screen_size_value < min_screen_size:
+            continue
+        if max_screen_size is not None and screen_size_value is not None and screen_size_value > max_screen_size:
+            continue
+        if min_front_camera_mp is not None and front_camera_value is not None and front_camera_value < min_front_camera_mp:
+            continue
+        if min_rear_camera_mp is not None and rear_camera_value is not None and rear_camera_value < min_rear_camera_mp:
+            continue
+        if network and not _matches_network(phone, network):
             continue
         results.append(phone)
     

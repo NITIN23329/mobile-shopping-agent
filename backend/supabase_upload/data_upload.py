@@ -1,4 +1,7 @@
-from supabase import create_client, Client, os
+from supabase import create_client, Client
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 url = os.getenv("SUPABASE_URL")
 key = os.getenv("SUPABASE_KEY")
@@ -1620,7 +1623,7 @@ data = [
         }
       ]
     },
-    "price": "₹10,999"
+    "price": "64GB 4GB RAM ₹10,999"
   },
   {
     "brand_name": "Samsung",
@@ -2175,7 +2178,7 @@ data = [
       "display_resolution": "1440x3120 pixels",
       "camera_pixels": "200 MP",
       "video_pixels": "4320p",
-      "ram_size": "12/16 GB RAM",
+      "ram_size": "12 GB RAM",
       "chipset": "Snapdragon 8 Elite",
       "battery_size": "5000 mAh",
       "battery_type": "45W15W",
@@ -2254,7 +2257,7 @@ data = [
         },
         {
           "title": "Internal",
-          "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 1TB 16GB RAM"
+          "info": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
         }
       ],
       "Main Camera": [
@@ -2296,7 +2299,7 @@ data = [
         }
       ]
     },
-    "price": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 1TB 16GB RAM"
+    "price": "256GB 12GB RAM: ₹1,29,999, 512GB 12GB RAM: ₹1,39,999, 1TB 12GB RAM: ₹1,59,999"
   },
   {
     "brand_name": "Samsung",
@@ -4162,7 +4165,7 @@ data = [
         }
       ]
     },
-    "price": "256GB 8GB RAM 34,999, 512GB 12GB RAM ₹42,999"
+    "price": "256GB 8GB RAM ₹34,999, 512GB 12GB RAM ₹42,999"
   },
   {
     "brand_name": "OnePlus",
@@ -5777,7 +5780,7 @@ data = [
         }
       ]
     },
-    "price": "₹79,999"
+    "price": "256GB 12GB RAM ₹79,999"
   },
   {
     "brand_name": "Google",
