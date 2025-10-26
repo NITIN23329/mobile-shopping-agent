@@ -22,7 +22,7 @@ const DebugPanel = ({ enabled, entries, sessionId, apiBaseUrl, isSending, onClea
   }
 
   return (
-    <div className="fixed bottom-24 left-4 z-50 text-xs">
+  <div className="fixed bottom-32 right-4 z-50 text-xs sm:bottom-24 sm:left-4 sm:right-auto">
       <button
         type="button"
         className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white/90 px-3 py-1.5 font-medium text-slate-600 shadow-card transition hover:border-brand-300 hover:text-brand-600"

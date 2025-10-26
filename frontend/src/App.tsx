@@ -65,12 +65,13 @@ function App() {
   const emptyState = messages.length === 0;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-white to-brand-100/40 text-slate-900">
+  <div className="min-h-screen overflow-x-hidden bg-gradient-to-br from-slate-100 via-white to-brand-100/40 text-slate-900">
       <ChatHeader />
-      <main className="mx-auto flex max-w-4xl flex-col gap-6 px-4 pb-40 pt-6 sm:px-6">
+  <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 pb-40 pt-6 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-3 rounded-3xl border border-brand-100/60 bg-white/80 px-4 py-3 text-xs text-slate-500 sm:text-sm">
-          <span>
-            Session <strong className="font-semibold text-brand-700">{sessionId ?? "new"}</strong>
+          <span className="flex items-center gap-1 truncate text-xs sm:text-sm" title={sessionId ?? "new"}>
+            Session
+            <strong className="truncate font-semibold text-brand-700">{sessionId ?? "new"}</strong>
           </span>
           {isSending && (
             <span className="flex items-center gap-2 text-brand-600">

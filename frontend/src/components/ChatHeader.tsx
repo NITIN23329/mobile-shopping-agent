@@ -4,7 +4,7 @@ import type { FC } from "react";
 const ChatHeader: FC = () => {
   return (
     <header className="sticky top-0 z-10 border-b border-slate-200 bg-gradient-to-br from-white/95 via-white/90 to-brand-50/80 backdrop-blur">
-  <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:flex-nowrap sm:px-6">
+  <div className="mx-auto flex w-full max-w-4xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:flex-nowrap sm:px-6">
         <div className="flex items-center gap-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 shadow-card">
             <Sparkles className="h-6 w-6" />
@@ -18,7 +18,7 @@ const ChatHeader: FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+  <div className="flex w-full items-center justify-center gap-2 sm:w-auto sm:justify-end">
           <a
             href="https://github.com/NITIN23329/mobile-shopping-agent"
             target="_blank"

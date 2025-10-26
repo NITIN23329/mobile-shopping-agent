@@ -46,12 +46,12 @@ const MessageComposer = ({
             maxLength={2000}
             disabled={disabled}
           />
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <div className="flex gap-2">
+          <div className="flex flex-col items-stretch gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
               <button
                 type="button"
                 onClick={onReset}
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-500 transition hover:border-brand-400 hover:text-brand-600"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-500 transition hover:border-brand-400 hover:text-brand-600 sm:w-auto"
               >
                 <RotateCcw className="h-4 w-4" aria-hidden />
                 New session
@@ -60,7 +60,7 @@ const MessageComposer = ({
                 <button
                   type="button"
                   onClick={onCancel}
-                  className="inline-flex items-center gap-2 rounded-full border border-transparent bg-brand-100 px-3 py-1.5 text-xs font-semibold text-brand-700 transition hover:bg-brand-200"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-transparent bg-brand-100 px-3 py-1.5 text-xs font-semibold text-brand-700 transition hover:bg-brand-200 sm:w-auto"
                 >
                   <CircleStop className="h-4 w-4" aria-hidden />
                   Cancel
@@ -70,7 +70,7 @@ const MessageComposer = ({
             <button
               type="submit"
               className={clsx(
-                "inline-flex items-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-card transition",
+                "inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-card transition sm:w-auto",
                 disabled && "opacity-60",
               )}
               disabled={disabled}
