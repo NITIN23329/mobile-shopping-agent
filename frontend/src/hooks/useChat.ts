@@ -208,7 +208,7 @@ export function useChat() {
         logDebug("info", "Dispatching chat request", payload);
         const response = await sendChatMessage(payload, controller.signal);
         persistSessionId(response, setSessionId, logDebug);
-        const phones = extractPhonesFromEvents(response.raw_response);
+  const phones = extractPhonesFromEvents(response.raw_response, response.reply);
 
         logDebug("info", "Received agent response", {
           sessionId: response.session_id,

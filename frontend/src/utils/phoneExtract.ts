@@ -2,7 +2,10 @@ import type { PhoneRecord } from "@/types/api";
 
 type JsonRecord = Record<string, unknown>;
 
-export function extractPhonesFromEvents(rawResponse: Record<string, unknown> | undefined): PhoneRecord[] {
+export function extractPhonesFromEvents(
+  rawResponse: Record<string, unknown> | undefined,
+  replyText?: string,
+): PhoneRecord[] {
   if (!rawResponse) {
     return [];
   }
@@ -38,7 +41,106 @@ export function extractPhonesFromEvents(rawResponse: Record<string, unknown> | u
   visit(rawResponse);
   events.forEach(visit);
 
+  if (!replyText) {
+    return collected;
+  }
+
+  const mentionText = normalize(replyText);
+  if (!mentionText) {
+    return collected;
+  }
+
+  const matched = collected.filter((phone) => {
+    const candidateNames = buildCandidateNames(phone);
+    return candidateNames.some((name) => mentionText.includes(name));
+  });
+  if (matched.length > 0) {
+    return matched;
+  }
+
+  const matchedBrands = new Set<string>();
+  collected.forEach((phone) => {
+    const brand = normalize(phone.brand_name);
+    if (brand && mentionText.includes(brand)) {
+      matchedBrands.add(brand);
+    }
+  });
+
+  if (matchedBrands.size > 0) {
+    const brandScoped = collected.filter((phone) => {
+      const brand = normalize(phone.brand_name);
+      if (!brand || !matchedBrands.has(brand)) {
+        return false;
+      }
+      const tokens = extractModelTokens(phone, brand);
+      if (!tokens.length) {
+        return true;
+      }
+      const strongTokens = tokens.filter((token) => token.length > 2 || /\d/.test(token));
+      if (!strongTokens.length) {
+        return tokens.some((token) => mentionText.includes(token));
+      }
+      return strongTokens.every((token) => mentionText.includes(token));
+    });
+    if (brandScoped.length > 0) {
+      return brandScoped;
+    }
+  }
+
   return collected;
+}
+
+function buildCandidateNames(phone: PhoneRecord): string[] {
+  const names = new Set<string>();
+  const phoneName = normalize(phone.phone_name);
+  const brandName = normalize(phone.brand_name);
+
+  if (phoneName) {
+    names.add(phoneName);
+  }
+  if (brandName && phoneName) {
+      const combined = normalize(`${phone.brand_name} ${phone.phone_name}`);
+      if (combined) {
+        names.add(combined);
+      }
+  }
+  if (brandName && !phoneName) {
+    names.add(brandName);
+  }
+
+  return Array.from(names).filter(Boolean);
+}
+
+function extractModelTokens(phone: PhoneRecord, brand: string | undefined): string[] {
+  const tokens = new Set<string>();
+  const addTokens = (value?: string) => {
+    const normalized = normalize(value);
+    if (!normalized) {
+      return;
+    }
+    normalized.split(" ").forEach((token) => {
+      if (token && token !== brand) {
+        tokens.add(token);
+      }
+    });
+  };
+
+  addTokens(phone.phone_name);
+  addTokens(phone.id);
+
+  return Array.from(tokens);
+}
+
+function normalize(value: unknown): string | undefined {
+  if (typeof value !== "string") {
+    return undefined;
+  }
+  const cleaned = value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return cleaned || undefined;
 }
 
 function looksLikePhone(value: Record<string, unknown>): boolean {

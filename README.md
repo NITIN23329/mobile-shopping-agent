@@ -2,6 +2,9 @@
 
 Gemini-powered shopping assistant built with the Google Agent Development Kit (ADK). The agent can search, compare, and explain mobile phones using a curated catalogue of realistic specs. A lightweight React frontend (planned under `frontend/`) will provide the public chat experience, while the FastAPI backend stays in Python.
 
+## Live Demo
+- Frontend (Vercel): https://mobile-shopping-agent-frontend-cwbtof0da-nitin23329s-projects.vercel.app/
+
 ## Tech Stack
 - **Backend**: FastAPI, Google ADK, Google Gemini via LiteLLM, Supabase Python client, Pydantic
 - **Frontend**: React + Vite (TypeScript), Tailwind CSS (or CSS modules), Axios/fetch for API calls *(scaffolding forthcoming)*
