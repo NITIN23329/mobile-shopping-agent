@@ -123,6 +123,13 @@ README.md                # You are here
 	 - Set `GOOGLE_API_KEY`, `SUPABASE_URL`, `SUPABASE_KEY` in the platform’s secret manager.
 	 - Enable CORS for your frontend origin.
 
+
+	 - **Deploying on Hugging Face Spaces**
+		 1. Create or update a Hugging Face Space (Docker runtime) such as [nitin23329/mobile-shopping-agent-backend](https://huggingface.co/spaces/nitin23329/mobile-shopping-agent-backend/tree/main) with the contents of `backend/`.
+		 2. Configure secrets in the Space settings (`GOOGLE_API_KEY`, `RAPIDAPI_KEY`, `RAPIDAPI_HOST`, `SUPABASE_URL`, `SUPABASE_KEY`, plus optional values like `API_REQUEST_TIMEOUT_SECONDS`).
+		 3. Push changes; the Space builds `backend/Dockerfile`, installs dependencies from `requirements.txt`, and runs Uvicorn on port `7860` (served via `https://<space>.hf.space`).
+		 4. Test `https://<space>.hf.space/health` to confirm the deployment before wiring the frontend.
+
 2. **Frontend (Vite build output)**
 	 - Run `npm run build` to emit static assets in `frontend/dist`.
 	 - Deploy to Vercel, Netlify, Cloudflare Pages, or GitHub Pages.

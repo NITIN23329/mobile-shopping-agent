@@ -159,6 +159,10 @@ def health_check() -> Dict[str, str]:
     return {"status": "ok"}
 
 
+@app.get("/", tags=["home"])
+def home_page() -> str:
+    return "Backend system for Mobile Shopping Agent , see: https://nitin23329-mobile-shopping-agent-backend.hf.space/docs#/"
+
 @app.post("/chat", response_model=ChatResponse, tags=["chat"])
 async def chat_endpoint(payload: ChatRequest) -> ChatResponse:
     message = (payload.message or "").strip()

@@ -4,7 +4,7 @@ import type { FC } from "react";
 const ChatHeader: FC = () => {
   return (
     <header className="sticky top-0 z-10 border-b border-slate-200 bg-gradient-to-br from-white/95 via-white/90 to-brand-50/80 backdrop-blur">
-      <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
+  <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:flex-nowrap sm:px-6">
         <div className="flex items-center gap-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 shadow-card">
             <Sparkles className="h-6 w-6" />
@@ -18,24 +18,24 @@ const ChatHeader: FC = () => {
             </p>
           </div>
         </div>
-        <div className="hidden items-center gap-2 sm:flex">
+        <div className="flex items-center gap-2">
           <a
             href="https://github.com/NITIN23329/mobile-shopping-agent"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:text-slate-900"
+            className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:text-slate-900 sm:px-3"
           >
             <Github className="h-4 w-4 transition group-hover:scale-110" />
-            <span>GitHub</span>
+            <span className="hidden sm:inline">GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/nitindas230202/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:text-slate-900"
+            className="group inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:text-slate-900 sm:px-3"
           >
             <Linkedin className="h-4 w-4 transition group-hover:scale-110" />
-            <span>LinkedIn</span>
+            <span className="hidden sm:inline">LinkedIn</span>
           </a>
         </div>
       </div>
