@@ -67,7 +67,7 @@ SUPABASE_KEY=your_supabase_service_or_anon_key
 Run the API locally:
 
 ```bash
-uvicorn backend.api:app --reload --port 8000
+uvicorn backend.app:app --reload --port 8000
 # health check: curl http://localhost:8000/health
 ```
 
