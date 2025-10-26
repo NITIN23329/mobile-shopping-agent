@@ -1,158 +1,173 @@
+git clone https://github.com/NITIN23329/mobile-shopping-agent.git
 # Mobile Shopping Agent (Google ADK)
 
-Gemini-powered shopping assistant built with the Google Agent Development Kit (ADK). The agent can search, compare, and explain mobile phones using a curated catalogue of realistic specs. A lightweight React frontend (planned under `frontend/`) will provide the public chat experience, while the FastAPI backend stays in Python.
+An end-to-end Gemini-powered shopping assistant built with the Google Agent Development Kit (ADK). The agent ingests a curated catalogue of mobile phones, answers natural-language queries, compares devices, and renders recommendations in a responsive React chat UI.
 
 ## Live Demo
-- Frontend (Vercel): https://mobile-shopping-agent-frontend-cwbtof0da-nitin23329s-projects.vercel.app/
+- Frontend (Vercel): https://mobile-shopping-agent-frontend-nitin23329s-projects.vercel.app?_vercel_share=AI7h6MowlQKC9mhHUfshpdfKNpmBaZPf
+- Backend API (Hugging Face Spaces): https://nitin23329-mobile-shopping-agent-backend.hf.space/ (Swagger docs at https://nitin23329-mobile-shopping-agent-backend.hf.space/docs)
 
-## Tech Stack
-- **Backend**: FastAPI, Google ADK, Google Gemini via LiteLLM, Supabase Python client, Pydantic
-- **Frontend**: React + Vite (TypeScript), Tailwind CSS (or CSS modules), Axios/fetch for API calls *(scaffolding forthcoming)*
-- **Tooling**: Conda for Python env management, Node.js (LTS) for the frontend build, GitHub for code hosting/deployment workflows
+## Feature Highlights
+- Conversational search that extracts intent (budget, brand, key features) from free-form prompts.
+- Comparison mode that contrasts two to three phones with structured spec cards and trade-off summaries.
+- Explainable recommendations reasoned directly from Supabase-sourced catalogue facts.
+- Safety guardrails that deflect adversarial prompts (prompt leakage, API key requests, toxic brand bashing).
+- Mobile-first web interface with product cards, comparison table, and persistent session management.
 
-## Requirements
+## Architecture & Tech Stack
+- **Frontend**: React + Vite (TypeScript), Tailwind CSS, Axios; deployed on Vercel.
+- **Backend**: FastAPI, Google ADK, Gemini via LiteLLM, Supabase Python client, Pydantic; deployed on Hugging Face Spaces Docker runtime.
+- **Data Layer**: Phone catalogue seeded from RapidAPI (`apikite/mobile-phones2`) into Supabase Postgres.
+- **Tooling**: Conda (Python), Node.js ≥ 18, nvm, GitHub Actions-ready structure.
 
-| Purpose | Tooling |
-| ------- | ------- |
-| Backend | Python 3.11, Conda (recommended), pip, Supabase service key, Google AI Studio API key |
-| Frontend | Node.js ≥ 18 (LTS), npm or pnpm, modern browser |
-| Shared | macOS/Linux/Windows, Git |
+### High-level Flow
+1. Users chat through the Vercel-hosted frontend.
+2. The client calls the FastAPI `/chat` endpoint with session context.
+3. The ADK agent orchestrates Gemini models plus custom tools:
+   - Vector/text search in Supabase for phones matching parsed constraints.
+   - Comparison tool assembling structured specs.
+4. Server replies stream back to the frontend, which renders rich cards matching the textual response.
 
-### Installing Node.js alongside Conda
+## Data Pipeline
+1. Fetch raw device records from RapidAPI (`mobile-phones2`).
+2. Normalize, filter, and enrich the data via `backend/supabase_upload/data_upload.py`.
+3. Load cleaned rows into Supabase Postgres (tables aligned with `backend/database.py` DTOs).
+4. Runtime queries pull from Supabase to keep model responses grounded in factual specs.
 
-The Python/Conda environment is untouched by Node, so you can install Node with any preferred method. Using `nvm` keeps versions isolated:
-
+To refresh the dataset:
 ```bash
-# install nvm (see https://github.com/nvm-sh/nvm#installing-and-updating)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-# load nvm in your current shell (or reopen terminal)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-# install Node LTS and set as default
-nvm install --lts
-nvm use --lts
+export RAPIDAPI_KEY=your_key
+export RAPIDAPI_HOST=mobile-phones2.p.rapidapi.com
+python backend/supabase_upload/data_upload.py
 ```
 
-Verify installation:
+## Prompt Design & Safety Strategy
+- **System instructions** (see `backend/agent_instructions.py`) reinforce neutral tone, sourcing from Supabase, and refuse unsafe requests.
+- **Guardrail heuristics** detect attempts to reveal prompts, request secrets, or incite toxic content, returning controlled refusal messages.
+- **Spec grounding**: model answers must reference catalogue facts; comparisons cite verifiable specs (battery, camera, chipset, price).
+- **Ambiguity handling**: when the query lacks constraints, the agent asks clarifying questions before recommending.
+- **Session memory**: lightweight history keeps context while enforcing a 50-message cap to avoid prompt bloat.
 
-```bash
-node -v   # should print >= 18.x
-npm -v
-```
+## Known Requirements Coverage
+- Conversational recommendations with structured rationales.
+- Comparison cards that list pros/cons, spec diffs, and price bands.
+- Ability to filter by brand, budget, and features (fast charging, camera, etc.).
+- Safety responses to adversarial prompts (prompt leak, API key, toxic language).
+- Public deployment links for both frontend and backend.
 
 ## Local Development
 
-### 1. Clone the repository
+### Prerequisites
+- Python 3.11 with Conda (recommended).
+- Node.js 18 LTS (via `nvm` or system installer).
+- Supabase project and service role key + Google AI Studio key + RapidAPI credentials for data refreshes.
 
+### Clone the repo
 ```bash
 git clone https://github.com/NITIN23329/mobile-shopping-agent.git
 cd mobile-shopping-agent
 ```
 
-### 2. Backend setup (FastAPI + Google ADK)
-
+### Backend setup
 ```bash
-conda create -n mobile-shopping-agent python=3.11  # once
+conda create -n mobile-shopping-agent python=3.11
 conda activate mobile-shopping-agent
 pip install -r requirements.txt
 ```
 
-Create `.env` at the project root and add:
-
+Create `.env` in the project root:
 ```
 GOOGLE_API_KEY=your_google_ai_studio_key
-SUPABASE_URL=your_supabase_project_url
-SUPABASE_KEY=your_supabase_service_or_anon_key
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_KEY=your_supabase_service_role_key
+RAPIDAPI_KEY=your_rapidapi_key
+RAPIDAPI_HOST=mobile-phones2.p.rapidapi.com
+API_REQUEST_TIMEOUT_SECONDS=120
 ```
 
-Run the API locally:
-
+Run locally:
 ```bash
-uvicorn backend.app:app --reload --port 8000
+uvicorn backend.api:app --reload --port 8000
 # health check: curl http://localhost:8000/health
 ```
 
-### 3. Frontend setup (React + Vite)
-
-> The `frontend/` scaffold will live beside `backend/`. Once generated:
-
+### Frontend setup
 ```bash
 cd frontend
 npm install
-cp .env.example .env.local  # if provided
+cp .env.example .env.local  # if present
 ```
 
-Add your backend URL to `.env.local` (during local dev this will be `http://localhost:8000`):
-
+Populate `.env.local`:
 ```
 VITE_API_BASE_URL=http://localhost:8000
+VITE_DEBUG_LOGGING=false
+VITE_REQUEST_TIMEOUT_MS=120000
 ```
 
-Start the dev server:
-
+Run the dev server:
 ```bash
 npm run dev -- --open
 ```
 
-The frontend will proxy requests to the FastAPI backend using the configured base URL.
-
-### 4. Running both together
-
+### Run frontend and backend together
 - Terminal A: `conda activate mobile-shopping-agent && uvicorn backend.api:app --reload --port 8000`
 - Terminal B: `cd frontend && npm run dev`
 
-Open the frontend UI (default `http://127.0.0.1:5173/`) and start chatting. The frontend includes product cards and comparison layouts to visualize structured replies from the agent.
+Visit http://127.0.0.1:5173/ to chat with the agent. Structured phone cards render beneath each agent reply.
 
 ## Project Layout
-
 ```
 backend/
-	agent.py               # Root agent plus sub-agent wiring and model bootstrap
-	agent_instructions.py  # Prompt definitions for all agents
-	tools.py               # ADK tool implementations backed by Supabase
-	database.py            # Supabase client integration and DTOs
-frontend/                # React + Vite app (created in upcoming steps)
-requirements.txt         # Backend Python dependencies
-README.md                # You are here
+  agent.py               # Gemini chat orchestrator and tool router
+  agent_instructions.py  # System prompts, safety and refusal templates
+  api.py                 # FastAPI routes (/chat, /health)
+  database.py            # Supabase client and DTO models
+  tools.py               # Tool implementations for catalogue search/comparison
+  supabase_upload/       # RapidAPI ingestion scripts and utilities
+frontend/
+  src/hooks/useChat.ts   # Chat state machine and request pipeline
+  src/utils/phoneExtract.ts # Maps agent events to rendered phone cards
+  ...                    # React components, styling, routing
+requirements.txt         # Backend dependencies
+README.md                # Project documentation (this file)
 ```
 
-## Deployment Overview
+## Deployment Strategy
 
-1. **Backend (FastAPI)**
-	 - Containerize with Docker or deploy directly to services like Render, Fly.io, Google Cloud Run, or Azure Web Apps.
-	 - Expose `/health` and `/chat` endpoints over HTTPS.
-	 - Set `GOOGLE_API_KEY`, `SUPABASE_URL`, `SUPABASE_KEY` in the platform’s secret manager.
-	 - Enable CORS for your frontend origin.
+### Backend on Hugging Face Spaces
+1. Push `backend/` to https://huggingface.co/spaces/nitin23329/mobile-shopping-agent-backend (Docker runtime).
+2. Set secrets: `GOOGLE_API_KEY`, `SUPABASE_URL`, `SUPABASE_KEY`, `RAPIDAPI_KEY`, `RAPIDAPI_HOST`, `API_REQUEST_TIMEOUT_SECONDS`.
+3. Build logs confirm Uvicorn serving on port 7860; health endpoint is https://nitin23329-mobile-shopping-agent-backend.hf.space/health.
+4. Swagger docs available at `/docs` for manual testing.
 
+### Frontend on Vercel
+1. Connect the repo or push the `frontend/` build output.
+2. Configure environment variables: `VITE_API_BASE_URL=https://nitin23329-mobile-shopping-agent-backend.hf.space`.
+3. `npm run build` produces static assets; Vercel deploys automatically.
+4. Production URL: https://mobile-shopping-agent-frontend-nitin23329s-projects.vercel.app/.
 
-	 - **Deploying on Hugging Face Spaces**
-		 1. Create or update a Hugging Face Space (Docker runtime) such as [nitin23329/mobile-shopping-agent-backend](https://huggingface.co/spaces/nitin23329/mobile-shopping-agent-backend/tree/main) with the contents of `backend/`.
-		 2. Configure secrets in the Space settings (`GOOGLE_API_KEY`, `RAPIDAPI_KEY`, `RAPIDAPI_HOST`, `SUPABASE_URL`, `SUPABASE_KEY`, plus optional values like `API_REQUEST_TIMEOUT_SECONDS`).
-		 3. Push changes; the Space builds `backend/Dockerfile`, installs dependencies from `requirements.txt`, and runs Uvicorn on port `7860` (served via `https://<space>.hf.space`).
-		 4. Test `https://<space>.hf.space/health` to confirm the deployment before wiring the frontend.
+### Post-deploy checks
+- Verify `/health` responds 200.
+- Run smoke queries: budget recommendation, two-phone comparison, safety refusal.
+- Confirm cards rendered match the textual recommendations (frontend uses reply text token matching for validation).
 
-2. **Frontend (Vite build output)**
-	 - Run `npm run build` to emit static assets in `frontend/dist`.
-	 - Deploy to Vercel, Netlify, Cloudflare Pages, or GitHub Pages.
-	 - Configure the `VITE_API_BASE_URL` environment variable to point at the hosted backend.
+## Testing & Validation
+- Manual regression passes cover: recommendations under budget, explicit brand filter, 1:1 comparisons, safety refusal prompts.
+- Frontend token matching ensures only phones mentioned in the reply render as cards.
+- Pending automation: add Playwright smoke tests and backend pytest suite (tracked in TODOs).
 
-3. **Verification**
-	 - Smoke test `https://<backend>/health`.
-	 - From the hosted frontend, send sample queries (recommendations, comparisons, feature explanations).
-
-## Customisation Tips
-- Update `backend/database.py` or the underlying Supabase table to add/modify phone entries.
-- Adjust prompts in `backend/agent_instructions.py` to tune agent tone, routing, or guardrails.
-- Extend `backend/tools.py` with additional Supabase queries or third-party integrations.
-- On the frontend, tweak card layouts, add filters, or integrate analytics/tracking as needed.
+## Known Limitations
+- Reliant on periodic RapidAPI snapshots; specs may drift from the latest market releases.
+- No persistent user authentication or personalized history beyond session storage.
+- Safety heuristics handle common prompt injections but are not formally verified.
+- Latency depends on Gemini response times; long comparisons may approach the 120s timeout.
 
 ## Troubleshooting
-- **Import errors for Google ADK models**: ensure `google-genai` ≥ 1.46.0 and `websockets` ≥ 15.0.1 (already declared in `requirements.txt`).
-- **FastAPI logs show timeouts**: the API enforces a 60-second timeout per request; long-running model calls will return HTTP 504.
-- **CORS errors in the browser**: confirm the backend deployment allows the frontend origin in its CORS configuration.
-- **Missing Node tooling**: rerun `nvm use --lts` or install Node from https://nodejs.org if you prefer a system-wide installer.
+- **Import errors for Google ADK models**: ensure `google-genai` ≥ 1.46.0 and `websockets` ≥ 15.0.1 (already in `requirements.txt`).
+- **Timeouts**: adjust `API_REQUEST_TIMEOUT_SECONDS` (backend) or `VITE_REQUEST_TIMEOUT_MS` (frontend) for longer-running calls.
+- **CORS issues**: confirm the backend allows the Vercel origin in its CORS middleware configuration.
+- **Dataset refresh failures**: check RapidAPI quota and Supabase service key permissions.
 
 ## License
 
