@@ -10,7 +10,7 @@ import type { ChatMessage } from "@/types/api";
 
 const SUGGESTED_PROMPTS = [
   "Best camera phone under ₹30,000",
-  "Compare Pixel 8a vs OnePlus 12R",
+  "Compare Pixel 9a vs OnePlus 13R",
   "Compact Android with excellent one-hand use",
   "Explain OIS vs EIS in simple terms",
 ];
