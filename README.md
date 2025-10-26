@@ -73,18 +73,42 @@ Visit http://127.0.0.1:3000/ to chat with the agent. Structured phone cards rend
 - Mobile-first web interface with product cards, comparison table, and persistent session management.
 
 ## Architecture & Tech Stack
-- **Frontend**: React + Vite (TypeScript), Tailwind CSS, Axios; deployed on Vercel.
-- **Backend**: FastAPI, Google ADK, Gemini via LiteLLM, Supabase Python client, Pydantic; deployed on Hugging Face Spaces Docker runtime.
-- **Data Layer**: Phone catalogue seeded from RapidAPI (`apikite/mobile-phones2`) into Supabase Postgres.
-- **Tooling**: Conda (Python), Node.js ≥ 18, nvm, GitHub Actions-ready structure.
 
-### High-level Flow
-1. Users chat through the Vercel-hosted frontend.
-2. The client calls the FastAPI `/chat` endpoint with session context.
-3. The ADK agent orchestrates Gemini models plus custom tools:
-   - Vector/text search in Supabase for phones matching parsed constraints.
-   - Comparison tool assembling structured specs.
-4. Server replies stream back to the frontend, which renders rich cards matching the textual response.
+### Frontend (Vercel)
+- React 18 + Vite + TypeScript front-end served as static assets on Vercel.
+- Tailwind CSS handles adaptive layout; custom hooks (`useChat`) coordinate API calls, optimistic UI, and timeout handling.
+- Axios/fetch abstraction in `frontend/src/api` attaches session identifiers and feeds responses into the card/comparison renderer.
+
+### Backend (Hugging Face Spaces)
+- FastAPI app (`backend/api.py`) exposes `/chat` and `/health` endpoints behind Uvicorn, packaged via Docker for Spaces.
+- Google Agent Development Kit bootstraps Gemini models through LiteLLM, enabling tool orchestration and streaming responses.
+- Dependency layer uses Pydantic models for request/response validation and structured traces.
+
+### Google ADK Agent Orchestration
+- Primary agent defined in `backend/agent.py` runs a planner-executor loop that evaluates user intent and invokes tools.
+- Tool set (`backend/tools.py`) contains:
+  - `search_catalogue` querying Supabase Postgres via RPC for budget/feature filters.
+  - `compare_models` assembling diff views and spec highlights for up to three handsets.
+  - `explain_feature` returning glossary-style summaries (e.g., OIS vs EIS) grounded in curated content.
+- Routing logic leans on ADK conversation memory to preserve context, with guardrails injected from `agent_instructions.py`.
+
+### Data & Persistence
+- RapidAPI `apikite/mobile-phones2` feed ingested through `backend/supabase_upload/data_upload.py`, normalized, and stored in Supabase tables.
+- Supabase service role key grants read/write access; runtime queries use row-level security safe service role channel restricted to deployed backend.
+- Postgres schema maintains device metadata, spec groups, and price bands to support structured comparisons.
+
+### Configuration & Tooling
+- Environment variables managed through `.env` locally and platform secret stores in production (Vercel + Spaces).
+- Conda environment isolates Python dependencies; Node.js ≥18 (via `nvm`) supports Vite build tooling.
+- Logging hooks prepared for integration with Hugging Face Space logs and Vercel analytics; optional DEBUG flag surfaces developer diagnostics.
+
+### End-to-end Request Flow
+1. User submits a query through the Vercel frontend; `useChat` stamps a session ID and dispatches to `/chat`.
+2. FastAPI validates payloads, spins up a Google ADK `AgentSession`, and feeds the message into Gemini with system instructions.
+3. Gemini planner calls custom tools as needed (search, compare, explain); each tool in turn queries Supabase or curated content.
+4. Tool outputs are reconciled into a final natural-language reply plus structured phone/event payloads.
+5. Frontend receives streaming chunks, completes the assistant message, and maps structured events to phone cards and comparison tables.
+6. Client stores session/context in local storage to persist history across refreshes while enforcing a 50-message cap.
 
 ## Data Pipeline
 1. Fetch raw device records from RapidAPI (`mobile-phones2`).
@@ -100,11 +124,13 @@ python backend/supabase_upload/data_upload.py
 ```
 
 ## Prompt Design & Safety Strategy
-- **System instructions** (see `backend/agent_instructions.py`) reinforce neutral tone, sourcing from Supabase, and refuse unsafe requests.
-- **Guardrail heuristics** detect attempts to reveal prompts, request secrets, or incite toxic content, returning controlled refusal messages.
-- **Spec grounding**: model answers must reference catalogue facts; comparisons cite verifiable specs (battery, camera, chipset, price).
-- **Ambiguity handling**: when the query lacks constraints, the agent asks clarifying questions before recommending.
-- **Session memory**: lightweight history keeps context while enforcing a 50-message cap to avoid prompt bloat.
+- **Layered system prompts**: `agent_instructions.py` defines core persona, factual sourcing directives, refusal templates, and enumerated disallowed content categories (prompt leaks, secret requests, harassment).
+- **Tool-usage constraints**: ADK planner explicitly describes each tool’s contract, forcing the model to ground answers in Supabase results rather than hallucinated specs.
+- **Input sanitation & guardrails**: pre-checks flag adversarial strings (e.g., “ignore previous instructions”, “reveal API key”) and redirect the model to refusal verbiage.
+- **Clarification routines**: missing constraints (budget, brand, quantity) trigger follow-up questions, reducing ambiguous or over-confident recommendations.
+- **Safety responses**: agent returns neutral refusals for toxicity or brand defamation requests, citing policy instead of engaging.
+- **Grounded reasoning**: comparison and explanation outputs include trace metadata so the frontend can render only devices mentioned, limiting hallucinated cards.
+- **Session governance**: rolling 50-message cap and timeout guards prevent prompt inflation and long-running generations.
 
 ## Known Requirements Coverage
 - Conversational recommendations with structured rationales.
@@ -152,6 +178,9 @@ README.md                # Project documentation (this file)
 
 
 ## Known Limitations
-- Reliant on periodic RapidAPI snapshots; specs may drift from the latest market releases.
-- No persistent user authentication or personalized history beyond session storage.
-- Latency depends on Gemini response times; long comparisons may approach the 120s timeout.
+- Catalogue freshness depends on manual RapidAPI ingestions; pricing and availability are not updated in real time.
+- Regional coverage is tuned for INR price bands; global currency or carrier-specific data is not modelled.
+- User sessions live only in browser storage; no account system, syncing, or analytics pipeline is in place.
+- Gemini-generated responses can still be verbose; without rate limiting, simultaneous heavy usage could hit Google ADK or Supabase quotas.
+- Frontend/offline experience remains shallow (no PWA caching, limited accessibility audits).
+- Automated testing is minimal; acceptance relies on manual smoke runs until Playwright/pytest suites are added.
