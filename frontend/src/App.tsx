@@ -1,10 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import ChatHeader from "@/components/ChatHeader";
-import DebugPanel from "@/components/DebugPanel";
 import MessageBubble from "@/components/MessageBubble";
 import MessageComposer from "@/components/MessageComposer";
 import LoadingDots from "@/components/LoadingDots";
-import { API_BASE_URL } from "@/api/chat";
 import { useChat } from "@/hooks/useChat";
 import type { ChatMessage } from "@/types/api";
 
@@ -16,7 +14,7 @@ const SUGGESTED_PROMPTS = [
 ];
 
 function App() {
-  const { messages, sessionId, sendMessage, isSending, cancel, resetSession, debug } = useChat();
+  const { messages, sessionId, sendMessage, isSending, cancel, resetSession } = useChat();
   const [input, setInput] = useState("");
   const [copyState, setCopyState] = useState<string | null>(null);
   const endRef = useRef<HTMLDivElement | null>(null);
@@ -67,7 +65,7 @@ function App() {
   return (
   <div className="min-h-screen overflow-x-hidden bg-gradient-to-br from-slate-100 via-white to-brand-100/40 text-slate-900">
       <ChatHeader />
-  <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 pb-40 pt-6 sm:px-6">
+  <main className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 pb-52 pt-6 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-3 rounded-3xl border border-brand-100/60 bg-white/80 px-4 py-3 text-xs text-slate-500 sm:text-sm">
           <span className="flex items-center gap-1 truncate text-xs sm:text-sm" title={sessionId ?? "new"}>
             Session
@@ -107,7 +105,7 @@ function App() {
             <MessageBubble key={message.id} message={message} onCopy={handleCopy} />
           ))
         )}
-        <div ref={endRef} />
+  <div ref={endRef} className="h-32 sm:h-36" />
       </main>
 
       <MessageComposer
@@ -127,14 +125,6 @@ function App() {
         </div>
       )}
 
-      <DebugPanel
-        enabled={debug.enabled}
-        entries={debug.entries}
-        sessionId={sessionId}
-        apiBaseUrl={API_BASE_URL}
-        isSending={isSending}
-        onClear={debug.clear}
-      />
     </div>
   );
 }
